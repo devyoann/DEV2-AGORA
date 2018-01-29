@@ -834,6 +834,14 @@ input:focus {
   outline: none;
 }
 
+/* line 3, ../sass/templates/_feed.scss */
+#feed .container .post {
+  width: 49%;
+  height: 400px;
+  background: blue;
+  border-radius: 5px;
+}
+
 /* line 1, ../sass/templates/_layout.scss */
 body,
 html {
