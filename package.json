@@ -1,0 +1,25 @@
+{
+  "name": "agora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devyoann/DEV2-AGORA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devyoann/DEV2-AGORA/issues"
+  },
+  "homepage": "https://github.com/devyoann/DEV2-AGORA#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "twig": "^1.10.5"
+  }
+}
