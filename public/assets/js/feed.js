@@ -1,6 +1,9 @@
 $(document).ready(function() {
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 200
+    $('.container').masonry({
+        itemSelector: '.post',
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer',
+        horizontalOrder: true,
+        percentPosition: true,
     });
 });
