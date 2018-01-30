@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>{% if title is defined %} {{ title }} {% endif %}</title>
+	{% block linksStylesheets %}
+	{% endblock %}
+	
+	{% block customsStylesheets %}
+	{% endblock %}
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+
+	{% block customsJavascripts %}
+	{% endblock %}
+</body>
+</html>
