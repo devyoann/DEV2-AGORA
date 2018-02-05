@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 
-	<title>{% if title is defined %} {{ title }} {% endif %}</title>
+        <title>
+            {% if title is defined %}
+                {{ title }}
+            {% endif %}
+        </title>
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/app.css">
 
-</head>
-<body>
-	{% block header %}
-	{% endblock %}
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
 
-	{% block content %}
-	{% endblock %}
+    </head>
+    <body>
+        {% block header %}{% endblock %}
 
-    {% block footer %}
-    {% endblock %}
+        {% block content %}{% endblock %}
 
-	{% block customsJavascripts %}
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/script.js"></script>
-	{% endblock %}
+        {% block footer %}{% endblock %}
 
-</body>
+        {% block customsJavascripts %}{% endblock %}
+
+    </body>
 </html>

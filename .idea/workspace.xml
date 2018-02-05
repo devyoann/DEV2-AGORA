@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="" />
+    <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_landing.scssc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/comment.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/fire.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/post_img/ca.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/post_img/landscape.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/profile_img/guy.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/profile_img/guy2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/profile_img/guy3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/share.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/video/h.mp4" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/feed.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/views/feed.twig" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_feed.scssc" afterPath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_feed.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_colors.scssc" afterPath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_colors.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_structure.scssc" afterPath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_structure.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_texts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_texts.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/_templates.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/_templates.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_structure.scssc" afterPath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_structure.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_feed.scssc" afterPath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_feed.scssc" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/app.css" afterPath="$PROJECT_DIR$/public/assets/css/app.css" />
+      <change beforePath="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" afterPath="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" />
+      <change beforePath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" />
+      <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change beforePath="$PROJECT_DIR$/views/_layout.twig" afterPath="$PROJECT_DIR$/views/_layout.twig" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/views/index.twig">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="284">
-                  <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+                  <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -36,9 +62,11 @@
           <file leaf-file-name="_layout.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/_layout.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-                  <folding />
+                <state relative-caret-position="546">
+                  <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+                  <folding>
+                    <marker date="1517828420534" expanded="true" signature="672:678" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -64,8 +92,8 @@
           <file leaf-file-name="_structure.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_structure.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4324">
-                  <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="130">
+                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -75,7 +103,7 @@
             <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_texts.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="226">
-                  <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+                  <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -108,10 +136,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/_layout.twig" />
-        <option value="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" />
         <option value="$PROJECT_DIR$/public/assets/sass/templates/_landing.scss" />
         <option value="$PROJECT_DIR$/public/assets/sass/common/_texts.scss" />
         <option value="$PROJECT_DIR$/views/index.twig" />
+        <option value="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" />
       </list>
     </option>
   </component>
@@ -216,17 +244,18 @@
       <updated>1517299493320</updated>
       <workItem from="1517299494714" duration="4535000" />
       <workItem from="1517307541320" duration="578000" />
-      <workItem from="1517818604947" duration="5209000" />
+      <workItem from="1517818604947" duration="5287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10322000" />
+    <option name="totallyTimeSpent" value="10400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18982808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18982808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -348,9 +377,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_layout.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="546">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <marker date="1517828420534" expanded="true" signature="672:678" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -365,7 +396,7 @@
     <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_texts.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -373,7 +404,7 @@
     <entry file="file://$PROJECT_DIR$/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -400,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_structure.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4324">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
