@@ -4,7 +4,7 @@ const bodyParser= require('body-parser');
 const twig		= require('twig');
 const port = 1337;
 
-const server	= express();
+const server = express();
 
 server.set('view engine', 'twig');
 
@@ -19,5 +19,5 @@ server.get('/', function(req, res) {
 });
 
 server.listen(port, function() {
-	console.log('Server listining on port' + port);
+	console.log('Server listining on port ' + port);
 });

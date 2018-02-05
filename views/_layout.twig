@@ -3,20 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% if title is defined %} {{ title }} {% endif %}</title>
-	{% block linksStylesheets %}
-	{% endblock %}
-	
-	{% block customsStylesheets %}
-	{% endblock %}
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/script.js"></script>
+	<link rel="stylesheet" href="assets/css/app.css">
+
+
 </head>
 <body>
+	{% block header %}
+	{% endblock %}
+
 	{% block content %}
 	{% endblock %}
 
+    {% block footer %}
+    {% endblock %}
+
 	{% block customsJavascripts %}
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/script.js"></script>
 	{% endblock %}
+
 </body>
 </html>
