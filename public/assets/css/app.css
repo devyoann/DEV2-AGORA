@@ -837,6 +837,8 @@ input:focus {
 /* line 1, ../sass/common/_texts.scss */
 h1 {
   font-size: 1rem;
+  font-family: 'Quicksand';
+  color: #FF5C3E;
 }
 
 /* line 1, ../sass/templates/_layout.scss */
