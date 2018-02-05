@@ -1,0 +1,114 @@
+#feed {
+    width: 90%;
+    float: right;
+    padding: 20px;
+    background: #EFEFEF;
+    font-family: 'Quicksand';
+
+    .container {
+        .grid-sizer,
+        .post {
+            width: 49%;
+            @media screen and (max-width: $break-medium) {
+                width: 100%;
+            }
+        }
+
+        .gutter-sizer {
+            width: 2%;
+        }
+
+        .post {
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: white;
+
+            .top {
+                width: 100%;
+
+                .profile_img {
+                    border-radius: 50px;
+                    width: 60px;
+                    height: 60px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .name_date {
+                    .name {
+                        font-size: 18px;
+                    }
+
+                    .date {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .content {
+                width: 100%;
+
+                .text {
+                    line-height: 22px;
+                }
+
+                .img {
+                    img {
+                        width: 100%;
+                    }
+
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .reaction {
+                .comment,
+                .fire,
+                .share {
+                    width: calc((100% / 3) - 10px);
+                    text-align: center;
+                    padding: 10px 0;
+                    position: relative;
+                    height: 20px;
+                    cursor: pointer;
+                    color: black;
+                    transition: 0.2s ease;
+                    border-radius: 10px;
+
+                    &.active {
+                        &.comment {
+                            background: #FF1C48;
+                        }
+
+                        &.fire {
+                            background: #FF5C3E;
+                        }
+
+                        &.share {
+                            background: #FC3574;
+                        }
+
+                        .comment_icon,
+                        .fire_icon,
+                        .share_icon {
+                            fill: white;
+                        }
+                    }
+
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
