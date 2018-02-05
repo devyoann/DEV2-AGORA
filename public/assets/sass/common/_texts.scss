@@ -1,5 +1,30 @@
 h1 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Quicksand';
-  color: map-get($colors, primary);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Quicksand';
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Quicksand;
+}
+
+p.desc {
+  font-size: 1rem;
+  font-family: 'Roboto';
+  line-height: 26px;
+}
+
+.text {
+  &.is-primary {
+    color: map-get($colors, primary);
+  }
+
+  &.is-secondary {
+    color: map-get($colors, secondary);
+  }
 }

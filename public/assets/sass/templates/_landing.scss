@@ -1,12 +1,99 @@
 main.landing {
-
-  .background {
-    height: 460px;
+  overflow-y:hidden;
+  /*.background {
+    height: 600px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    background: url("../img/landing.jpg");
+    position: relative;
+    bottom: 290px;
+    background: url(../img/landing.jpg);
     z-index: -1;
-  }
+  }*/
 
+  section:first-of-type {
+
+    .left {
+      position: relative;
+      width: 50%;
+      h1 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        text-align: center;
+        max-width: 570px;
+      }
+      p.desc {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 78%;
+        max-width: 570px;
+      }
+    }
+    .right {
+      position: relative;
+      width: 50%;
+
+      .white-bg {
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: skyblue;
+        border-radius: 8px;
+        height: 400px;
+        width: 80%;
+      }
+
+      h2 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        text-align: center;
+        max-width: 570px;
+      }
+
+      form {
+        position: absolute;
+        transform: translate(-50%);
+        top: 35%;
+        left: 50%;
+        height: 100%;
+        width: 80%;
+
+        div.input-container {
+          display: flex;
+          position: relative;
+          height: 70px;
+          label {
+            font-family: 'Roboto';
+            position: absolute;
+            top: 0;
+          }
+          input {
+            position: absolute;
+            top: 30px;
+            display: block;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          }
+
+          div.input-left, .input-right {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
 }

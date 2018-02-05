@@ -4,9 +4,34 @@
 
 {% block content %}
 	<main class="landing">
-		<div class="background"></div>
-		<section>
-			<h1>Le nouveau réseau social innovant !</h1>
+		<section class="flex">
+			<div class="left flex">
+				<h1 class="text is-primary">Le nouveau réseau social innovant !</h1>
+				<p class="desc text is-secondary">
+					Bacon ipsum dolor amet ball tip frankfurter turkey, pancetta beef kevin pig pastrami. Prosciutto spare ribs short loin filet mignon beef ribs rump. Pancetta picanha flank boudin, fatback chuck porchetta.
+				</p>
+				<div class="devices text is-secondary">
+					<h3>Disponible sur toutes les platformes</h3>
+				</div>
+			</div>
+			<div class="right flex">
+				<div class="white-bg">
+					<h2 class="text is-primary">Inscription</h2>
+					<form action="#" method="POST">
+						<div class="input-container">
+							<div class="input-left">
+								<label for="firstname">Name</label>
+								<input id="firstname" type="text" value="Nom">
+							</div>
+							<div class="input-right">
+								<label for="firstname">Name</label>
+								<input id="firstname" type="text" value="Nom">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</section>
+		<div class="background"></div>
 	</main>
 {% endblock %}

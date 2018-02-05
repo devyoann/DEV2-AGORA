@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 2, ../sass/common/_structure.scss */
-.d-flex {
+.flex {
   display: flex;
 }
 
@@ -836,9 +836,36 @@ input:focus {
 
 /* line 1, ../sass/common/_texts.scss */
 h1 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Quicksand';
+}
+
+/* line 6, ../sass/common/_texts.scss */
+h2 {
+  font-size: 2rem;
+  font-family: 'Quicksand';
+}
+
+/* line 11, ../sass/common/_texts.scss */
+h3 {
+  font-size: 1.5rem;
+  font-family: Quicksand;
+}
+
+/* line 16, ../sass/common/_texts.scss */
+p.desc {
+  font-size: 1rem;
+  font-family: 'Roboto';
+  line-height: 26px;
+}
+
+/* line 23, ../sass/common/_texts.scss */
+.text.is-primary {
   color: #FF5C3E;
+}
+/* line 27, ../sass/common/_texts.scss */
+.text.is-secondary {
+  color: #404258;
 }
 
 /* line 1, ../sass/templates/_layout.scss */
@@ -855,12 +882,105 @@ header {
   width: 100%;
 }
 
-/* line 3, ../sass/templates/_landing.scss */
-main.landing .background {
-  height: 460px;
-  width: 100%;
+/* line 1, ../sass/templates/_landing.scss */
+main.landing {
+  overflow-y: hidden;
+  /*.background {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    bottom: 290px;
+    background: url(../img/landing.jpg);
+    z-index: -1;
+  }*/
+}
+/* line 14, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .left {
+  position: relative;
+  width: 50%;
+}
+/* line 17, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .left h1 {
   position: absolute;
-  bottom: 0;
-  background: url("../img/landing.jpg");
-  z-index: -1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  text-align: center;
+  max-width: 570px;
+}
+/* line 26, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .left p.desc {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 78%;
+  max-width: 570px;
+}
+/* line 35, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right {
+  position: relative;
+  width: 50%;
+}
+/* line 39, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right .white-bg {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: skyblue;
+  border-radius: 8px;
+  height: 400px;
+  width: 80%;
+}
+/* line 50, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right h2 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  text-align: center;
+  max-width: 570px;
+}
+/* line 60, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form {
+  position: absolute;
+  transform: translate(-50%);
+  top: 35%;
+  left: 50%;
+  height: 100%;
+  width: 80%;
+}
+/* line 68, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container {
+  display: flex;
+  position: relative;
+  height: 70px;
+}
+/* line 72, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container label {
+  font-family: 'Roboto';
+  position: absolute;
+  top: 0;
+}
+/* line 77, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container input {
+  position: absolute;
+  top: 30px;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* line 92, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container div.input-left, main.landing section:first-of-type .right form div.input-container .input-right {
+  width: 50%;
 }
