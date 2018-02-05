@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_structure.scssc" afterPath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_structure.scssc" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_texts.scssc" afterPath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_texts.scssc" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_landing.scssc" afterPath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_landing.scssc" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/app.css" afterPath="$PROJECT_DIR$/public/assets/css/app.css" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/landing.jpg" afterPath="$PROJECT_DIR$/public/assets/img/landing.jpg" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" afterPath="$PROJECT_DIR$/public/assets/sass/common/_structure.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/common/_texts.scss" afterPath="$PROJECT_DIR$/public/assets/sass/common/_texts.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/templates/_landing.scss" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_landing.scss" />
-      <change beforePath="$PROJECT_DIR$/views/index.twig" afterPath="$PROJECT_DIR$/views/index.twig" />
-    </list>
+    <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,28 +170,6 @@
             <path>
               <item name="DEV2-AGORA" type="b2602c69:ProjectViewProjectNode" />
               <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DEV2-AGORA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DEV2-AGORA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DEV2-AGORA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -249,18 +216,17 @@
       <updated>1517299493320</updated>
       <workItem from="1517299494714" duration="4535000" />
       <workItem from="1517307541320" duration="578000" />
-      <workItem from="1517818604947" duration="5132000" />
+      <workItem from="1517818604947" duration="5209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10245000" />
+    <option name="totallyTimeSpent" value="10322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18982808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18982808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
