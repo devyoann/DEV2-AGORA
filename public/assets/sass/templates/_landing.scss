@@ -1,12 +1,103 @@
 main.landing {
+    .background {
+        height: 460px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background: url("../img/landing.jpg");
+        z-index: -1;
+    }
+}
 
-  .background {
-    height: 460px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background: url("../img/landing.jpg");
-    z-index: -1;
-  }
+header {
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    left: 10vw;
+    height: 100px;
+    background: white;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
 
+    img {
+        width: 100px;
+    }
+
+    & > div {
+        width: 50%;
+
+        &:last-child {
+            justify-content: flex-end;
+
+            .notification {
+                img {
+                    width: 30px;
+                }
+            }
+
+            .profile_img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .burger_right {
+                cursor: pointer;
+                font-weight: bold;
+                font-family: 'Quicksand';
+                font-size: 15px;
+                background: url("../../assets/img/burger.svg") no-repeat 0 center;
+                background-size: 30px;
+                padding: 10px 0 10px 40px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+#search {
+    input {
+        border: solid 1px #4A4A4A;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        width: 200px;
+        border-right: none;
+
+        &::placeholder {
+            color: lightgray;
+        }
+    }
+
+    label {
+        background: #FF5C3E;
+        height: 30px;
+        width: 50px;
+        position: relative;
+
+        img {
+            width: 15px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}
+
+#board {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 100vh;
+    background: #4A4A4A;
 }

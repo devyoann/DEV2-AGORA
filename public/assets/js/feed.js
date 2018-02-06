@@ -1,10 +1,21 @@
 $(document).ready(function() {
-    $('.container').masonry({
+    var $container = $('.container');
+    $container.masonry({
         itemSelector: '.post',
         columnWidth: '.grid-sizer',
         gutter: '.gutter-sizer',
         horizontalOrder: true,
         percentPosition: true
+    });
+
+    $container.one('layoutComplete', function() {
+
+    });
+
+    $('.reaction .comment').click(function() {
+        $(this).parent().next().slideDown();
+        console.log('ok');
+        $container.masonry('reloadItems')
     });
 });
 
@@ -14,6 +25,7 @@ $('.react').click(function() {
     } else if ($(this).hasClass('active')) {
         $(this).removeClass('active');
     }
+
 });
 
 // document.addEventListener("DOMContentLoaded", function() {

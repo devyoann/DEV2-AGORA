@@ -9,7 +9,7 @@
             {% endif %}
         </title>
 
-        <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/app.css">
 
         <script src="assets/js/jquery.min.js"></script>
@@ -17,7 +17,34 @@
 
     </head>
     <body>
-        {% block header %}{% endblock %}
+        {% block header %}
+            <header class="flex align-items-center justify-content-between">
+                <div class="flex align-items-center">
+                    <img src="assets/img/logo.svg" alt="">
+                    <form id="search" class="flex align-items-center mg-l3" action="index.html" method="post">
+                        <input type="text" id="search_bar" name="" placeholder="Search..">
+                        <label for="search_bar">
+                            <img src="assets/img/search_icon.svg" alt="">
+                        </label>
+                    </form>
+                </div>
+                <div class="flex align-items-center">
+                    <div class="notification">
+                        <img src="assets/img/notif.svg" alt="">
+                    </div>
+                    <div class="profile_img over_hide mg-l2">
+                        <a href="#">
+                            <img src="assets/img/profile_img/guy2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="burger_right mg-l2">
+                        <span>Filters</span>
+                    </div>
+                </div>
+            </header>
+
+            <nav id="board"></nav>
+        {% endblock %}
 
         {% block content %}{% endblock %}
 

@@ -869,75 +869,82 @@ h1 {
 
 /* line 1, ../sass/templates/_feed.scss */
 #feed {
-  width: 90%;
+  width: 90vw;
   float: right;
   padding: 20px;
+  box-sizing: border-box;
   background: #EFEFEF;
   font-family: 'Quicksand';
+  margin-top: 100px;
 }
-/* line 9, ../sass/templates/_feed.scss */
+/* line 10, ../sass/templates/_feed.scss */
+#feed .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* line 14, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
   width: 49%;
 }
 @media screen and (max-width: 769px) {
-  /* line 9, ../sass/templates/_feed.scss */
+  /* line 14, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 17, ../sass/templates/_feed.scss */
+/* line 22, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
-/* line 21, ../sass/templates/_feed.scss */
+/* line 26, ../sass/templates/_feed.scss */
 #feed .container .post {
   border-radius: 5px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px 20px 10px;
   box-sizing: border-box;
   background: white;
 }
-/* line 28, ../sass/templates/_feed.scss */
+/* line 33, ../sass/templates/_feed.scss */
 #feed .container .post .top {
   width: 100%;
 }
-/* line 31, ../sass/templates/_feed.scss */
+/* line 36, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img {
   border-radius: 50px;
   width: 60px;
   height: 60px;
 }
-/* line 36, ../sass/templates/_feed.scss */
+/* line 41, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img img {
   height: 100%;
 }
-/* line 42, ../sass/templates/_feed.scss */
+/* line 47, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .name {
   font-size: 18px;
 }
-/* line 46, ../sass/templates/_feed.scss */
+/* line 51, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .date {
   font-size: 14px;
 }
-/* line 52, ../sass/templates/_feed.scss */
+/* line 57, ../sass/templates/_feed.scss */
 #feed .container .post .content {
   width: 100%;
 }
-/* line 55, ../sass/templates/_feed.scss */
+/* line 60, ../sass/templates/_feed.scss */
 #feed .container .post .content .text {
   line-height: 22px;
 }
-/* line 60, ../sass/templates/_feed.scss */
+/* line 65, ../sass/templates/_feed.scss */
 #feed .container .post .content .img img {
   width: 100%;
 }
-/* line 64, ../sass/templates/_feed.scss */
+/* line 69, ../sass/templates/_feed.scss */
 #feed .container .post .content .img video {
   width: 100%;
 }
-/* line 71, ../sass/templates/_feed.scss */
+/* line 76, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment,
 #feed .container .post .reaction .fire,
 #feed .container .post .reaction .share {
@@ -951,25 +958,25 @@ h1 {
   transition: 0.2s ease;
   border-radius: 10px;
 }
-/* line 85, ../sass/templates/_feed.scss */
+/* line 90, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.comment,
 #feed .container .post .reaction .fire.active.comment,
 #feed .container .post .reaction .share.active.comment {
   background: #FF1C48;
 }
-/* line 89, ../sass/templates/_feed.scss */
+/* line 94, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.fire,
 #feed .container .post .reaction .fire.active.fire,
 #feed .container .post .reaction .share.active.fire {
   background: #FF5C3E;
 }
-/* line 93, ../sass/templates/_feed.scss */
+/* line 98, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.share,
 #feed .container .post .reaction .fire.active.share,
 #feed .container .post .reaction .share.active.share {
   background: #FC3574;
 }
-/* line 97, ../sass/templates/_feed.scss */
+/* line 102, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active .comment_icon,
 #feed .container .post .reaction .comment.active .fire_icon,
 #feed .container .post .reaction .comment.active .share_icon,
@@ -981,7 +988,7 @@ h1 {
 #feed .container .post .reaction .share.active .share_icon {
   fill: white;
 }
-/* line 104, ../sass/templates/_feed.scss */
+/* line 109, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment svg,
 #feed .container .post .reaction .fire svg,
 #feed .container .post .reaction .share svg {
@@ -989,6 +996,52 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+}
+/* line 118, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section {
+  display: none;
+}
+/* line 122, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form label {
+  width: 10%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50px;
+}
+/* line 128, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form label img {
+  width: 100%;
+}
+/* line 133, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form input {
+  width: 85%;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+/* line 144, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .profile_img {
+  width: 10%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50px;
+}
+/* line 150, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .profile_img img {
+  width: 100%;
+}
+/* line 155, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .comment {
+  background-color: #F4F4F4;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 85%;
+}
+/* line 162, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .comment .name {
+  font-weight: bold;
+  color: #FF5C3E;
 }
 
 /* line 1, ../sass/templates/_layout.scss */
@@ -1005,7 +1058,7 @@ header {
   width: 100%;
 }
 
-/* line 3, ../sass/templates/_landing.scss */
+/* line 2, ../sass/templates/_landing.scss */
 main.landing .background {
   height: 460px;
   width: 100%;
@@ -1013,4 +1066,96 @@ main.landing .background {
   bottom: 0;
   background: url("../img/landing.jpg");
   z-index: -1;
+}
+
+/* line 12, ../sass/templates/_landing.scss */
+header {
+  width: 90vw;
+  position: fixed;
+  top: 0;
+  left: 10vw;
+  height: 100px;
+  background: white;
+  z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* line 23, ../sass/templates/_landing.scss */
+header img {
+  width: 100px;
+}
+/* line 27, ../sass/templates/_landing.scss */
+header > div {
+  width: 50%;
+}
+/* line 30, ../sass/templates/_landing.scss */
+header > div:last-child {
+  justify-content: flex-end;
+}
+/* line 34, ../sass/templates/_landing.scss */
+header > div:last-child .notification img {
+  width: 30px;
+}
+/* line 39, ../sass/templates/_landing.scss */
+header > div:last-child .profile_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+/* line 44, ../sass/templates/_landing.scss */
+header > div:last-child .profile_img img {
+  width: 100%;
+}
+/* line 49, ../sass/templates/_landing.scss */
+header > div:last-child .burger_right {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Quicksand';
+  font-size: 15px;
+  background: url("../../assets/img/burger.svg") no-repeat 0 center;
+  background-size: 30px;
+  padding: 10px 0 10px 40px;
+}
+/* line 58, ../sass/templates/_landing.scss */
+header > div:last-child .burger_right:focus {
+  outline: none;
+}
+
+/* line 67, ../sass/templates/_landing.scss */
+#search input {
+  border: solid 1px #4A4A4A;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  width: 200px;
+  border-right: none;
+}
+/* line 75, ../sass/templates/_landing.scss */
+#search input::placeholder {
+  color: lightgray;
+}
+/* line 80, ../sass/templates/_landing.scss */
+#search label {
+  background: #FF5C3E;
+  height: 30px;
+  width: 50px;
+  position: relative;
+}
+/* line 86, ../sass/templates/_landing.scss */
+#search label img {
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 96, ../sass/templates/_landing.scss */
+#board {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  background: #4A4A4A;
 }
