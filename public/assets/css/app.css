@@ -1052,23 +1052,6 @@ html {
 
 /* line 7, ../sass/templates/_layout.scss */
 header {
-  height: 100px;
-  background: red;
-  width: 100%;
-}
-
-/* line 2, ../sass/templates/_landing.scss */
-main.landing .background {
-  height: 460px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: url("../img/landing.jpg");
-  z-index: -1;
-}
-
-/* line 12, ../sass/templates/_landing.scss */
-header {
   width: 94vw;
   position: fixed;
   top: 0;
@@ -1079,38 +1062,38 @@ header {
   padding: 0 20px;
   box-sizing: border-box;
 }
-/* line 23, ../sass/templates/_landing.scss */
+/* line 18, ../sass/templates/_layout.scss */
 header.board_open {
   width: 85vw;
   left: 15vw;
 }
-/* line 28, ../sass/templates/_landing.scss */
+/* line 23, ../sass/templates/_layout.scss */
 header img {
   width: 100px;
 }
-/* line 32, ../sass/templates/_landing.scss */
+/* line 27, ../sass/templates/_layout.scss */
 header > div {
   width: 50%;
 }
-/* line 35, ../sass/templates/_landing.scss */
+/* line 30, ../sass/templates/_layout.scss */
 header > div:last-child {
   justify-content: flex-end;
 }
-/* line 39, ../sass/templates/_landing.scss */
+/* line 34, ../sass/templates/_layout.scss */
 header > div:last-child .notification img {
   width: 30px;
 }
-/* line 44, ../sass/templates/_landing.scss */
+/* line 39, ../sass/templates/_layout.scss */
 header > div:last-child .profile_img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
-/* line 49, ../sass/templates/_landing.scss */
+/* line 44, ../sass/templates/_layout.scss */
 header > div:last-child .profile_img img {
   width: 100%;
 }
-/* line 54, ../sass/templates/_landing.scss */
+/* line 49, ../sass/templates/_layout.scss */
 header > div:last-child .burger_right {
   cursor: pointer;
   font-weight: bold;
@@ -1120,12 +1103,12 @@ header > div:last-child .burger_right {
   background-size: 30px;
   padding: 10px 0 10px 40px;
 }
-/* line 63, ../sass/templates/_landing.scss */
+/* line 58, ../sass/templates/_layout.scss */
 header > div:last-child .burger_right:focus {
   outline: none;
 }
 
-/* line 72, ../sass/templates/_landing.scss */
+/* line 67, ../sass/templates/_layout.scss */
 #search input {
   border: solid 1px #4A4A4A;
   height: 30px;
@@ -1134,18 +1117,18 @@ header > div:last-child .burger_right:focus {
   width: 200px;
   border-right: none;
 }
-/* line 80, ../sass/templates/_landing.scss */
+/* line 75, ../sass/templates/_layout.scss */
 #search input::placeholder {
   color: lightgray;
 }
-/* line 85, ../sass/templates/_landing.scss */
+/* line 80, ../sass/templates/_layout.scss */
 #search label {
   background: #FF5C3E;
   height: 30px;
   width: 50px;
   position: relative;
 }
-/* line 91, ../sass/templates/_landing.scss */
+/* line 86, ../sass/templates/_layout.scss */
 #search label img {
   width: 15px;
   position: absolute;
@@ -1154,7 +1137,7 @@ header > div:last-child .burger_right:focus {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 101, ../sass/templates/_landing.scss */
+/* line 96, ../sass/templates/_layout.scss */
 #board {
   position: fixed;
   top: 0;
@@ -1164,59 +1147,69 @@ header > div:last-child .burger_right:focus {
   background: #4A4A4A;
   padding-top: 35px;
 }
-/* line 110, ../sass/templates/_landing.scss */
+/* line 105, ../sass/templates/_layout.scss */
 #board.open {
   width: 15vw;
 }
-/* line 113, ../sass/templates/_landing.scss */
+/* line 108, ../sass/templates/_layout.scss */
 #board.open ul {
   width: 140px;
   margin: 50px auto 0;
 }
-/* line 117, ../sass/templates/_landing.scss */
+/* line 112, ../sass/templates/_layout.scss */
 #board.open ul li {
   display: flex;
   align-items: center;
 }
-/* line 121, ../sass/templates/_landing.scss */
+/* line 116, ../sass/templates/_layout.scss */
 #board.open ul li span {
   margin-left: 10px;
 }
-/* line 127, ../sass/templates/_landing.scss */
+/* line 122, ../sass/templates/_layout.scss */
 #board.open .feed_label::after {
   content: "Flux d'actualité";
 }
-/* line 131, ../sass/templates/_landing.scss */
+/* line 126, ../sass/templates/_layout.scss */
 #board.open .chat_label::after {
   content: "Chat";
 }
-/* line 135, ../sass/templates/_landing.scss */
+/* line 130, ../sass/templates/_layout.scss */
 #board.open .calendar_label::after {
   content: "Calendrier";
 }
-/* line 139, ../sass/templates/_landing.scss */
+/* line 134, ../sass/templates/_layout.scss */
 #board.open .weather_label::after {
   content: "Météo";
 }
-/* line 143, ../sass/templates/_landing.scss */
+/* line 138, ../sass/templates/_layout.scss */
 #board.open .settings_label::after {
   content: "Paramètres";
 }
-/* line 148, ../sass/templates/_landing.scss */
+/* line 143, ../sass/templates/_layout.scss */
 #board > div {
   cursor: pointer;
 }
-/* line 153, ../sass/templates/_landing.scss */
+/* line 148, ../sass/templates/_layout.scss */
 #board ul li {
   cursor: pointer;
   color: white;
   font-family: 'Quicksand';
 }
-/* line 158, ../sass/templates/_landing.scss */
+/* line 153, ../sass/templates/_layout.scss */
 #board ul li:hover {
   color: #FF5C3E;
 }
-/* line 161, ../sass/templates/_landing.scss */
+/* line 156, ../sass/templates/_layout.scss */
 #board ul li:hover path {
   fill: #FF5C3E;
+}
+
+/* line 2, ../sass/templates/_landing.scss */
+main.landing .background {
+  height: 460px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: url("../img/landing.jpg");
+  z-index: -1;
 }
