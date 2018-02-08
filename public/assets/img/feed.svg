@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>burgericon/feed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="burger/closed" transform="translate(-53.000000, -173.000000)">
+            <g id="Nav-Burger">
+                <g id="burgericon/feed" transform="translate(51.000000, 169.000000)">
+                    <g id="ic/subtitles/grey600">
+                        <g id="ic_subtitles_24px">
+                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M20,4 L4,4 C2.9,4 2,4.9 2,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M4,12 L8,12 L8,14 L4,14 L4,12 Z M14,18 L4,18 L4,16 L14,16 L14,18 Z M20,18 L16,18 L16,16 L20,16 L20,18 Z M20,14 L10,14 L10,12 L20,12 L20,14 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

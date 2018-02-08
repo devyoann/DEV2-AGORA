@@ -220,7 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*/
 ///////TEXT////////*/
 /* line 125, ../sass/common/_structure.scss */
-.text-center {
+.text_center {
   text-align: center;
 }
 
@@ -869,7 +869,7 @@ h1 {
 
 /* line 1, ../sass/templates/_feed.scss */
 #feed {
-  width: 90vw;
+  width: 94vw;
   float: right;
   padding: 20px;
   box-sizing: border-box;
@@ -878,27 +878,37 @@ h1 {
   margin-top: 100px;
 }
 /* line 10, ../sass/templates/_feed.scss */
-#feed .container {
-  max-width: 1000px;
-  margin: 0 auto;
+#feed.board_open {
+  width: 85vw;
 }
 /* line 14, ../sass/templates/_feed.scss */
+#feed .container {
+  margin: 0 auto;
+}
+/* line 17, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
-  width: 49%;
+  width: 32%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 17, ../sass/templates/_feed.scss */
+  #feed .container .grid-sizer,
+  #feed .container .post {
+    width: 49%;
+  }
 }
 @media screen and (max-width: 769px) {
-  /* line 14, ../sass/templates/_feed.scss */
+  /* line 17, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 22, ../sass/templates/_feed.scss */
+/* line 28, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
-/* line 26, ../sass/templates/_feed.scss */
+/* line 32, ../sass/templates/_feed.scss */
 #feed .container .post {
   border-radius: 5px;
   margin-bottom: 20px;
@@ -906,45 +916,46 @@ h1 {
   box-sizing: border-box;
   background: white;
 }
-/* line 33, ../sass/templates/_feed.scss */
+/* line 39, ../sass/templates/_feed.scss */
 #feed .container .post .top {
   width: 100%;
 }
-/* line 36, ../sass/templates/_feed.scss */
+/* line 42, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img {
   border-radius: 50px;
   width: 60px;
   height: 60px;
 }
-/* line 41, ../sass/templates/_feed.scss */
+/* line 47, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img img {
   height: 100%;
 }
-/* line 47, ../sass/templates/_feed.scss */
+/* line 53, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .name {
-  font-size: 18px;
-}
-/* line 51, ../sass/templates/_feed.scss */
-#feed .container .post .top .name_date .date {
-  font-size: 14px;
+  font-size: 17px;
 }
 /* line 57, ../sass/templates/_feed.scss */
+#feed .container .post .top .name_date .date {
+  font-size: 13px;
+}
+/* line 63, ../sass/templates/_feed.scss */
 #feed .container .post .content {
   width: 100%;
 }
-/* line 60, ../sass/templates/_feed.scss */
+/* line 66, ../sass/templates/_feed.scss */
 #feed .container .post .content .text {
   line-height: 22px;
+  font-size: 14px;
 }
-/* line 65, ../sass/templates/_feed.scss */
+/* line 72, ../sass/templates/_feed.scss */
 #feed .container .post .content .img img {
   width: 100%;
 }
-/* line 69, ../sass/templates/_feed.scss */
+/* line 76, ../sass/templates/_feed.scss */
 #feed .container .post .content .img video {
   width: 100%;
 }
-/* line 76, ../sass/templates/_feed.scss */
+/* line 83, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment,
 #feed .container .post .reaction .fire,
 #feed .container .post .reaction .share {
@@ -958,25 +969,13 @@ h1 {
   transition: 0.2s ease;
   border-radius: 10px;
 }
-/* line 90, ../sass/templates/_feed.scss */
-#feed .container .post .reaction .comment.active.comment,
-#feed .container .post .reaction .fire.active.comment,
-#feed .container .post .reaction .share.active.comment {
-  background: #FF1C48;
-}
-/* line 94, ../sass/templates/_feed.scss */
+/* line 97, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.fire,
 #feed .container .post .reaction .fire.active.fire,
 #feed .container .post .reaction .share.active.fire {
   background: #FF5C3E;
 }
-/* line 98, ../sass/templates/_feed.scss */
-#feed .container .post .reaction .comment.active.share,
-#feed .container .post .reaction .fire.active.share,
-#feed .container .post .reaction .share.active.share {
-  background: #FC3574;
-}
-/* line 102, ../sass/templates/_feed.scss */
+/* line 101, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active .comment_icon,
 #feed .container .post .reaction .comment.active .fire_icon,
 #feed .container .post .reaction .comment.active .share_icon,
@@ -988,7 +987,7 @@ h1 {
 #feed .container .post .reaction .share.active .share_icon {
   fill: white;
 }
-/* line 109, ../sass/templates/_feed.scss */
+/* line 108, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment svg,
 #feed .container .post .reaction .fire svg,
 #feed .container .post .reaction .share svg {
@@ -997,40 +996,40 @@ h1 {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-/* line 118, ../sass/templates/_feed.scss */
+/* line 117, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section {
   display: none;
 }
-/* line 122, ../sass/templates/_feed.scss */
+/* line 121, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form label {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 128, ../sass/templates/_feed.scss */
+/* line 127, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form label img {
   width: 100%;
 }
-/* line 133, ../sass/templates/_feed.scss */
+/* line 132, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form input {
   width: 85%;
   border-radius: 50px;
   border: solid 1px lightgray;
   padding: 5px;
 }
-/* line 144, ../sass/templates/_feed.scss */
+/* line 143, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .profile_img {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 150, ../sass/templates/_feed.scss */
+/* line 149, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .profile_img img {
   width: 100%;
 }
-/* line 155, ../sass/templates/_feed.scss */
+/* line 154, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .comment {
   background-color: #F4F4F4;
   padding: 10px 5px;
@@ -1038,7 +1037,7 @@ h1 {
   border-radius: 10px;
   width: 85%;
 }
-/* line 162, ../sass/templates/_feed.scss */
+/* line 161, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .comment .name {
   font-weight: bold;
   color: #FF5C3E;
@@ -1070,10 +1069,10 @@ main.landing .background {
 
 /* line 12, ../sass/templates/_landing.scss */
 header {
-  width: 90vw;
+  width: 94vw;
   position: fixed;
   top: 0;
-  left: 10vw;
+  left: 6vw;
   height: 100px;
   background: white;
   z-index: 1000;
@@ -1081,32 +1080,37 @@ header {
   box-sizing: border-box;
 }
 /* line 23, ../sass/templates/_landing.scss */
+header.board_open {
+  width: 85vw;
+  left: 15vw;
+}
+/* line 28, ../sass/templates/_landing.scss */
 header img {
   width: 100px;
 }
-/* line 27, ../sass/templates/_landing.scss */
+/* line 32, ../sass/templates/_landing.scss */
 header > div {
   width: 50%;
 }
-/* line 30, ../sass/templates/_landing.scss */
+/* line 35, ../sass/templates/_landing.scss */
 header > div:last-child {
   justify-content: flex-end;
 }
-/* line 34, ../sass/templates/_landing.scss */
+/* line 39, ../sass/templates/_landing.scss */
 header > div:last-child .notification img {
   width: 30px;
 }
-/* line 39, ../sass/templates/_landing.scss */
+/* line 44, ../sass/templates/_landing.scss */
 header > div:last-child .profile_img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
-/* line 44, ../sass/templates/_landing.scss */
+/* line 49, ../sass/templates/_landing.scss */
 header > div:last-child .profile_img img {
   width: 100%;
 }
-/* line 49, ../sass/templates/_landing.scss */
+/* line 54, ../sass/templates/_landing.scss */
 header > div:last-child .burger_right {
   cursor: pointer;
   font-weight: bold;
@@ -1116,12 +1120,12 @@ header > div:last-child .burger_right {
   background-size: 30px;
   padding: 10px 0 10px 40px;
 }
-/* line 58, ../sass/templates/_landing.scss */
+/* line 63, ../sass/templates/_landing.scss */
 header > div:last-child .burger_right:focus {
   outline: none;
 }
 
-/* line 67, ../sass/templates/_landing.scss */
+/* line 72, ../sass/templates/_landing.scss */
 #search input {
   border: solid 1px #4A4A4A;
   height: 30px;
@@ -1130,18 +1134,18 @@ header > div:last-child .burger_right:focus {
   width: 200px;
   border-right: none;
 }
-/* line 75, ../sass/templates/_landing.scss */
+/* line 80, ../sass/templates/_landing.scss */
 #search input::placeholder {
   color: lightgray;
 }
-/* line 80, ../sass/templates/_landing.scss */
+/* line 85, ../sass/templates/_landing.scss */
 #search label {
   background: #FF5C3E;
   height: 30px;
   width: 50px;
   position: relative;
 }
-/* line 86, ../sass/templates/_landing.scss */
+/* line 91, ../sass/templates/_landing.scss */
 #search label img {
   width: 15px;
   position: absolute;
@@ -1150,12 +1154,69 @@ header > div:last-child .burger_right:focus {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 96, ../sass/templates/_landing.scss */
+/* line 101, ../sass/templates/_landing.scss */
 #board {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10vw;
+  width: 6vw;
   height: 100vh;
   background: #4A4A4A;
+  padding-top: 35px;
+}
+/* line 110, ../sass/templates/_landing.scss */
+#board.open {
+  width: 15vw;
+}
+/* line 113, ../sass/templates/_landing.scss */
+#board.open ul {
+  width: 140px;
+  margin: 50px auto 0;
+}
+/* line 117, ../sass/templates/_landing.scss */
+#board.open ul li {
+  display: flex;
+  align-items: center;
+}
+/* line 121, ../sass/templates/_landing.scss */
+#board.open ul li span {
+  margin-left: 10px;
+}
+/* line 127, ../sass/templates/_landing.scss */
+#board.open .feed_label::after {
+  content: "Flux d'actualité";
+}
+/* line 131, ../sass/templates/_landing.scss */
+#board.open .chat_label::after {
+  content: "Chat";
+}
+/* line 135, ../sass/templates/_landing.scss */
+#board.open .calendar_label::after {
+  content: "Calendrier";
+}
+/* line 139, ../sass/templates/_landing.scss */
+#board.open .weather_label::after {
+  content: "Météo";
+}
+/* line 143, ../sass/templates/_landing.scss */
+#board.open .settings_label::after {
+  content: "Paramètres";
+}
+/* line 148, ../sass/templates/_landing.scss */
+#board > div {
+  cursor: pointer;
+}
+/* line 153, ../sass/templates/_landing.scss */
+#board ul li {
+  cursor: pointer;
+  color: white;
+  font-family: 'Quicksand';
+}
+/* line 158, ../sass/templates/_landing.scss */
+#board ul li:hover {
+  color: #FF5C3E;
+}
+/* line 161, ../sass/templates/_landing.scss */
+#board ul li:hover path {
+  fill: #FF5C3E;
 }

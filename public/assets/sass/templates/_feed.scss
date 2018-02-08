@@ -1,5 +1,5 @@
 #feed {
-    width: 90vw;
+    width: 94vw;
     float: right;
     padding: 20px;
     box-sizing: border-box;
@@ -7,13 +7,19 @@
     font-family: 'Quicksand';
     margin-top: 100px;
 
+    &.board_open {
+        width: 85vw;
+    }
+
     .container {
-        max-width: 1000px;
         margin: 0 auto;
 
         .grid-sizer,
         .post {
-            width: 49%;
+            width: 32%;
+            @media screen and (max-width: $break-13pouces) {
+                width: 49%;
+            }
             @media screen and (max-width: $break-medium) {
                 width: 100%;
             }
@@ -45,11 +51,11 @@
 
                 .name_date {
                     .name {
-                        font-size: 18px;
+                        font-size: 17px;
                     }
 
                     .date {
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -59,6 +65,7 @@
 
                 .text {
                     line-height: 22px;
+                    font-size: 14px;
                 }
 
                 .img {
@@ -87,16 +94,8 @@
                     border-radius: 10px;
 
                     &.active {
-                        &.comment {
-                            background: #FF1C48;
-                        }
-
                         &.fire {
                             background: #FF5C3E;
-                        }
-
-                        &.share {
-                            background: #FC3574;
                         }
 
                         .comment_icon,

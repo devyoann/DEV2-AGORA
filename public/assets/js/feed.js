@@ -13,7 +13,7 @@ $(document).ready(function() {
     });
 
     $('.reaction .comment').click(function() {
-        $(this).parent().next().slideDown();
+        $(this).parent().next().slideToggle();
         console.log('ok');
         $container.masonry('reloadItems')
     });
