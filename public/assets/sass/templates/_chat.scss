@@ -1,0 +1,19 @@
+#chat {
+    width: 94vw;
+    margin-top: 100px;
+    float: right;
+
+    & > section {
+        &:first-child {
+            width: 20%;
+            height: 100px;
+            background-color: red;
+        }
+
+        &:last-child {
+            width: 80%;
+            height: 100px;
+            background: blue;
+        }
+    }
+}

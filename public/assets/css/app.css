@@ -905,37 +905,75 @@ p.desc {
   margin-top: 100px;
 }
 /* line 10, ../sass/templates/_feed.scss */
+#feed .type_content {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* line 17, ../sass/templates/_feed.scss */
+#feed .type_content .profile_img {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+/* line 23, ../sass/templates/_feed.scss */
+#feed .type_content .profile_img img {
+  width: 100%;
+}
+/* line 28, ../sass/templates/_feed.scss */
+#feed .type_content input {
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+}
+/* line 33, ../sass/templates/_feed.scss */
+#feed .type_content input:first-child {
+  border: solid 1px #C2C2C2;
+  padding-left: 10px;
+}
+/* line 37, ../sass/templates/_feed.scss */
+#feed .type_content input:first-child::placeholder {
+  color: #C2C2C2;
+}
+/* line 42, ../sass/templates/_feed.scss */
+#feed .type_content input:last-child {
+  background: url("../../img/send.svg") #FF5C3E;
+}
+/* line 48, ../sass/templates/_feed.scss */
 #feed.board_open {
   width: 85vw;
 }
-/* line 14, ../sass/templates/_feed.scss */
+/* line 52, ../sass/templates/_feed.scss */
 #feed .container {
   margin: 0 auto;
 }
-/* line 17, ../sass/templates/_feed.scss */
+/* line 55, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
   width: 32%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 17, ../sass/templates/_feed.scss */
+  /* line 55, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 49%;
   }
 }
 @media screen and (max-width: 769px) {
-  /* line 17, ../sass/templates/_feed.scss */
+  /* line 55, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 28, ../sass/templates/_feed.scss */
+/* line 66, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
-/* line 32, ../sass/templates/_feed.scss */
+/* line 70, ../sass/templates/_feed.scss */
 #feed .container .post {
   border-radius: 5px;
   margin-bottom: 20px;
@@ -943,46 +981,46 @@ p.desc {
   box-sizing: border-box;
   background: white;
 }
-/* line 39, ../sass/templates/_feed.scss */
+/* line 77, ../sass/templates/_feed.scss */
 #feed .container .post .top {
   width: 100%;
 }
-/* line 42, ../sass/templates/_feed.scss */
+/* line 80, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img {
   border-radius: 50px;
   width: 60px;
   height: 60px;
 }
-/* line 47, ../sass/templates/_feed.scss */
+/* line 85, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img img {
   height: 100%;
 }
-/* line 53, ../sass/templates/_feed.scss */
+/* line 91, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .name {
   font-size: 17px;
 }
-/* line 57, ../sass/templates/_feed.scss */
+/* line 95, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .date {
   font-size: 13px;
 }
-/* line 63, ../sass/templates/_feed.scss */
+/* line 101, ../sass/templates/_feed.scss */
 #feed .container .post .content {
   width: 100%;
 }
-/* line 66, ../sass/templates/_feed.scss */
+/* line 104, ../sass/templates/_feed.scss */
 #feed .container .post .content .text {
   line-height: 22px;
   font-size: 14px;
 }
-/* line 72, ../sass/templates/_feed.scss */
+/* line 110, ../sass/templates/_feed.scss */
 #feed .container .post .content .img img {
   width: 100%;
 }
-/* line 76, ../sass/templates/_feed.scss */
+/* line 114, ../sass/templates/_feed.scss */
 #feed .container .post .content .img video {
   width: 100%;
 }
-/* line 83, ../sass/templates/_feed.scss */
+/* line 121, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment,
 #feed .container .post .reaction .fire,
 #feed .container .post .reaction .share {
@@ -996,13 +1034,13 @@ p.desc {
   transition: 0.2s ease;
   border-radius: 10px;
 }
-/* line 97, ../sass/templates/_feed.scss */
+/* line 135, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.fire,
 #feed .container .post .reaction .fire.active.fire,
 #feed .container .post .reaction .share.active.fire {
   background: #FF5C3E;
 }
-/* line 101, ../sass/templates/_feed.scss */
+/* line 139, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active .comment_icon,
 #feed .container .post .reaction .comment.active .fire_icon,
 #feed .container .post .reaction .comment.active .share_icon,
@@ -1014,7 +1052,7 @@ p.desc {
 #feed .container .post .reaction .share.active .share_icon {
   fill: white;
 }
-/* line 108, ../sass/templates/_feed.scss */
+/* line 146, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment svg,
 #feed .container .post .reaction .fire svg,
 #feed .container .post .reaction .share svg {
@@ -1023,40 +1061,40 @@ p.desc {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-/* line 117, ../sass/templates/_feed.scss */
+/* line 155, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section {
   display: none;
 }
-/* line 121, ../sass/templates/_feed.scss */
+/* line 159, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form label {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 127, ../sass/templates/_feed.scss */
+/* line 165, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form label img {
   width: 100%;
 }
-/* line 132, ../sass/templates/_feed.scss */
+/* line 170, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section form input {
   width: 85%;
   border-radius: 50px;
   border: solid 1px lightgray;
   padding: 5px;
 }
-/* line 143, ../sass/templates/_feed.scss */
+/* line 181, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .profile_img {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 149, ../sass/templates/_feed.scss */
+/* line 187, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .profile_img img {
   width: 100%;
 }
-/* line 154, ../sass/templates/_feed.scss */
+/* line 192, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .comment {
   background-color: #F4F4F4;
   padding: 10px 5px;
@@ -1064,7 +1102,7 @@ p.desc {
   border-radius: 10px;
   width: 85%;
 }
-/* line 161, ../sass/templates/_feed.scss */
+/* line 199, ../sass/templates/_feed.scss */
 #feed .container .post .comments_section .contain > div .author .comment .name {
   font-weight: bold;
   color: #FF5C3E;
@@ -1333,4 +1371,23 @@ main.landing section:first-of-type .right form div.input-container input {
 main.landing section:first-of-type .right form div.input-container .input-right,
 main.landing section:first-of-type .right form div.input-container div.input-left {
   width: 50%;
+}
+
+/* line 1, ../sass/templates/_chat.scss */
+#chat {
+  width: 94vw;
+  margin-top: 100px;
+  float: right;
+}
+/* line 7, ../sass/templates/_chat.scss */
+#chat > section:first-child {
+  width: 20%;
+  height: 100px;
+  background-color: red;
+}
+/* line 13, ../sass/templates/_chat.scss */
+#chat > section:last-child {
+  width: 80%;
+  height: 100px;
+  background: blue;
 }

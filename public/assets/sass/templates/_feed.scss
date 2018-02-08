@@ -7,6 +7,44 @@
     font-family: 'Quicksand';
     margin-top: 100px;
 
+    .type_content {
+        width: 100%;
+        background: white;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        .profile_img {
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        input {
+            border-radius: 50px;
+            border: none;
+            height: 40px;
+
+            &:first-child {
+                border: solid 1px #C2C2C2;
+                padding-left: 10px;
+
+                &::placeholder {
+                    color: #C2C2C2;
+                }
+            }
+
+            &:last-child {
+                background: url('../../img/send.svg')#FF5C3E;
+            }
+        }
+    }
+
     &.board_open {
         width: 85vw;
     }
