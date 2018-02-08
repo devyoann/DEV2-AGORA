@@ -1,14 +1,25 @@
 #feed {
-    width: 90%;
+    width: 94vw;
     float: right;
     padding: 20px;
+    box-sizing: border-box;
     background: #EFEFEF;
     font-family: 'Quicksand';
+    margin-top: 100px;
+
+    &.board_open {
+        width: 85vw;
+    }
 
     .container {
+        margin: 0 auto;
+
         .grid-sizer,
         .post {
-            width: 49%;
+            width: 32%;
+            @media screen and (max-width: $break-13pouces) {
+                width: 49%;
+            }
             @media screen and (max-width: $break-medium) {
                 width: 100%;
             }
@@ -21,7 +32,7 @@
         .post {
             border-radius: 5px;
             margin-bottom: 20px;
-            padding: 20px;
+            padding: 20px 20px 10px;
             box-sizing: border-box;
             background: white;
 
@@ -40,11 +51,11 @@
 
                 .name_date {
                     .name {
-                        font-size: 18px;
+                        font-size: 17px;
                     }
 
                     .date {
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -54,6 +65,7 @@
 
                 .text {
                     line-height: 22px;
+                    font-size: 14px;
                 }
 
                 .img {
@@ -82,16 +94,8 @@
                     border-radius: 10px;
 
                     &.active {
-                        &.comment {
-                            background: #FF1C48;
-                        }
-
                         &.fire {
                             background: #FF5C3E;
-                        }
-
-                        &.share {
-                            background: #FC3574;
                         }
 
                         .comment_icon,
@@ -106,6 +110,62 @@
                         top: 50%;
                         left: 50%;
                         transform: translateY(-50%) translateX(-50%);
+                    }
+                }
+            }
+
+            .comments_section {
+                display: none;
+
+                form {
+                    label {
+                        width: 10%;
+                        max-width: 40px;
+                        max-height: 40px;
+                        border-radius: 50px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    input {
+                        width: 85%;
+                        border-radius: 50px;
+                        border: solid 1px lightgray;
+                        padding: 5px;
+                    }
+                }
+
+                .contain {
+                    & > div {
+                        .author {
+                            .profile_img {
+                                width: 10%;
+                                max-width: 40px;
+                                max-height: 40px;
+                                border-radius: 50px;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .comment {
+                                background-color: #F4F4F4;
+                                padding: 10px 5px;
+                                font-size: 14px;
+                                border-radius: 10px;
+                                width: 85%;
+
+                                .name {
+                                    font-weight: bold;
+                                    color: #FF5C3E;
+                                }
+
+                                .text_comment {}
+                            }
+                        }
                     }
                 }
             }

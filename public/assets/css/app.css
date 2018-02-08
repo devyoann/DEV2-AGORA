@@ -220,7 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*/
 ///////TEXT////////*/
 /* line 125, ../sass/common/_structure.scss */
-.text-center {
+.text_center {
   text-align: center;
 }
 
@@ -896,75 +896,93 @@ p.desc {
 
 /* line 1, ../sass/templates/_feed.scss */
 #feed {
-  width: 90%;
+  width: 94vw;
   float: right;
   padding: 20px;
+  box-sizing: border-box;
   background: #EFEFEF;
   font-family: 'Quicksand';
+  margin-top: 100px;
 }
-/* line 9, ../sass/templates/_feed.scss */
+/* line 10, ../sass/templates/_feed.scss */
+#feed.board_open {
+  width: 85vw;
+}
+/* line 14, ../sass/templates/_feed.scss */
+#feed .container {
+  margin: 0 auto;
+}
+/* line 17, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
-  width: 49%;
+  width: 32%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 17, ../sass/templates/_feed.scss */
+  #feed .container .grid-sizer,
+  #feed .container .post {
+    width: 49%;
+  }
 }
 @media screen and (max-width: 769px) {
-  /* line 9, ../sass/templates/_feed.scss */
+  /* line 17, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 17, ../sass/templates/_feed.scss */
+/* line 28, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
-/* line 21, ../sass/templates/_feed.scss */
+/* line 32, ../sass/templates/_feed.scss */
 #feed .container .post {
   border-radius: 5px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px 20px 10px;
   box-sizing: border-box;
   background: white;
 }
-/* line 28, ../sass/templates/_feed.scss */
+/* line 39, ../sass/templates/_feed.scss */
 #feed .container .post .top {
   width: 100%;
 }
-/* line 31, ../sass/templates/_feed.scss */
+/* line 42, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img {
   border-radius: 50px;
   width: 60px;
   height: 60px;
 }
-/* line 36, ../sass/templates/_feed.scss */
+/* line 47, ../sass/templates/_feed.scss */
 #feed .container .post .top .profile_img img {
   height: 100%;
 }
-/* line 42, ../sass/templates/_feed.scss */
+/* line 53, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .name {
-  font-size: 18px;
+  font-size: 17px;
 }
-/* line 46, ../sass/templates/_feed.scss */
+/* line 57, ../sass/templates/_feed.scss */
 #feed .container .post .top .name_date .date {
-  font-size: 14px;
+  font-size: 13px;
 }
-/* line 52, ../sass/templates/_feed.scss */
+/* line 63, ../sass/templates/_feed.scss */
 #feed .container .post .content {
   width: 100%;
 }
-/* line 55, ../sass/templates/_feed.scss */
+/* line 66, ../sass/templates/_feed.scss */
 #feed .container .post .content .text {
   line-height: 22px;
+  font-size: 14px;
 }
-/* line 60, ../sass/templates/_feed.scss */
+/* line 72, ../sass/templates/_feed.scss */
 #feed .container .post .content .img img {
   width: 100%;
 }
-/* line 64, ../sass/templates/_feed.scss */
+/* line 76, ../sass/templates/_feed.scss */
 #feed .container .post .content .img video {
   width: 100%;
 }
-/* line 71, ../sass/templates/_feed.scss */
+/* line 83, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment,
 #feed .container .post .reaction .fire,
 #feed .container .post .reaction .share {
@@ -978,25 +996,13 @@ p.desc {
   transition: 0.2s ease;
   border-radius: 10px;
 }
-/* line 85, ../sass/templates/_feed.scss */
-#feed .container .post .reaction .comment.active.comment,
-#feed .container .post .reaction .fire.active.comment,
-#feed .container .post .reaction .share.active.comment {
-  background: #FF1C48;
-}
-/* line 89, ../sass/templates/_feed.scss */
+/* line 97, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active.fire,
 #feed .container .post .reaction .fire.active.fire,
 #feed .container .post .reaction .share.active.fire {
   background: #FF5C3E;
 }
-/* line 93, ../sass/templates/_feed.scss */
-#feed .container .post .reaction .comment.active.share,
-#feed .container .post .reaction .fire.active.share,
-#feed .container .post .reaction .share.active.share {
-  background: #FC3574;
-}
-/* line 97, ../sass/templates/_feed.scss */
+/* line 101, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment.active .comment_icon,
 #feed .container .post .reaction .comment.active .fire_icon,
 #feed .container .post .reaction .comment.active .share_icon,
@@ -1008,7 +1014,7 @@ p.desc {
 #feed .container .post .reaction .share.active .share_icon {
   fill: white;
 }
-/* line 104, ../sass/templates/_feed.scss */
+/* line 108, ../sass/templates/_feed.scss */
 #feed .container .post .reaction .comment svg,
 #feed .container .post .reaction .fire svg,
 #feed .container .post .reaction .share svg {
@@ -1016,6 +1022,52 @@ p.desc {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+}
+/* line 117, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section {
+  display: none;
+}
+/* line 121, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form label {
+  width: 10%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50px;
+}
+/* line 127, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form label img {
+  width: 100%;
+}
+/* line 132, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section form input {
+  width: 85%;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+/* line 143, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .profile_img {
+  width: 10%;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50px;
+}
+/* line 149, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .profile_img img {
+  width: 100%;
+}
+/* line 154, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .comment {
+  background-color: #F4F4F4;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 85%;
+}
+/* line 161, ../sass/templates/_feed.scss */
+#feed .container .post .comments_section .contain > div .author .comment .name {
+  font-weight: bold;
+  color: #FF5C3E;
 }
 
 /* line 1, ../sass/templates/_layout.scss */
@@ -1036,20 +1088,20 @@ header {
 main.landing {
   overflow-y: hidden;
   /*.background {
-    height: 600px;
-    width: 100%;
-    position: relative;
-    bottom: 290px;
-    background: url(../img/landing.jpg);
-    z-index: -1;
-  }*/
+  height: 600px;
+  width: 100%;
+  position: relative;
+  bottom: 290px;
+  background: url(../img/landing.jpg);
+  z-index: -1;
+}*/
 }
-/* line 14, ../sass/templates/_landing.scss */
+/* line 12, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left {
   position: relative;
   width: 50%;
 }
-/* line 17, ../sass/templates/_landing.scss */
+/* line 16, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h1 {
   position: absolute;
   top: 30%;
@@ -1068,12 +1120,12 @@ main.landing section:first-of-type .left p.desc {
   width: 78%;
   max-width: 570px;
 }
-/* line 35, ../sass/templates/_landing.scss */
+/* line 36, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right {
   position: relative;
   width: 50%;
 }
-/* line 39, ../sass/templates/_landing.scss */
+/* line 40, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right .white-bg {
   position: relative;
   top: 20%;
@@ -1084,7 +1136,7 @@ main.landing section:first-of-type .right .white-bg {
   height: 400px;
   width: 80%;
 }
-/* line 50, ../sass/templates/_landing.scss */
+/* line 51, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right h2 {
   position: absolute;
   top: 15%;
@@ -1094,7 +1146,7 @@ main.landing section:first-of-type .right h2 {
   text-align: center;
   max-width: 570px;
 }
-/* line 60, ../sass/templates/_landing.scss */
+/* line 61, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form {
   position: absolute;
   transform: translate(-50%);
@@ -1103,34 +1155,35 @@ main.landing section:first-of-type .right form {
   height: 100%;
   width: 80%;
 }
-/* line 68, ../sass/templates/_landing.scss */
+/* line 69, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container {
   display: flex;
   position: relative;
   height: 70px;
 }
-/* line 72, ../sass/templates/_landing.scss */
+/* line 74, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container label {
   font-family: 'Roboto';
   position: absolute;
   top: 0;
 }
-/* line 77, ../sass/templates/_landing.scss */
+/* line 80, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container input {
   position: absolute;
   top: 30px;
   display: block;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
-/* line 92, ../sass/templates/_landing.scss */
-main.landing section:first-of-type .right form div.input-container div.input-left, main.landing section:first-of-type .right form div.input-container .input-right {
+/* line 95, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container .input-right,
+main.landing section:first-of-type .right form div.input-container div.input-left {
   width: 50%;
 }
