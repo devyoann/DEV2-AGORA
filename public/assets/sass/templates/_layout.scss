@@ -5,7 +5,158 @@ html {
 }
 
 header {
+    width: 94vw;
+    position: fixed;
+    top: 0;
+    left: 6vw;
     height: 100px;
-    background: red;
-    width: 100%;
+    background: white;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &.board_open {
+        width: 85vw;
+        left: 15vw;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    & > div {
+        width: 50%;
+
+        &:last-child {
+            justify-content: flex-end;
+
+            .notification {
+                img {
+                    width: 30px;
+                }
+            }
+
+            .profile_img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .burger_right {
+                cursor: pointer;
+                font-weight: bold;
+                font-family: 'Quicksand';
+                font-size: 15px;
+                background: url("../../assets/img/burger.svg") no-repeat 0 center;
+                background-size: 30px;
+                padding: 10px 0 10px 40px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+#search {
+    input {
+        border: solid 1px #4A4A4A;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 0 0 0 10px;
+        width: 200px;
+        border-right: none;
+
+        &::placeholder {
+            color: lightgray;
+        }
+    }
+
+    label {
+        background: #FF5C3E;
+        height: 30px;
+        width: 50px;
+        position: relative;
+
+        img {
+            width: 15px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}
+
+#board {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6vw;
+    height: 100vh;
+    background: #4A4A4A;
+    padding-top: 35px;
+
+    &.open {
+        width: 15vw;
+
+        ul {
+            width: 140px;
+            margin: 50px auto 0;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .feed_label::after {
+            content: "Flux d'actualité";
+        }
+
+        .chat_label::after {
+            content: "Chat";
+        }
+
+        .calendar_label::after {
+            content: "Calendrier";
+        }
+
+        .weather_label::after {
+            content: "Météo";
+        }
+
+        .settings_label::after {
+            content: "Paramètres";
+        }
+    }
+
+    & > div {
+        cursor: pointer;
+    }
+
+    ul {
+        li {
+            cursor: pointer;
+            color: white;
+            font-family: 'Quicksand';
+
+            &:hover {
+                color: #FF5C3E;
+
+                path {
+                    fill: #FF5C3E;
+                }
+            }
+        }
+    }
 }
