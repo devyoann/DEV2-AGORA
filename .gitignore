@@ -1,3 +1,5 @@
 node_modules/
 OLD/
-.idea/
+.DS_Store
+*.sass-cache
+.idea

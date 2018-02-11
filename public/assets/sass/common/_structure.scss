@@ -63,7 +63,11 @@
 .align-items-center {
 	align-items: center;
 }
-/*/
+
+.block {
+	display: block;
+}
+
 ///////Z-INDEX////////*/
 
 .zind1 {
@@ -145,16 +149,9 @@
 ///////MARGIN - PADDING////////*/
 
 .mauto {
-	margin: auto;
-}
-
-.mauto-w {
 	margin: 0 auto;
 }
 
-.mauto-h {
-	margin: auto 0;
-}
 @for $i from 0 through 10 {
 	.mg#{$i} {
 		margin: 10px*$i;
