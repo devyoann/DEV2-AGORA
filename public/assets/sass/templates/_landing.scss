@@ -1,6 +1,7 @@
 main.landing {
-  overflow-y:hidden;
-  height: 100vh;
+  height: calc(100vh - 100px);
+  width: 94vw;
+  margin-left: 6vw;
   .background {
     height: 600px;
     width: 100%;
@@ -11,13 +12,14 @@ main.landing {
   }
 
   section:first-of-type {
+    margin-top: 100px;
 
     .left {
       position: relative;
       width: 50%;
       h1 {
         position: absolute;
-        top: 10%;
+        top: 30px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -26,7 +28,7 @@ main.landing {
       }
       p.desc {
         position: absolute;
-        top: 20%;
+        top: 100px;
         left: 50%;
         transform: translate(-50%);
         max-width: 560px;
@@ -51,7 +53,7 @@ main.landing {
 
       h2 {
         position: absolute;
-        top: 10%;
+        top: 30px;
         left: 50%;
         transform: translate(-50%);
         width: 80%;
@@ -61,7 +63,7 @@ main.landing {
       form {
         position: absolute;
         transform: translate(-50%);
-        top: 25%;
+        top: 110px;
         left: 50%;
         width: 80%;
 
@@ -70,6 +72,7 @@ main.landing {
 
           input {
             display: block;
+            height: 22px;
             padding: .375rem .75rem;
             font-size: 1rem;
             line-height: 1.5;
