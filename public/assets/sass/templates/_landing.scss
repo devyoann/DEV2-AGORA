@@ -1,25 +1,24 @@
 main.landing {
-  height: calc(100vh - 100px);
-  width: 94vw;
-  margin-left: 6vw;
+  height: 100vh;
+  overflow-y: hidden;
+
   .background {
     height: 600px;
     width: 100%;
     position: relative;
-    bottom: 480px;
+    bottom: 595px;
     background: url(../img/landing.jpg);
     z-index: -1;
   }
 
   section:first-of-type {
-    margin-top: 100px;
 
     .left {
       position: relative;
       width: 50%;
       h1 {
         position: absolute;
-        top: 30px;
+        top: 70px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -28,12 +27,33 @@ main.landing {
       }
       p.desc {
         position: absolute;
-        top: 100px;
+        top: 160px;
         left: 50%;
         transform: translate(-50%);
         max-width: 560px;
         width: 100%;
       }
+
+      h3 {
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        max-width: 565px;
+        width: 100%;
+      }
+      div.mockup {
+        background: url(../img/mockup.png) no-repeat;
+        height: 300px;
+        width: 580px;
+        background-size: contain;
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
     }
     .right {
       position: relative;
@@ -41,14 +61,13 @@ main.landing {
 
       .white-bg {
         position: relative;
-        top: 0%;
+        top: 40px;
         left: 50%;
         transform: translate(-50%);
         background-color: map-get($colors, white);
         border-radius: 8px;
         width: 80%;
-        max-width: 580px;
-        max-height: 730px;
+        max-height: 650px;
       }
 
       h2 {
