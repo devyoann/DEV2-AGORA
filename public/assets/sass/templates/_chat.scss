@@ -12,8 +12,13 @@
 
         &:last-child {
             width: 80%;
-            height: 100px;
-            background: blue;
+            height: 100%;
+
+            .top {
+                border: solid 1px grey;
+                padding: 10px;
+                box-sizing: border-box;
+            }
         }
     }
 }
