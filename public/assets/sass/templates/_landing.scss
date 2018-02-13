@@ -18,7 +18,7 @@ main.landing {
       width: 50%;
       h1 {
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -61,7 +61,7 @@ main.landing {
 
       .white-bg {
         position: relative;
-        top: 40px;
+        top: 70px;
         left: 50%;
         transform: translate(-50%);
         background-color: map-get($colors, white);
@@ -72,7 +72,7 @@ main.landing {
 
       h2 {
         position: absolute;
-        top: 30px;
+        top: 10px;
         left: 50%;
         transform: translate(-50%);
         width: 80%;

@@ -1251,7 +1251,7 @@ main.landing section:first-of-type .left {
 /* line 19, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h1 {
   position: absolute;
-  top: 70px;
+  top: 80px;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -1296,7 +1296,7 @@ main.landing section:first-of-type .right {
 /* line 62, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right .white-bg {
   position: relative;
-  top: 40px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%);
   background-color: #fff;
@@ -1307,7 +1307,7 @@ main.landing section:first-of-type .right .white-bg {
 /* line 73, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right h2 {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 50%;
   transform: translate(-50%);
   width: 80%;
