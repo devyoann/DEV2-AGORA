@@ -22,6 +22,10 @@ server.get('/feed', function(req, res) {
     res.render(__dirname + '/views/feed');
 });
 
+server.get('/weather', function(req, res) {
+    res.render(__dirname + '/views/weather');
+});
+
 server.listen(port, function() {
     console.log('Server listining on port ' + port);
 });

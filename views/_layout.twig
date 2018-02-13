@@ -11,10 +11,6 @@
 
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/app.css">
-
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/script.js"></script>
-
     </head>
     <body>
         {% block header %}{% endblock %}
@@ -23,7 +19,10 @@
 
         {% block footer %}{% endblock %}
 
-        {% block customsJavascripts %}{% endblock %}
-
+        {% block globalJavascript %}
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/script.js"></script>
+        {% endblock %}
+        {% block customJavascript %}{% endblock %}
     </body>
 </html>
