@@ -101,6 +101,7 @@ header {
     height: 100vh;
     background: #4A4A4A;
     padding-top: 35px;
+    z-index: 2;
 
     &.open {
         width: 15vw;
