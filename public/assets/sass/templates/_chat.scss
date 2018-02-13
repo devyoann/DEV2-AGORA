@@ -1,19 +1,19 @@
 #chat {
     width: 94vw;
-    margin-top: 100px;
+    margin-top: 10vh;
     float: right;
+    height: 90vh;
 
     & > section {
         &:first-child {
             width: 20%;
-            height: 100px;
             background-color: red;
         }
 
         &:last-child {
             width: 80%;
-            height: 100%;
             border: solid 1px grey;
+            position: relative;
 
             .top {
                 padding: 10px;
@@ -47,8 +47,29 @@
             }
 
             .messages_container {
-                padding: 0 20px;
-                height: 75vh;
+                padding: 20px;
+
+                .sent {
+                    flex-direction: row-reverse;
+
+                    .profile_img {
+                        margin-left: 10px;
+                    }
+
+                    .mes {
+                        border-right: solid 3px orange;
+                    }
+                }
+
+                .dest {
+                    .profile_img {
+                        margin-right: 10px;
+                    }
+
+                    .mes {
+                        border-left: solid 3px red;
+                    }
+                }
 
                 .profile_img {
                     border-radius: 50px;
@@ -62,23 +83,66 @@
 
                 .mes {
                     margin-bottom: 15px;
-                    width: 350px;
-                    padding: 5px;
+                    max-width: 60%;
+                    padding: 10px;
                     box-sizing: border-box;
-                    background: blue;
-                    color: white;
+                    color: gray;
                     border-radius: 5px;
-                    clear: both;
+                    border: solid 1px Gainsboro;
+                    font-size: 14px;
+                }
+            }
 
-                    &.dest {
-                        float: left;
-                        word-wrap: break-word;
-                    }
+            .write {
+                padding: 5px 10px;
+                border-top: solid 1px silver;
+                position: absolute;
+                bottom: 0;
+                box-sizing: border-box;
 
-                    &.sent {
-                        float: right;
-                        word-wrap: break-word;
+                .profile_img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50px;
+
+                    img {
+                        width: 100%;
                     }
+                }
+
+                form {
+                    width: 70%;
+
+                    input {
+                        border-radius: 5px;
+                        border: none;
+                        border: solid 1px Gainsboro;
+                        padding: 5px;
+                        box-sizing: border-box;
+
+                        &::placeholder {
+                            color: Gainsboro;
+                        }
+                    }
+                }
+
+                .media {
+                    background: #FF5C3E;
+                    border-radius: 50px;
+                    padding: 8px 5px 5px;
+                    border: none;
+
+                    svg {
+                        width: 22px;
+                    }
+                }
+
+                .gif {
+                    padding: 10px 7px;
+                    border: none;
+                    background: blue;
+                    border-radius: 50px;
+                    color: white;
                 }
             }
         }
