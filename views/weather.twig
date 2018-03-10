@@ -181,14 +181,31 @@
 
 {% block content %}
     <main class="weather">
-        <input id="search" type="text" placeholder="Search">
-        <input id="submit" type="submit">
-        <div>
-            <h1></h1>
+
+        <div class="flex justify-content-between">
+            <div class="flex align-items-center">
+                <h1 class="is-capitalize text is-primary">Paris</h1>
+                <span class="date pd-l2 is-capitalize text is-primary pd-t1"></span>
+            </div>
+            <div class="flex">
+                <input class="input-right-less" id="searchweather" type="text" value="Paris">
+                <button id="submitweather" class="button" type="submit">Rechercher</button>
+            </div>
+        </div>
+        <div id="locationimg" class="flex mg-t2">
+            <div class="bg-img"></div>
+        </div>
+        <div class="flex mg-t2">
+            <h2 class="is-capitalize text is-primary">Bonjour Brieuc ! </h2>
+        </div>
+        <div id="locationdesc" class="flex mg-t2">
+            <p></p>
         </div>
     </main>
 {% endblock %}
 
 {% block customJavascript %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/fr.js"></script>
     <script src="assets/js/api.js"></script>
 {% endblock %}

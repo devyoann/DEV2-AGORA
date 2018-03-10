@@ -10,6 +10,7 @@ main.landing {
     background: url(../img/landing.jpg);
     z-index: -1;
   }
+  
 
   section:first-of-type {
 
@@ -90,19 +91,8 @@ main.landing {
           height: 70px;
 
           input {
-            display: block;
-            height: 22px;
-            padding: .375rem .75rem;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #495057;
-            background-color: #fff;
-            background-clip: padding-box;
-            border: 1px solid #ced4da;
-            border-radius: .25rem;
-            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            margin-top: 10px;
           }
-
           div.input-left, .input-right {
             width: 50%;
             .input-centered {
@@ -128,7 +118,7 @@ main.landing {
         }
 
         .button {
-          @include button(secondary, white, 5px);
+          @include button(secondary, white, 5px, 15px 30px);
         }
       }
     }

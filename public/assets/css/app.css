@@ -891,6 +891,26 @@ p.desc {
   color: #404258;
 }
 
+/* line 1, ../sass/components/_inputs.scss */
+.input, .input-right-less {
+  display: block;
+  height: 22px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* line 15, ../sass/components/_inputs.scss */
+.input-right-less {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
 /* line 1, ../sass/templates/_feed.scss */
 #feed {
   width: 94vw;
@@ -1243,12 +1263,12 @@ main.landing .background {
   background: url(../img/landing.jpg);
   z-index: -1;
 }
-/* line 16, ../sass/templates/_landing.scss */
+/* line 17, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left {
   position: relative;
   width: 50%;
 }
-/* line 19, ../sass/templates/_landing.scss */
+/* line 20, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h1 {
   position: absolute;
   top: 80px;
@@ -1258,7 +1278,7 @@ main.landing section:first-of-type .left h1 {
   max-width: 565px;
   width: 100%;
 }
-/* line 28, ../sass/templates/_landing.scss */
+/* line 29, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left p.desc {
   position: absolute;
   top: 160px;
@@ -1267,7 +1287,7 @@ main.landing section:first-of-type .left p.desc {
   max-width: 560px;
   width: 100%;
 }
-/* line 37, ../sass/templates/_landing.scss */
+/* line 38, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h3 {
   position: absolute;
   top: 320px;
@@ -1277,7 +1297,7 @@ main.landing section:first-of-type .left h3 {
   max-width: 565px;
   width: 100%;
 }
-/* line 46, ../sass/templates/_landing.scss */
+/* line 47, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left div.mockup {
   background: url(../img/mockup.png) no-repeat;
   height: 300px;
@@ -1288,12 +1308,12 @@ main.landing section:first-of-type .left div.mockup {
   left: 50%;
   transform: translate(-50%);
 }
-/* line 58, ../sass/templates/_landing.scss */
+/* line 59, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right {
   position: relative;
   width: 50%;
 }
-/* line 62, ../sass/templates/_landing.scss */
+/* line 63, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right .white-bg {
   position: relative;
   top: 70px;
@@ -1304,7 +1324,7 @@ main.landing section:first-of-type .right .white-bg {
   width: 80%;
   max-height: 650px;
 }
-/* line 73, ../sass/templates/_landing.scss */
+/* line 74, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right h2 {
   position: absolute;
   top: 10px;
@@ -1313,7 +1333,7 @@ main.landing section:first-of-type .right h2 {
   width: 80%;
   max-width: 570px;
 }
-/* line 82, ../sass/templates/_landing.scss */
+/* line 83, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form {
   position: absolute;
   transform: translate(-50%);
@@ -1321,57 +1341,74 @@ main.landing section:first-of-type .right form {
   left: 50%;
   width: 80%;
 }
-/* line 89, ../sass/templates/_landing.scss */
+/* line 90, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container {
   height: 70px;
 }
-/* line 92, ../sass/templates/_landing.scss */
+/* line 93, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container input {
-  display: block;
-  height: 22px;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-top: 10px;
 }
-/* line 106, ../sass/templates/_landing.scss */
+/* line 96, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-left, main.landing section:first-of-type .right form div.input-container .input-right {
   width: 50%;
 }
-/* line 108, ../sass/templates/_landing.scss */
+/* line 98, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-left .input-centered, main.landing section:first-of-type .right form div.input-container .input-right .input-centered {
   margin: 0 auto;
   width: 90%;
 }
-/* line 113, ../sass/templates/_landing.scss */
+/* line 103, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full {
   width: 94%;
   margin: 0 auto;
 }
-/* line 116, ../sass/templates/_landing.scss */
+/* line 106, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full input {
   width: 95%;
 }
-/* line 121, ../sass/templates/_landing.scss */
+/* line 111, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full {
   width: 94%;
   margin: 0 auto;
   height: 50px;
 }
-/* line 125, ../sass/templates/_landing.scss */
+/* line 115, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full .radio:first-child {
   margin-right: 30px;
 }
-/* line 130, ../sass/templates/_landing.scss */
+/* line 120, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form .button {
   background-color: #404258;
   color: #fff;
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 15px 30px;
+}
+
+/* line 1, ../sass/templates/_weather.scss */
+main.weather {
+  width: 94vw;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+/* line 8, ../sass/templates/_weather.scss */
+main.weather .button {
+  background-color: #404258;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 9px 30px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+/* line 14, ../sass/templates/_weather.scss */
+main.weather .bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+  width: 100%;
 }
