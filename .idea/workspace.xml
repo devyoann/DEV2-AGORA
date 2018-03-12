@@ -2,238 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/comment.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/fire.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/post_img/ca.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/post_img/landscape.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/profile_img/guy.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/profile_img/guy2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/image/share.svg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_animation.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_appearance.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_background-clip.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_background-origin.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_background-size.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_border-radius.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_box-shadow.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_box-sizing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_columns.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_deprecated-support.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_filter.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_flexbox.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_font-face.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_hyphenation.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_images.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_inline-block.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_opacity.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_regions.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_text-shadow.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_transform.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_transition.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/0dc6ce13c2a02b5a6384d1ff8e0d38dfb5db5c25/_user-interface.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_feed.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_index.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_landing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/10e63ee99aaba15b935c6fe05cc7848f922c3153/_layout.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/16e816edc3b2718585e2b6845aedeab731289d8f/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/16e816edc3b2718585e2b6845aedeab731289d8f/_generic.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/16e816edc3b2718585e2b6845aedeab731289d8f/_helpers.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/16e816edc3b2718585e2b6845aedeab731289d8f/_minireset.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/1bcb4635e73b161cf09490c9e784e16318214639/_base.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/1bcb4635e73b161cf09490c9e784e16318214639/_sprite-img.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/26b540c80e77b8743da519bc9f7390d7a15e1c7c/_hover-link.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/26b540c80e77b8743da519bc9f7390d7a15e1c7c/_link-colors.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/26b540c80e77b8743da519bc9f7390d7a15e1c7c/_unstyled-link.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/275682606d6ea909225ae8e516e86fff89f9f7f4/_utilities.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2ae14b36286f3a2e4e675ebdef6af70dcabf8b17/_common.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2ae14b36286f3a2e4e675ebdef6af70dcabf8b17/_components.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2ae14b36286f3a2e4e675ebdef6af70dcabf8b17/_templates.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2ae14b36286f3a2e4e675ebdef6af70dcabf8b17/app.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c3461b85f50339024d99380b408617925426403/_ellipsis.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c3461b85f50339024d99380b408617925426403/_force-wrap.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c3461b85f50339024d99380b408617925426403/_nowrap.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c3461b85f50339024d99380b408617925426403/_replacement.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c4ef1685cc7a2320c3e3296769f54f39f82eb72/_css3.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c4ef1685cc7a2320c3e3296769f54f39f82eb72/_reset.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c4ef1685cc7a2320c3e3296769f54f39f82eb72/_support.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/2c4ef1685cc7a2320c3e3296769f54f39f82eb72/_utilities.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/3b484273fed833eb59bc031d0526737f405673c8/_brightness.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/3b484273fed833eb59bc031d0526737f405673c8/_contrast.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/42a5e1493f5fdef6694c80923532777675928746/_links.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/42a5e1493f5fdef6694c80923532777675928746/_lists.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/42a5e1493f5fdef6694c80923532777675928746/_text.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/4740817a41952c7d0b87506229a017010aeb11f7/_color.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/4740817a41952c7d0b87506229a017010aeb11f7/_general.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/4740817a41952c7d0b87506229a017010aeb11f7/_sprites.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/4740817a41952c7d0b87506229a017010aeb11f7/_tables.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/517df8ef99fe26740cfe839f5bc3c7283223493f/_base.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/517df8ef99fe26740cfe839f5bc3c7283223493f/_sprite-img.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5388550d6e05f42f4aac2734cd5cf1aaeea717ff/_alternating-rows-and-columns.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5388550d6e05f42f4aac2734cd5cf1aaeea717ff/_borders.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5388550d6e05f42f4aac2734cd5cf1aaeea717ff/_scaffolding.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/56835fb6bdab479bad5c8d28592ece31442b761d/_hover-link.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/56835fb6bdab479bad5c8d28592ece31442b761d/_link-colors.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/56835fb6bdab479bad5c8d28592ece31442b761d/_unstyled-link.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5875a90ca10b07364db23b0eb86312893d8b504a/_alternating-rows-and-columns.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5875a90ca10b07364db23b0eb86312893d8b504a/_borders.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5875a90ca10b07364db23b0eb86312893d8b504a/_scaffolding.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_estimate.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_feed.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_home.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_index.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_landing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_layout.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_listing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_ourservices.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5affdf9b5570231a398ddd6d64ed1630334fca19/_property.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_colors.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_screensize.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_structure.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/5bcb5668bb8e2d1e7350e1414114a8856a96cf8a/_texts.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62584799459f52c362dda0435f4dfa9edefe4d73/_common.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62584799459f52c362dda0435f4dfa9edefe4d73/_components.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62584799459f52c362dda0435f4dfa9edefe4d73/_templates.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62584799459f52c362dda0435f4dfa9edefe4d73/app.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62c0ed233588c082adc500ba475fc9d40b60a3ca/_background.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/62c0ed233588c082adc500ba475fc9d40b60a3ca/_buttons.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_box.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_button.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_container.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_content.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_form.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_icon.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_image.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_notification.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_other.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_progress.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_table.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_tag.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/705255f53ce8f874c15277fa7052e21f3a3b381f/_title.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/788042af6aefc90edfe7ef904406df28dfda6b3d/_colors.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/788042af6aefc90edfe7ef904406df28dfda6b3d/_screensize.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/788042af6aefc90edfe7ef904406df28dfda6b3d/_structure.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/788042af6aefc90edfe7ef904406df28dfda6b3d/_texts.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_breadcrumb.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_card.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_dropdown.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_level.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_media.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_menu.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_message.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_modal.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_navbar.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_pagination.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_panel.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/7eb692dc0b542806e478f04d05932eb9e0e71c40/_tabs.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/81d8bae3bffecdcb5ba722e87c86752becd12bbb/_bullets.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/81d8bae3bffecdcb5ba722e87c86752becd12bbb/_horizontal-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/81d8bae3bffecdcb5ba722e87c86752becd12bbb/_inline-block-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/81d8bae3bffecdcb5ba722e87c86752becd12bbb/_inline-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8b783f68212ee63401c2640a1f334424e0aa7ba4/_brightness.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8b783f68212ee63401c2640a1f334424e0aa7ba4/_contrast.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_animation.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_appearance.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_background-clip.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_background-origin.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_background-size.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_border-radius.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_box-shadow.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_box-sizing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_columns.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_deprecated-support.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_filter.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_flexbox.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_font-face.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_hyphenation.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_images.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_inline-block.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_opacity.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_regions.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_text-shadow.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_transform.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_transition.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8ca3797b4ac560e99ec8787f21c58621cdabd077/_user-interface.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8fd3a1ef12045676895eb3a351b45696943dc4cb/_links.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8fd3a1ef12045676895eb3a351b45696943dc4cb/_lists.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/8fd3a1ef12045676895eb3a351b45696943dc4cb/_text.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/_common.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/_components.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/_templates.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9c3a6bf5086027e3f2ebe054e01c6f819eeb7961/app.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9f7c09b419bf1dd585b45405e888c8c7b1b3dcb3/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9f7c09b419bf1dd585b45405e888c8c7b1b3dcb3/_footer.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9f7c09b419bf1dd585b45405e888c8c7b1b3dcb3/_hero.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/9f7c09b419bf1dd585b45405e888c8c7b1b3dcb3/_section.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/b1d04090904e2d6b59f5f3e4a60594ee61530594/_color.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/b1d04090904e2d6b59f5f3e4a60594ee61530594/_general.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/b1d04090904e2d6b59f5f3e4a60594ee61530594/_sprites.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/b1d04090904e2d6b59f5f3e4a60594ee61530594/_tables.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_clearfix.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_float.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_hacks.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_min.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_reset.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/c2284da33331895626906dece1ec3c8e58c4e17e/_tag-cloud.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/caa6707c3d7c22fef75f1be64f6a3d3968884f2f/_bullets.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/caa6707c3d7c22fef75f1be64f6a3d3968884f2f/_horizontal-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/caa6707c3d7c22fef75f1be64f6a3d3968884f2f/_inline-block-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/caa6707c3d7c22fef75f1be64f6a3d3968884f2f/_inline-list.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_colors.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_screensize.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_structure.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/cf592f6df4023e05b34622a8afa5ad7ea874e263/_texts.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d22ebdd73e16e712e55dd7c6a569a1b209a4d447/_utilities.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_clearfix.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_float.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_hacks.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_min.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_reset.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d54eee1108b3c6914278d6da831cb574317ad482/_tag-cloud.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d710f64cf28700ba2dc9b6ac4947a7505e4a8496/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d710f64cf28700ba2dc9b6ac4947a7505e4a8496/_columns.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/d710f64cf28700ba2dc9b6ac4947a7505e4a8496/_tiles.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e4275d1827cf499b648d1a306b7a5d9cc2bb09c3/bulma.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_feed.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_index.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_landing.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e6b0e66ae5c6ac86472953e5c344099d2b9754d3/_layout.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e72d9eacfbb3f61446017f71b2008fbf4e282158/_css3.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e72d9eacfbb3f61446017f71b2008fbf4e282158/_reset.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e72d9eacfbb3f61446017f71b2008fbf4e282158/_support.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e72d9eacfbb3f61446017f71b2008fbf4e282158/_utilities.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_background.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_buttons.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_content.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_icons.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_modal.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_pricerange.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_skew.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e8317b86793ac0af1d20cfc93a0642a9246a2de4/_swiper.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_all.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_animations.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_controls.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_derived-variables.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_functions.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_initial-variables.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/eb8e12b406992b1110baefd2d784a6eb56bcea06/_mixins.sassc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f1f302a3b646633de85220cf1d7d8c8dced2584f/_ellipsis.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f1f302a3b646633de85220cf1d7d8c8dced2584f/_force-wrap.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f1f302a3b646633de85220cf1d7d8c8dced2584f/_nowrap.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f1f302a3b646633de85220cf1d7d8c8dced2584f/_replacement.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f3360f97def566bbcf5c6c1cafc8f7b24975d14e/_background.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/f3360f97def566bbcf5c6c1cafc8f7b24975d14e/_buttons.scssc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/app.css" afterPath="$PROJECT_DIR$/public/assets/css/app.css" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/_templates.scss" afterPath="$PROJECT_DIR$/public/assets/sass/_templates.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/templates/_layout.scss" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_layout.scss" />
-      <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/views/_layout/head.php" afterPath="$PROJECT_DIR$/views/_layout/head.php" />
-      <change beforePath="$PROJECT_DIR$/views/feed.php" afterPath="$PROJECT_DIR$/views/feed.php" />
-      <change beforePath="$PROJECT_DIR$/views/feed.twig" afterPath="$PROJECT_DIR$/views/feed.twig" />
-      <change beforePath="$PROJECT_DIR$/views/weather.twig" afterPath="$PROJECT_DIR$/views/weather.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -246,18 +15,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.5347222">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="weather.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/weather.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="668">
-                  <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="28" />
-                  <folding>
-                    <element signature="n#nav#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="menu.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/menu.twig">
               <provider selected="true" editor-type-id="text-editor">
@@ -271,7 +28,7 @@
           <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/index.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
+                <state relative-caret-position="322">
                   <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
                   <folding />
                 </state>
@@ -281,11 +38,9 @@
           <file leaf-file-name="feed.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/feed.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="553">
-                  <caret line="943" column="22" lean-forward="true" selection-start-line="943" selection-start-column="22" selection-end-line="943" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#1083#12541#0#HTML" expanded="false" />
-                  </folding>
+                <state relative-caret-position="286">
+                  <caret line="938" column="40" lean-forward="true" selection-start-line="938" selection-start-column="40" selection-end-line="938" selection-end-column="40" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -295,9 +50,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="437">
                   <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-                  <folding>
-                    <marker date="1518512537330" expanded="true" signature="411:425" ph="{% block header ...%}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -310,7 +63,7 @@
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="437">
-                  <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+                  <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -340,27 +93,7 @@
             <entry file="file://$PROJECT_DIR$/public/assets/js/feed.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="414">
-                  <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_inputs.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/assets/sass/components/_inputs.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/assets/js/api.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="604">
-                  <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+                  <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -370,7 +103,7 @@
             <entry file="file://$PROJECT_DIR$/public/assets/sass/_templates.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="161">
-                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -386,20 +119,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_weather.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_weather.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="_structure.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_structure.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
+                <state relative-caret-position="2783">
                   <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
                   <folding />
                 </state>
@@ -476,7 +199,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="841" />
@@ -496,6 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -561,7 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -616,34 +339,35 @@
       <workItem from="1518523770936" duration="2873000" />
       <workItem from="1518527373050" duration="611000" />
       <workItem from="1520499257072" duration="548000" />
-      <workItem from="1520682748597" duration="16599000" />
+      <workItem from="1520682748597" duration="16842000" />
+      <workItem from="1520842598622" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47400000" />
+    <option name="totallyTimeSpent" value="47663000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="841" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -726,9 +450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <marker date="1518512537330" expanded="true" signature="411:425" ph="{% block header ...%}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,9 +511,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <marker date="1518512537330" expanded="true" signature="411:425" ph="{% block header ...%}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,11 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#54#1211#0" expanded="false" />
-            <element signature="e#1221#1780#0" expanded="false" />
-            <element signature="e#1789#2947#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
           <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,24 +688,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <marker date="1518512537330" expanded="true" signature="411:425" ph="{% block header ...%}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/sass/common/_structure.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="2783">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1009,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,14 +718,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
           <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/sass/_templates.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1048,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/public/assets/js/feed.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1057,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,17 +760,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="322">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
@@ -1089,19 +772,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
           <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="28" />
-          <folding>
-            <element signature="n#nav#0;n#!!top" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/feed.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="943" column="22" lean-forward="true" selection-start-line="943" selection-start-column="22" selection-end-line="943" selection-end-column="22" />
-          <folding>
-            <element signature="e#1083#12541#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="938" column="40" lean-forward="true" selection-start-line="938" selection-start-column="40" selection-end-line="938" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
