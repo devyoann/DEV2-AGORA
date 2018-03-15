@@ -1,0 +1,10 @@
+/* line 1, ../../sass/components/recurrent.scss */
+.profile_img {
+  border-radius: 100px;
+  max-height: 50px;
+  max-width: 50px;
+}
+/* line 6, ../../sass/components/recurrent.scss */
+.profile_img img {
+  width: 100%;
+}
