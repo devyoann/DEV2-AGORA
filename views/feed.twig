@@ -183,10 +183,18 @@
 
 {% block content %}
     <main id="feed">
-      <div class="write_post">
+      <div class="write_post full-w mg-b3 bbox flex align-items-center">
         <div class="profile_img over_hide">
           <img src="assets/img/profile_img/guy.jpg" alt="">
         </div>
+        <form class="flex align-items-center justify-content-between mg-l1" action="index.html" method="post">
+          <input class="pd-l1 bbox" type="text" name="" value="" placeholder="Type a post">
+          <input type="submit" name="" value="">
+          <label for="mediaUpload"></label>
+          <input type="file" id="mediaUpload" name="" value="">
+          <label class="bbox" for="gif">GIF</label>
+          <input type="file" id="gif" name="" value="">
+        </form>
       </div>
       <div class="container ">
             <div class="grid-sizer"></div>

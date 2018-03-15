@@ -1,227 +1,96 @@
 #feed {
-    width: 94vw;
-    float: right;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #EFEFEF;
-    font-family: 'Quicksand';
-    margin-top: 100px;
+  width: 94vw;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  font-family: 'Quicksand';
+  margin-top: 10vh;
 
-    .type_content {
-        width: 100%;
-        background: white;
-        padding: 10px;
-        box-sizing: border-box;
-        border-radius: 5px;
+  &.board_open {
+    width: 85vw;
+  }
 
-        .profile_img {
-            overflow: hidden;
-            width: 40px;
-            height: 40px;
-            border-radius: 50px;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        input {
-            border-radius: 50px;
-            border: none;
-            height: 40px;
-
-            &:first-child {
-                border: solid 1px #C2C2C2;
-                padding-left: 10px;
-
-                &::placeholder {
-                    color: #C2C2C2;
-                }
-            }
-
-            &:last-child {
-                background: url('../../img/send.svg')#FF5C3E;
-            }
-        }
-    }
-
-    &.board_open {
-        width: 85vw;
-    }
-
-    .container {
-        margin: 0 auto;
-
-        .grid-sizer,
-        .post {
-            width: 32%;
-            @media screen and (max-width: $break-13pouces) {
-                width: 49%;
-            }
-            @media screen and (max-width: $break-medium) {
-                width: 100%;
-            }
-        }
-
-        .gutter-sizer {
-            width: 2%;
-        }
-    }
-}
-
-.post {
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px 20px 10px;
-    box-sizing: border-box;
+  .write_post {
     background: white;
+    border-radius: 10px;
+    padding: 5px 10px;
 
-    .top {
+    .profile_img {
+      width: 40px;
+      height: 40px;
+    }
+
+    form {
+      width: 95%;
+
+      input,
+      label {
+        display: block;
+        border-radius: 50px;
+        border: none;
+        height: 35px;
+      }
+
+      input {
+        &[type=text] {
+          border: solid 1px #C2C2C2;
+          width: 85%;
+
+          &::placeholder {
+            color: #C2C2C2;
+          }
+        }
+
+        &[type=submit] {
+          background: url("/assets/img/send.svg")no-repeat center;
+          background-size: 20px;
+          background-color: #FF5C3E;
+          width: 35px;
+          height: 35px;
+          border: none;
+        }
+
+        &[type=file] {
+          display: none;
+        }
+      }
+
+      label {
+        width: 35px;
+
+        &[for=mediaUpload] {
+          background: url("/assets/img/media.svg")no-repeat center;
+          background-size: 20px;
+          background-color: #FC3574;
+        }
+
+        &[for=gif] {
+          background: #3194FC;
+          text-align: center;
+          color: white;
+          line-height: 2.3;
+        }
+      }
+    }
+  }
+
+  .container {
+    margin: 0 auto;
+
+    .grid-sizer,
+    .post {
+      width: 32%;
+      @media screen and (max-width: $break-13pouces) {
+        width: 49%;
+      }
+      @media screen and (max-width: $break-medium) {
         width: 100%;
-
-        .profile_img {
-            border-radius: 50px;
-            width: 60px;
-            height: 60px;
-
-            img {
-                height: 100%;
-            }
-        }
-
-        .name_date {
-            .name {
-                font-size: 17px;
-            }
-
-            .date {
-                font-size: 13px;
-            }
-        }
+      }
     }
 
-    .content {
-        width: 100%;
-
-        .text {
-            line-height: 22px;
-            font-size: 14px;
-        }
-
-        .img {
-            img {
-                width: 100%;
-            }
-
-            video {
-                width: 100%;
-            }
-        }
+    .gutter-sizer {
+      width: 2%;
     }
-
-    .reaction_counter {
-        span {
-            color: #9B9B9B;
-            font-size: 13px;
-        }
-
-        svg {
-            height: 12px;
-
-            g {
-                fill: #9B9B9B;
-            }
-        }
-    }
-
-    .reaction {
-        .comment,
-        .fire,
-        .share {
-            width: calc((100% / 3) - 10px);
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            height: 20px;
-            cursor: pointer;
-            color: black;
-            transition: 0.2s ease;
-            border-radius: 10px;
-
-            &.active {
-                &.fire {
-                    background: #FF5C3E;
-                }
-
-                .comment_icon,
-                .fire_icon,
-                .share_icon {
-                    fill: white;
-                }
-            }
-
-            svg {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateY(-50%) translateX(-50%);
-            }
-        }
-    }
-
-    .comments_section {
-        display: none;
-
-        form {
-            label {
-                width: 10%;
-                max-width: 40px;
-                max-height: 40px;
-                border-radius: 50px;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            input {
-                width: 85%;
-                border-radius: 50px;
-                border: solid 1px lightgray;
-                padding: 5px;
-            }
-        }
-
-        .contain {
-            & > div {
-                .author {
-                    .profile_img {
-                        width: 10%;
-                        max-width: 40px;
-                        max-height: 40px;
-                        border-radius: 50px;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-
-                    .comment {
-                        background-color: #F4F4F4;
-                        padding: 10px 5px;
-                        font-size: 14px;
-                        border-radius: 10px;
-                        width: 85%;
-
-                        .name {
-                            font-weight: bold;
-                            color: #FF5C3E;
-                        }
-
-                        .text_comment {}
-                    }
-                }
-            }
-        }
-    }
+  }
 }
