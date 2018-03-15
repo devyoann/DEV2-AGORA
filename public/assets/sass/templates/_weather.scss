@@ -15,7 +15,21 @@ main.weather {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 420px;
+    height: 360px;
     width: 100%;
+  }
+
+  #locationinfoinc {
+    position: relative;
+    max-width: 190px;
+    #locationinfotoday {
+      span.today {
+        font-size: 1.4rem;
+      }
+      span.todayinfo {
+        color: map-get($colors, tertiary);
+        font-size: 2rem;
+      }
+    }
   }
 }

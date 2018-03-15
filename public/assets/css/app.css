@@ -1461,8 +1461,22 @@ main.weather .bg-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 420px;
+  height: 360px;
   width: 100%;
+}
+/* line 22, ../sass/templates/_weather.scss */
+main.weather #locationinfoinc {
+  position: relative;
+  max-width: 190px;
+}
+/* line 26, ../sass/templates/_weather.scss */
+main.weather #locationinfoinc #locationinfotoday span.today {
+  font-size: 1.4rem;
+}
+/* line 29, ../sass/templates/_weather.scss */
+main.weather #locationinfoinc #locationinfotoday span.todayinfo {
+  color: #FF1C48;
+  font-size: 2rem;
 }
 
 /* line 1, ../sass/templates/_chat.scss */
