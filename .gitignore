@@ -1,2 +1,7 @@
 node_modules/
 OLD/
+CREA/
+Icon
+.Icon
+.sass-cache
+package-lock.json

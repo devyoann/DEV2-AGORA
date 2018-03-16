@@ -3,20 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% if title is defined %} {{ title }} {% endif %}</title>
-	{% block linksStylesheets %}
-	{% endblock %}
-	
-	{% block customsStylesheets %}
-	{% endblock %}
+
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+{% block linksStylesheets %}
+{% endblock %}
+
+{% block customsStylesheets %}
+{% endblock %}
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
+{% block customsScript %}
+{% endblock %}
 </head>
 <body>
-	{% block content %}
-	{% endblock %}
+{% block content %}
+{% endblock %}
 
-	{% block customsJavascripts %}
-	{% endblock %}
+{% block customsJavascripts %}
+{% endblock %}
 </body>
 </html>
