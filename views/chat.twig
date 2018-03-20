@@ -3,7 +3,7 @@
 {% set title = 'Agora | Chat' %}
 
 {% block header %}
-  <header class="flex align-items-center justify-content-between">
+  <header id="mainHeader" class="flex align-items-center justify-content-between">
     <div class="flex align-items-center">
       <img src="assets/img/logo.svg" alt="">
       <form id="search" class="flex align-items-center mg-l3" action="index.html" method="post">
@@ -187,7 +187,7 @@
       <div class="flex block_message align-items-center justify-content-between">
         <span>Désactiver la messagerie</span>
         <label class="switch mg-l1">
-          <input type="checkbox" checked>
+          <input type="checkbox" checked="checked">
           <span class="slider round"></span>
         </label>
       </div>

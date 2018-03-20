@@ -1070,6 +1070,18 @@ p.desc {
   color: #FF5C3E;
 }
 
+/* line 1, ../sass/templates/_index.scss */
+header#indexHeader {
+  padding: 20px;
+}
+/* line 5, ../sass/templates/_index.scss */
+header#indexHeader form input {
+  border: solid 1px grey;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* line 1, ../sass/templates/_feed.scss */
 #feed {
   width: 94vw;
@@ -1182,7 +1194,7 @@ html {
 }
 
 /* line 7, ../sass/templates/_layout.scss */
-header {
+header#mainHeader {
   width: 94vw;
   position: fixed;
   top: 0;
@@ -1195,80 +1207,80 @@ header {
 }
 @media screen and (max-width: 769px) {
   /* line 7, ../sass/templates/_layout.scss */
-  header {
+  header#mainHeader {
     display: block !important;
     padding: 20px 0;
     height: inherit;
   }
   /* line 23, ../sass/templates/_layout.scss */
-  header div:first-child {
+  header#mainHeader div:first-child {
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
   }
   /* line 28, ../sass/templates/_layout.scss */
-  header div:first-child form {
+  header#mainHeader div:first-child form {
     margin: 0;
     width: 70%;
   }
   /* line 32, ../sass/templates/_layout.scss */
-  header div:first-child form input {
+  header#mainHeader div:first-child form input {
     width: 80% !important;
   }
   /* line 36, ../sass/templates/_layout.scss */
-  header div:first-child form label {
+  header#mainHeader div:first-child form label {
     width: 20% !important;
   }
   /* line 42, ../sass/templates/_layout.scss */
-  header div:last-child {
+  header#mainHeader div:last-child {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
   /* line 49, ../sass/templates/_layout.scss */
-  header div:first-child {
+  header#mainHeader div:first-child {
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
   }
   /* line 54, ../sass/templates/_layout.scss */
-  header div:first-child form {
+  header#mainHeader div:first-child form {
     display: none;
   }
 }
 /* line 61, ../sass/templates/_layout.scss */
-header.board_open {
+header#mainHeader.board_open {
   width: 85vw;
   left: 15vw;
 }
 /* line 66, ../sass/templates/_layout.scss */
-header img {
+header#mainHeader img {
   width: 100px;
 }
 /* line 70, ../sass/templates/_layout.scss */
-header > div {
+header#mainHeader > div {
   width: 50%;
 }
 /* line 73, ../sass/templates/_layout.scss */
-header > div:last-child {
+header#mainHeader > div:last-child {
   justify-content: flex-end;
 }
 /* line 77, ../sass/templates/_layout.scss */
-header > div:last-child .notification img {
+header#mainHeader > div:last-child .notification img {
   width: 30px;
 }
 /* line 82, ../sass/templates/_layout.scss */
-header > div:last-child .profile_img {
+header#mainHeader > div:last-child .profile_img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
 /* line 87, ../sass/templates/_layout.scss */
-header > div:last-child .profile_img img {
+header#mainHeader > div:last-child .profile_img img {
   width: 100%;
 }
 /* line 92, ../sass/templates/_layout.scss */
-header > div:last-child .burger_right {
+header#mainHeader > div:last-child .burger_right {
   cursor: pointer;
   font-weight: bold;
   font-family: 'Quicksand';
@@ -1278,7 +1290,7 @@ header > div:last-child .burger_right {
   padding: 10px 0 10px 40px;
 }
 /* line 101, ../sass/templates/_layout.scss */
-header > div:last-child .burger_right:focus {
+header#mainHeader > div:last-child .burger_right:focus {
   outline: none;
 }
 
@@ -1390,124 +1402,98 @@ main.landing .background {
   width: 100%;
   position: relative;
   bottom: 595px;
-  background: url(../img/landing.jpg);
+  background: url("../img/landing.jpg");
   z-index: -1;
+}
+/* line 14, ../sass/templates/_landing.scss */
+main.landing section:first-of-type {
+  margin-top: 100px;
 }
 /* line 17, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left {
-  position: relative;
   width: 50%;
 }
 /* line 20, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h1 {
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translate(-50%);
   text-align: center;
-  max-width: 565px;
-  width: 100%;
 }
-/* line 29, ../sass/templates/_landing.scss */
+/* line 24, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left p.desc {
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translate(-50%);
-  max-width: 560px;
-  width: 100%;
-}
-/* line 38, ../sass/templates/_landing.scss */
-main.landing section:first-of-type .left h3 {
-  position: absolute;
-  top: 320px;
-  left: 50%;
-  transform: translate(-50%);
   text-align: center;
-  max-width: 565px;
-  width: 100%;
 }
-/* line 47, ../sass/templates/_landing.scss */
+/* line 28, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .left h3 {
+  text-align: center;
+}
+/* line 32, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left div.mockup {
-  background: url(../img/mockup.png) no-repeat;
+  background: url("../img/mockup.png") no-repeat;
   height: 300px;
   width: 580px;
   background-size: contain;
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 50px auto 0;
 }
-/* line 59, ../sass/templates/_landing.scss */
+/* line 41, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right {
-  position: relative;
   width: 50%;
 }
-/* line 63, ../sass/templates/_landing.scss */
+/* line 44, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right .white-bg {
-  position: relative;
-  top: 70px;
-  left: 50%;
-  transform: translate(-50%);
   background-color: #fff;
   border-radius: 8px;
   width: 80%;
-  max-height: 650px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
-/* line 74, ../sass/templates/_landing.scss */
+/* line 52, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right h2 {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 80%;
-  max-width: 570px;
+  text-align: center;
 }
-/* line 83, ../sass/templates/_landing.scss */
+/* line 56, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form {
-  position: absolute;
-  transform: translate(-50%);
   top: 110px;
-  left: 50%;
   width: 80%;
+  margin: 0 auto;
 }
-/* line 90, ../sass/templates/_landing.scss */
+/* line 61, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container {
   height: 70px;
 }
-/* line 93, ../sass/templates/_landing.scss */
+/* line 64, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container input {
   margin-top: 10px;
 }
-/* line 96, ../sass/templates/_landing.scss */
-main.landing section:first-of-type .right form div.input-container div.input-left, main.landing section:first-of-type .right form div.input-container .input-right {
+/* line 68, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container .input-right,
+main.landing section:first-of-type .right form div.input-container div.input-left {
   width: 50%;
 }
-/* line 98, ../sass/templates/_landing.scss */
-main.landing section:first-of-type .right form div.input-container div.input-left .input-centered, main.landing section:first-of-type .right form div.input-container .input-right .input-centered {
+/* line 72, ../sass/templates/_landing.scss */
+main.landing section:first-of-type .right form div.input-container .input-right .input-centered,
+main.landing section:first-of-type .right form div.input-container div.input-left .input-centered {
   margin: 0 auto;
   width: 90%;
 }
-/* line 103, ../sass/templates/_landing.scss */
+/* line 78, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full {
   width: 94%;
   margin: 0 auto;
 }
-/* line 106, ../sass/templates/_landing.scss */
+/* line 82, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full input {
   width: 95%;
 }
-/* line 111, ../sass/templates/_landing.scss */
+/* line 88, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full {
   width: 94%;
   margin: 0 auto;
   height: 50px;
 }
-/* line 115, ../sass/templates/_landing.scss */
+/* line 93, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full .radio:first-child {
   margin-right: 30px;
 }
-/* line 120, ../sass/templates/_landing.scss */
+/* line 98, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form .button {
   background-color: #404258;
   color: #fff;

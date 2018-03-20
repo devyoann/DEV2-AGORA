@@ -7,85 +7,56 @@ main.landing {
     width: 100%;
     position: relative;
     bottom: 595px;
-    background: url(../img/landing.jpg);
+    background: url("../img/landing.jpg");
     z-index: -1;
   }
-  
 
   section:first-of-type {
+    margin-top: 100px;
 
     .left {
-      position: relative;
       width: 50%;
+
       h1 {
-        position: absolute;
-        top: 80px;
-        left: 50%;
-        transform: translate(-50%);
         text-align: center;
-        max-width: 565px;
-        width: 100%;
       }
+
       p.desc {
-        position: absolute;
-        top: 160px;
-        left: 50%;
-        transform: translate(-50%);
-        max-width: 560px;
-        width: 100%;
+        text-align: center;
       }
 
       h3 {
-        position: absolute;
-        top: 320px;
-        left: 50%;
-        transform: translate(-50%);
         text-align: center;
-        max-width: 565px;
-        width: 100%;
       }
+
       div.mockup {
-        background: url(../img/mockup.png) no-repeat;
+        background: url("../img/mockup.png") no-repeat;
         height: 300px;
         width: 580px;
         background-size: contain;
-        position: absolute;
-        top: 400px;
-        left: 50%;
-        transform: translate(-50%);
+        margin: 50px auto 0;
       }
-
     }
+
     .right {
-      position: relative;
       width: 50%;
 
       .white-bg {
-        position: relative;
-        top: 70px;
-        left: 50%;
-        transform: translate(-50%);
         background-color: map-get($colors, white);
         border-radius: 8px;
         width: 80%;
-        max-height: 650px;
+        margin: 0 auto;
+        padding: 40px 0;
       }
 
       h2 {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 80%;
-        max-width: 570px;
+        text-align: center;
       }
 
       form {
-        position: absolute;
-        transform: translate(-50%);
         top: 110px;
-        left: 50%;
         width: 80%;
+        margin: 0 auto;
 
         div.input-container {
           height: 70px;
@@ -93,25 +64,32 @@ main.landing {
           input {
             margin-top: 10px;
           }
-          div.input-left, .input-right {
+
+          .input-right,
+          div.input-left {
             width: 50%;
+
             .input-centered {
               margin: 0 auto;
               width: 90%;
             }
           }
+
           div.input-full {
             width: 94%;
             margin: 0 auto;
+
             input {
               width: 95%;
             }
           }
         }
+
         div.radio-full {
           width: 94%;
           margin: 0 auto;
           height: 50px;
+
           .radio:first-child {
             margin-right: 30px;
           }
