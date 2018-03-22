@@ -4,6 +4,12 @@ main.weather {
   padding: 20px;
   box-sizing: border-box;
   margin-top: 100px;
+  @media screen and (max-width: $break-large) {
+    width: 100vw;
+    left: 0;
+    padding-bottom: 65px;
+    margin-top: 70px;
+  }
 
   .button {
     @include button(secondary, white, 5px, 9px 30px);
@@ -22,10 +28,12 @@ main.weather {
   #locationinfoinc {
     position: relative;
     max-width: 190px;
+
     #locationinfotoday {
       span.today {
         font-size: 1.4rem;
       }
+
       span.todayinfo {
         color: map-get($colors, tertiary);
         font-size: 2rem;

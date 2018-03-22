@@ -910,8 +910,8 @@ p.desc {
 /* line 1, ../sass/components/recurrent.scss */
 .profile_img {
   border-radius: 100px;
-  min-height: 50px;
-  min-width: 50px;
+  height: 50px;
+  width: 50px;
 }
 /* line 6, ../sass/components/recurrent.scss */
 .profile_img img {
@@ -1159,34 +1159,42 @@ header#indexHeader form input {
   font-family: 'Quicksand';
   margin-top: 10vh;
 }
-/* line 10, ../sass/templates/_feed.scss */
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/templates/_feed.scss */
+  #feed {
+    width: 100vw;
+    left: 0;
+    padding-bottom: 65px;
+  }
+}
+/* line 15, ../sass/templates/_feed.scss */
 #feed.board_open {
   width: 85vw;
 }
-/* line 14, ../sass/templates/_feed.scss */
+/* line 19, ../sass/templates/_feed.scss */
 #feed .container {
   margin: 0 auto;
 }
-/* line 17, ../sass/templates/_feed.scss */
+/* line 22, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
   width: 32%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 17, ../sass/templates/_feed.scss */
+  /* line 22, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 49%;
   }
 }
 @media screen and (max-width: 769px) {
-  /* line 17, ../sass/templates/_feed.scss */
+  /* line 22, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 28, ../sass/templates/_feed.scss */
+/* line 33, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
@@ -1210,6 +1218,13 @@ header#mainHeader {
   padding: 0 20px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 1024px) {
+  /* line 7, ../sass/templates/_layout.scss */
+  header#mainHeader {
+    width: 100vw;
+    left: 0;
+  }
+}
 @media screen and (max-width: 769px) {
   /* line 7, ../sass/templates/_layout.scss */
   header#mainHeader {
@@ -1217,74 +1232,79 @@ header#mainHeader {
     padding: 20px 0;
     height: inherit;
   }
-  /* line 23, ../sass/templates/_layout.scss */
+  /* line 27, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child {
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
   }
-  /* line 28, ../sass/templates/_layout.scss */
+  /* line 32, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child form {
     margin: 0;
     width: 70%;
   }
-  /* line 32, ../sass/templates/_layout.scss */
+  /* line 36, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child form input {
     width: 80% !important;
   }
-  /* line 36, ../sass/templates/_layout.scss */
+  /* line 40, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child form label {
     width: 20% !important;
   }
-  /* line 42, ../sass/templates/_layout.scss */
+  /* line 46, ../sass/templates/_layout.scss */
   header#mainHeader div:last-child {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 49, ../sass/templates/_layout.scss */
+  /* line 53, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child {
     width: 95%;
     margin: 0 auto;
     justify-content: space-between;
   }
-  /* line 54, ../sass/templates/_layout.scss */
+  /* line 58, ../sass/templates/_layout.scss */
+  header#mainHeader div:first-child a {
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 63, ../sass/templates/_layout.scss */
   header#mainHeader div:first-child form {
     display: none;
   }
 }
-/* line 61, ../sass/templates/_layout.scss */
+/* line 70, ../sass/templates/_layout.scss */
 header#mainHeader.board_open {
   width: 85vw;
   left: 15vw;
 }
-/* line 66, ../sass/templates/_layout.scss */
+/* line 75, ../sass/templates/_layout.scss */
 header#mainHeader img {
   width: 100px;
 }
-/* line 70, ../sass/templates/_layout.scss */
+/* line 79, ../sass/templates/_layout.scss */
 header#mainHeader > div {
   width: 50%;
 }
-/* line 73, ../sass/templates/_layout.scss */
+/* line 82, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child {
   justify-content: flex-end;
 }
-/* line 77, ../sass/templates/_layout.scss */
+/* line 86, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child .notification img {
   width: 30px;
 }
-/* line 82, ../sass/templates/_layout.scss */
+/* line 91, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child .profile_img {
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
-/* line 87, ../sass/templates/_layout.scss */
+/* line 96, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child .profile_img img {
   width: 100%;
 }
-/* line 92, ../sass/templates/_layout.scss */
+/* line 101, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child .burger_right {
   cursor: pointer;
   font-weight: bold;
@@ -1294,12 +1314,12 @@ header#mainHeader > div:last-child .burger_right {
   background-size: 30px;
   padding: 10px 0 10px 40px;
 }
-/* line 101, ../sass/templates/_layout.scss */
+/* line 110, ../sass/templates/_layout.scss */
 header#mainHeader > div:last-child .burger_right:focus {
   outline: none;
 }
 
-/* line 110, ../sass/templates/_layout.scss */
+/* line 119, ../sass/templates/_layout.scss */
 #search input {
   border: solid 1px #4A4A4A;
   height: 30px;
@@ -1307,19 +1327,21 @@ header#mainHeader > div:last-child .burger_right:focus {
   padding: 0 0 0 10px;
   width: 200px;
   border-right: none;
+  border-radius: 5px 0 0 5px;
 }
-/* line 118, ../sass/templates/_layout.scss */
+/* line 128, ../sass/templates/_layout.scss */
 #search input::placeholder {
   color: lightgray;
 }
-/* line 123, ../sass/templates/_layout.scss */
+/* line 133, ../sass/templates/_layout.scss */
 #search label {
   background: #FF5C3E;
   height: 30px;
   width: 50px;
   position: relative;
+  border-radius: 0 5px 5px 0;
 }
-/* line 129, ../sass/templates/_layout.scss */
+/* line 140, ../sass/templates/_layout.scss */
 #search label img {
   width: 15px;
   position: absolute;
@@ -1328,7 +1350,7 @@ header#mainHeader > div:last-child .burger_right:focus {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 139, ../sass/templates/_layout.scss */
+/* line 150, ../sass/templates/_layout.scss */
 #board {
   position: fixed;
   top: 0;
@@ -1339,59 +1361,88 @@ header#mainHeader > div:last-child .burger_right:focus {
   padding-top: 35px;
   z-index: 2;
 }
-/* line 149, ../sass/templates/_layout.scss */
+@media screen and (max-width: 1024px) {
+  /* line 150, ../sass/templates/_layout.scss */
+  #board {
+    width: 100vw;
+    padding: 20px 0;
+    top: inherit;
+    bottom: 0;
+    height: inherit;
+  }
+}
+/* line 167, ../sass/templates/_layout.scss */
 #board.open {
   width: 15vw;
 }
-/* line 152, ../sass/templates/_layout.scss */
+/* line 170, ../sass/templates/_layout.scss */
 #board.open ul {
   width: 140px;
   margin: 50px auto 0;
 }
-/* line 156, ../sass/templates/_layout.scss */
+/* line 174, ../sass/templates/_layout.scss */
 #board.open ul li {
   display: flex;
   align-items: center;
 }
-/* line 160, ../sass/templates/_layout.scss */
+/* line 178, ../sass/templates/_layout.scss */
 #board.open ul li span {
   margin-left: 10px;
 }
-/* line 166, ../sass/templates/_layout.scss */
+/* line 184, ../sass/templates/_layout.scss */
 #board.open .feed_label::after {
   content: "Flux d'actualité";
 }
-/* line 170, ../sass/templates/_layout.scss */
+/* line 188, ../sass/templates/_layout.scss */
 #board.open .chat_label::after {
   content: "Chat";
 }
-/* line 174, ../sass/templates/_layout.scss */
+/* line 192, ../sass/templates/_layout.scss */
 #board.open .calendar_label::after {
   content: "Calendrier";
 }
-/* line 178, ../sass/templates/_layout.scss */
+/* line 196, ../sass/templates/_layout.scss */
 #board.open .weather_label::after {
   content: "Météo";
 }
-/* line 182, ../sass/templates/_layout.scss */
+/* line 200, ../sass/templates/_layout.scss */
 #board.open .settings_label::after {
   content: "Paramètres";
 }
-/* line 187, ../sass/templates/_layout.scss */
+/* line 205, ../sass/templates/_layout.scss */
 #board > div {
   cursor: pointer;
 }
-/* line 192, ../sass/templates/_layout.scss */
+@media screen and (max-width: 1024px) {
+  /* line 209, ../sass/templates/_layout.scss */
+  #board ul {
+    display: flex;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 215, ../sass/templates/_layout.scss */
+  #board ul a {
+    width: calc(100%/4);
+  }
+}
+/* line 221, ../sass/templates/_layout.scss */
 #board ul li {
   cursor: pointer;
   color: white;
   font-family: 'Quicksand';
 }
-/* line 197, ../sass/templates/_layout.scss */
+@media screen and (max-width: 1024px) {
+  /* line 221, ../sass/templates/_layout.scss */
+  #board ul li {
+    margin: 0;
+  }
+}
+/* line 229, ../sass/templates/_layout.scss */
 #board ul li:hover {
   color: #FF5C3E;
 }
-/* line 200, ../sass/templates/_layout.scss */
+/* line 232, ../sass/templates/_layout.scss */
 #board ul li:hover path {
   fill: #FF5C3E;
 }
@@ -1550,7 +1601,16 @@ main.weather {
   box-sizing: border-box;
   margin-top: 100px;
 }
-/* line 8, ../sass/templates/_weather.scss */
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/templates/_weather.scss */
+  main.weather {
+    width: 100vw;
+    left: 0;
+    padding-bottom: 65px;
+    margin-top: 70px;
+  }
+}
+/* line 14, ../sass/templates/_weather.scss */
 main.weather .button {
   background-color: #404258;
   color: #fff;
@@ -1560,7 +1620,7 @@ main.weather .button {
   border-radius: 0 5px 5px 0;
   border: none;
 }
-/* line 14, ../sass/templates/_weather.scss */
+/* line 20, ../sass/templates/_weather.scss */
 main.weather .bg-img {
   background-repeat: no-repeat;
   background-position: center;
@@ -1568,16 +1628,16 @@ main.weather .bg-img {
   height: 360px;
   width: 100%;
 }
-/* line 22, ../sass/templates/_weather.scss */
+/* line 28, ../sass/templates/_weather.scss */
 main.weather #locationinfoinc {
   position: relative;
   max-width: 190px;
 }
-/* line 26, ../sass/templates/_weather.scss */
+/* line 33, ../sass/templates/_weather.scss */
 main.weather #locationinfoinc #locationinfotoday span.today {
   font-size: 1.4rem;
 }
-/* line 29, ../sass/templates/_weather.scss */
+/* line 37, ../sass/templates/_weather.scss */
 main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   color: #FF1C48;
   font-size: 2rem;
@@ -1590,33 +1650,46 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   float: right;
   height: 90vh;
 }
-/* line 8, ../sass/templates/_chat.scss */
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/templates/_chat.scss */
+  #chat {
+    width: 100vw;
+    left: 0;
+  }
+}
+/* line 12, ../sass/templates/_chat.scss */
 #chat > section:first-child {
   width: 25%;
   border-top: solid 1px #D8D8D8;
   overflow-y: scroll;
 }
-/* line 13, ../sass/templates/_chat.scss */
+@media screen and (max-width: 1024px) {
+  /* line 12, ../sass/templates/_chat.scss */
+  #chat > section:first-child {
+    display: none;
+  }
+}
+/* line 20, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message {
-  width: 300px;
+  width: 90%;
   margin: 0 auto;
 }
-/* line 17, ../sass/templates/_chat.scss */
+/* line 24, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message span {
   color: #404258;
 }
-/* line 21, ../sass/templates/_chat.scss */
+/* line 28, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
-/* line 27, ../sass/templates/_chat.scss */
+/* line 34, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .switch input {
   display: none;
 }
-/* line 32, ../sass/templates/_chat.scss */
+/* line 39, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .slider {
   position: absolute;
   cursor: pointer;
@@ -1628,7 +1701,7 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 43, ../sass/templates/_chat.scss */
+/* line 50, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .slider::before {
   position: absolute;
   content: "";
@@ -1640,56 +1713,56 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 55, ../sass/templates/_chat.scss */
+/* line 62, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .slider.round {
   border-radius: 34px;
 }
-/* line 58, ../sass/templates/_chat.scss */
+/* line 65, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message .slider.round:before {
   border-radius: 50%;
 }
-/* line 65, ../sass/templates/_chat.scss */
+/* line 72, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message input:checked + .slider {
   background-color: #27D238;
 }
-/* line 69, ../sass/templates/_chat.scss */
+/* line 76, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message input:focus + .slider {
   box-shadow: 0 0 1px #27D238;
 }
-/* line 73, ../sass/templates/_chat.scss */
+/* line 80, ../sass/templates/_chat.scss */
 #chat > section:first-child .block_message input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-/* line 81, ../sass/templates/_chat.scss */
+/* line 88, ../sass/templates/_chat.scss */
 #chat > section:first-child .profile_img {
   height: 30px;
   width: 30px;
 }
-/* line 88, ../sass/templates/_chat.scss */
+/* line 95, ../sass/templates/_chat.scss */
 #chat > section:first-child .contacts > div,
 #chat > section:first-child .groupes > div {
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.1s ease;
 }
-/* line 93, ../sass/templates/_chat.scss */
+/* line 100, ../sass/templates/_chat.scss */
 #chat > section:first-child .contacts > div span,
 #chat > section:first-child .groupes > div span {
   margin-top: 5px;
 }
-/* line 97, ../sass/templates/_chat.scss */
+/* line 104, ../sass/templates/_chat.scss */
 #chat > section:first-child .contacts > div:hover,
 #chat > section:first-child .groupes > div:hover {
   background: lightgray;
 }
-/* line 101, ../sass/templates/_chat.scss */
+/* line 108, ../sass/templates/_chat.scss */
 #chat > section:first-child .contacts > div.active,
 #chat > section:first-child .groupes > div.active {
   background: #EFEFEF;
 }
-/* line 106, ../sass/templates/_chat.scss */
+/* line 113, ../sass/templates/_chat.scss */
 #chat > section:first-child .contacts .connect,
 #chat > section:first-child .groupes .connect {
   height: 20px;
@@ -1697,7 +1770,7 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   border-radius: 50px;
   background: #27D238;
 }
-/* line 114, ../sass/templates/_chat.scss */
+/* line 121, ../sass/templates/_chat.scss */
 #chat > section:first-child input {
   width: 90%;
   border-radius: 10px;
@@ -1705,68 +1778,80 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   font-size: 15px;
   padding: 10px;
 }
-/* line 121, ../sass/templates/_chat.scss */
+/* line 128, ../sass/templates/_chat.scss */
 #chat > section:first-child input::placeholder {
   color: #818181;
 }
-/* line 127, ../sass/templates/_chat.scss */
+/* line 134, ../sass/templates/_chat.scss */
 #chat > section:last-child {
   width: 75%;
   border: solid 1px #D8D8D8;
   position: relative;
 }
-/* line 132, ../sass/templates/_chat.scss */
+@media screen and (max-width: 1024px) {
+  /* line 134, ../sass/templates/_chat.scss */
+  #chat > section:last-child {
+    width: 100%;
+  }
+}
+/* line 142, ../sass/templates/_chat.scss */
 #chat > section:last-child .top {
   padding: 10px;
   box-sizing: border-box;
   border-bottom: solid 1px #D8D8D8;
 }
-/* line 137, ../sass/templates/_chat.scss */
+/* line 147, ../sass/templates/_chat.scss */
 #chat > section:last-child .top .profile_img {
   height: 35px;
   width: 35px;
 }
-/* line 145, ../sass/templates/_chat.scss */
+/* line 155, ../sass/templates/_chat.scss */
 #chat > section:last-child .top .name > div span:first-child {
   font-weight: 500;
 }
-/* line 149, ../sass/templates/_chat.scss */
+/* line 159, ../sass/templates/_chat.scss */
 #chat > section:last-child .top .name > div span:last-child {
   font-size: 12px;
   margin-top: 5px;
 }
-/* line 158, ../sass/templates/_chat.scss */
+/* line 168, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container {
   padding: 20px;
   overflow-y: auto;
   max-height: 70vh;
 }
-/* line 163, ../sass/templates/_chat.scss */
+@media screen and (max-width: 1024px) {
+  /* line 168, ../sass/templates/_chat.scss */
+  #chat > section:last-child .messages_container {
+    padding: 10px;
+  }
+}
+/* line 176, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .sent {
   flex-direction: row-reverse;
 }
-/* line 166, ../sass/templates/_chat.scss */
+/* line 179, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .sent .profile_img {
   margin-left: 10px;
 }
-/* line 170, ../sass/templates/_chat.scss */
+/* line 183, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .sent .mes {
   border-right: solid 3px orange;
 }
-/* line 176, ../sass/templates/_chat.scss */
+/* line 189, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .dest .profile_img {
   margin-right: 10px;
 }
-/* line 180, ../sass/templates/_chat.scss */
+/* line 193, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .dest .mes {
   border-left: solid 3px red;
 }
-/* line 185, ../sass/templates/_chat.scss */
+/* line 198, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .profile_img {
   height: 30px;
   width: 30px;
 }
-/* line 190, ../sass/templates/_chat.scss */
+/* line 203, ../sass/templates/_chat.scss */
 #chat > section:last-child .messages_container .mes {
   margin-bottom: 15px;
   max-width: 60%;
@@ -1777,7 +1862,13 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   border: solid 1px #F1F1F1;
   font-size: 15px;
 }
-/* line 202, ../sass/templates/_chat.scss */
+@media screen and (max-width: 1024px) {
+  /* line 203, ../sass/templates/_chat.scss */
+  #chat > section:last-child .messages_container .mes {
+    max-width: 80%;
+  }
+}
+/* line 218, ../sass/templates/_chat.scss */
 #chat > section:last-child .write {
   padding: 5px 10px;
   border-top: solid 1px silver;
@@ -1786,21 +1877,17 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   box-sizing: border-box;
   background: white;
 }
-/* line 210, ../sass/templates/_chat.scss */
-#chat > section:last-child .write .profile_img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
+@media screen and (max-width: 1024px) {
+  /* line 218, ../sass/templates/_chat.scss */
+  #chat > section:last-child .write {
+    bottom: 63px;
+  }
 }
-/* line 215, ../sass/templates/_chat.scss */
-#chat > section:last-child .write .profile_img img {
-  width: 100%;
-}
-/* line 220, ../sass/templates/_chat.scss */
+/* line 229, ../sass/templates/_chat.scss */
 #chat > section:last-child .write form {
-  width: 70%;
+  width: 90%;
 }
-/* line 223, ../sass/templates/_chat.scss */
+/* line 232, ../sass/templates/_chat.scss */
 #chat > section:last-child .write form input {
   border-radius: 5px;
   border: none;
@@ -1808,22 +1895,22 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   padding: 5px;
   box-sizing: border-box;
 }
-/* line 230, ../sass/templates/_chat.scss */
+/* line 239, ../sass/templates/_chat.scss */
 #chat > section:last-child .write form input::placeholder {
   color: Gainsboro;
 }
-/* line 236, ../sass/templates/_chat.scss */
+/* line 245, ../sass/templates/_chat.scss */
 #chat > section:last-child .write .media {
   background: #FF5C3E;
   border-radius: 50px;
   padding: 8px 5px 5px;
   border: none;
 }
-/* line 242, ../sass/templates/_chat.scss */
+/* line 251, ../sass/templates/_chat.scss */
 #chat > section:last-child .write .media svg {
   width: 22px;
 }
-/* line 247, ../sass/templates/_chat.scss */
+/* line 256, ../sass/templates/_chat.scss */
 #chat > section:last-child .write .gif {
   padding: 10px 7px;
   border: none;
@@ -1843,13 +1930,21 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   font-family: 'Quicksand';
   margin-top: 10vh;
 }
+@media screen and (max-width: 1024px) {
+  /* line 1, ../sass/templates/_profile.scss */
+  #profile_about,
+  #profile_timeline {
+    width: 100vw;
+    left: 0;
+  }
+}
 
-/* line 12, ../sass/templates/_profile.scss */
+/* line 16, ../sass/templates/_profile.scss */
 .page_choice {
   display: table;
   margin: 0 auto 20px;
 }
-/* line 16, ../sass/templates/_profile.scss */
+/* line 20, ../sass/templates/_profile.scss */
 .page_choice a {
   padding: 10px 0;
   width: 100px;
@@ -1859,30 +1954,30 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   text-align: center;
   box-sizing: border-box;
 }
-/* line 25, ../sass/templates/_profile.scss */
+/* line 29, ../sass/templates/_profile.scss */
 .page_choice a.active {
   background: #FF5C3E;
   color: white;
   border: none;
 }
-/* line 31, ../sass/templates/_profile.scss */
+/* line 35, ../sass/templates/_profile.scss */
 .page_choice a:first-child {
   border-right: none;
   border-radius: 5px 0 0 5px;
 }
-/* line 36, ../sass/templates/_profile.scss */
+/* line 40, ../sass/templates/_profile.scss */
 .page_choice a:last-child {
   border-radius: 0 5px 5px 0;
 }
 
-/* line 42, ../sass/templates/_profile.scss */
+/* line 46, ../sass/templates/_profile.scss */
 #headProfile {
   height: 250px;
   background: url("/assets/img/dark.jpg") no-repeat center;
   background-size: cover;
   position: relative;
 }
-/* line 48, ../sass/templates/_profile.scss */
+/* line 52, ../sass/templates/_profile.scss */
 #headProfile .profile_img {
   width: 150px;
   height: 150px;
@@ -1890,13 +1985,13 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   bottom: -50px;
   left: 50px;
 }
-/* line 56, ../sass/templates/_profile.scss */
+/* line 60, ../sass/templates/_profile.scss */
 #headProfile .buttons {
   position: absolute;
   bottom: 20px;
   right: 5%;
 }
-/* line 61, ../sass/templates/_profile.scss */
+/* line 65, ../sass/templates/_profile.scss */
 #headProfile .buttons button {
   padding: 10px 20px;
   border: none;
@@ -1906,12 +2001,12 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   background-color: #FF5C3E;
   color: white;
 }
-/* line 74, ../sass/templates/_profile.scss */
+/* line 78, ../sass/templates/_profile.scss */
 #headProfile .buttons button:focus {
   outline: none;
 }
 
-/* line 81, ../sass/templates/_profile.scss */
+/* line 85, ../sass/templates/_profile.scss */
 #name {
   color: white;
   font-size: 30px;
@@ -1920,22 +2015,22 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   bottom: 20px;
 }
 
-/* line 92, ../sass/templates/_profile.scss */
+/* line 96, ../sass/templates/_profile.scss */
 #profile_about .title {
   font-size: 30px;
   color: #FF5C3E;
 }
 
-/* line 99, ../sass/templates/_profile.scss */
+/* line 103, ../sass/templates/_profile.scss */
 #desc span {
   font-size: 17px;
 }
-/* line 103, ../sass/templates/_profile.scss */
+/* line 107, ../sass/templates/_profile.scss */
 #desc .left {
   width: 200px;
   color: #FF5C3E;
 }
-/* line 108, ../sass/templates/_profile.scss */
+/* line 112, ../sass/templates/_profile.scss */
 #desc .right {
   width: 600px;
 }
