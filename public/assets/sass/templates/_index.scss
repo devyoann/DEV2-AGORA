@@ -1,0 +1,13 @@
+header#indexHeader {
+  padding: 20px;
+  border-bottom: solid 1px grey;
+
+  form {
+    input {
+      border: solid 1px grey;
+      font-size: 16px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}

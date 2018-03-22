@@ -1,150 +1,257 @@
 #chat {
-    width: 94vw;
-    margin-top: 10vh;
-    float: right;
-    height: 90vh;
+  width: 94vw;
+  margin-top: 10vh;
+  float: right;
+  height: 90vh;
 
-    & > section {
-        &:first-child {
-            width: 20%;
-            background-color: red;
+  & > section {
+    &:first-child {
+      width: 25%;
+      border-top: solid 1px #D8D8D8;
+      overflow-y: scroll;
+
+      .block_message {
+        width: 300px;
+        margin: 0 auto;
+
+        span {
+          color: #404258;
         }
 
-        &:last-child {
-            width: 80%;
-            border: solid 1px grey;
-            position: relative;
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
 
-            .top {
-                padding: 10px;
-                box-sizing: border-box;
-                border-bottom: solid 1px grey;
-
-                .profile_img {
-                    border-radius: 50px;
-                    height: 35px;
-                    width: 35px;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .name {
-                    & > div {
-                        span {
-                            &:first-child {
-                                font-weight: 500;
-                            }
-
-                            &:last-child {
-                                font-size: 12px;
-                                margin-top: 5px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .messages_container {
-                padding: 20px;
-
-                .sent {
-                    flex-direction: row-reverse;
-
-                    .profile_img {
-                        margin-left: 10px;
-                    }
-
-                    .mes {
-                        border-right: solid 3px orange;
-                    }
-                }
-
-                .dest {
-                    .profile_img {
-                        margin-right: 10px;
-                    }
-
-                    .mes {
-                        border-left: solid 3px red;
-                    }
-                }
-
-                .profile_img {
-                    border-radius: 50px;
-                    height: 30px;
-                    width: 30px;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .mes {
-                    margin-bottom: 15px;
-                    max-width: 60%;
-                    padding: 10px;
-                    box-sizing: border-box;
-                    color: gray;
-                    border-radius: 5px;
-                    border: solid 1px Gainsboro;
-                    font-size: 14px;
-                }
-            }
-
-            .write {
-                padding: 5px 10px;
-                border-top: solid 1px silver;
-                position: absolute;
-                bottom: 0;
-                box-sizing: border-box;
-
-                .profile_img {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50px;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                form {
-                    width: 70%;
-
-                    input {
-                        border-radius: 5px;
-                        border: none;
-                        border: solid 1px Gainsboro;
-                        padding: 5px;
-                        box-sizing: border-box;
-
-                        &::placeholder {
-                            color: Gainsboro;
-                        }
-                    }
-                }
-
-                .media {
-                    background: #FF5C3E;
-                    border-radius: 50px;
-                    padding: 8px 5px 5px;
-                    border: none;
-
-                    svg {
-                        width: 22px;
-                    }
-                }
-
-                .gif {
-                    padding: 10px 7px;
-                    border: none;
-                    background: blue;
-                    border-radius: 50px;
-                    color: white;
-                }
-            }
+          input {
+            display: none;
+          }
         }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+
+          &::before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+
+          &.round {
+            border-radius: 34px;
+
+            &:before {
+              border-radius: 50%;
+            }
+          }
+        }
+
+        input {
+          &:checked + .slider {
+            background-color: #27D238;
+          }
+
+          &:focus + .slider {
+            box-shadow: 0 0 1px #27D238;
+          }
+
+          &:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+        }
+      }
+
+      .profile_img {
+        height: 30px;
+        width: 30px;
+      }
+
+      .contacts,
+      .groupes {
+        & > div {
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: 0.1s ease;
+
+          span {
+            margin-top: 5px;
+          }
+
+          &:hover {
+            background: lightgray;
+          }
+
+          &.active {
+            background: #EFEFEF;
+          }
+        }
+
+        .connect {
+          height: 20px;
+          width: 20px;
+          border-radius: 50px;
+          background: #27D238;
+        }
+      }
+
+      input {
+        width: 90%;
+        border-radius: 10px;
+        border: solid 1px #404258;
+        font-size: 15px;
+        padding: 10px;
+
+        &::placeholder {
+          color: #818181;
+        }
+      }
     }
+
+    &:last-child {
+      width: 75%;
+      border: solid 1px #D8D8D8;
+      position: relative;
+
+      .top {
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: solid 1px #D8D8D8;
+
+        .profile_img {
+          height: 35px;
+          width: 35px;
+        }
+
+        .name {
+          & > div {
+            span {
+              &:first-child {
+                font-weight: 500;
+              }
+
+              &:last-child {
+                font-size: 12px;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .messages_container {
+        padding: 20px;
+        overflow-y: auto;
+        max-height: 70vh;
+
+        .sent {
+          flex-direction: row-reverse;
+
+          .profile_img {
+            margin-left: 10px;
+          }
+
+          .mes {
+            border-right: solid 3px orange;
+          }
+        }
+
+        .dest {
+          .profile_img {
+            margin-right: 10px;
+          }
+
+          .mes {
+            border-left: solid 3px red;
+          }
+        }
+
+        .profile_img {
+          height: 30px;
+          width: 30px;
+        }
+
+        .mes {
+          margin-bottom: 15px;
+          max-width: 60%;
+          padding: 10px;
+          box-sizing: border-box;
+          color: gray;
+          border-radius: 5px;
+          border: solid 1px #F1F1F1;
+          font-size: 15px;
+        }
+      }
+
+      .write {
+        padding: 5px 10px;
+        border-top: solid 1px silver;
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        background: white;
+
+        .profile_img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        form {
+          width: 70%;
+
+          input {
+            border-radius: 5px;
+            border: none;
+            border: solid 1px Gainsboro;
+            padding: 5px;
+            box-sizing: border-box;
+
+            &::placeholder {
+              color: Gainsboro;
+            }
+          }
+        }
+
+        .media {
+          background: #FF5C3E;
+          border-radius: 50px;
+          padding: 8px 5px 5px;
+          border: none;
+
+          svg {
+            width: 22px;
+          }
+        }
+
+        .gif {
+          padding: 10px 7px;
+          border: none;
+          background: blue;
+          border-radius: 50px;
+          color: white;
+        }
+      }
+    }
+  }
 }
