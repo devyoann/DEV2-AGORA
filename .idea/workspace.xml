@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/dark.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_profile.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/profile_about.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/views/profile_timeline.twig" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/app.css" afterPath="$PROJECT_DIR$/public/assets/css/app.css" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/components/recurrent.css" afterPath="$PROJECT_DIR$/public/assets/css/components/recurrent.css" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/feed.js" afterPath="$PROJECT_DIR$/public/assets/js/feed.js" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/_templates.scss" afterPath="$PROJECT_DIR$/public/assets/sass/_templates.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/components/recurrent.scss" afterPath="$PROJECT_DIR$/public/assets/sass/components/recurrent.scss" />
-      <change beforePath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" afterPath="$PROJECT_DIR$/public/assets/sass/templates/_feed.scss" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/views/feed.twig" afterPath="$PROJECT_DIR$/views/feed.twig" />
-      <change beforePath="$PROJECT_DIR$/views/profile.twig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/views/index.twig" afterPath="$PROJECT_DIR$/views/index.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +20,8 @@
           <file leaf-file-name="menu.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/menu.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+                <state relative-caret-position="69">
+                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -41,8 +30,18 @@
           <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+                <state relative-caret-position="496">
+                  <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signup.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -72,8 +71,10 @@
             <entry file="file://$PROJECT_DIR$/views/feed.twig">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="332">
-                  <caret line="961" column="18" lean-forward="false" selection-start-line="961" selection-start-column="18" selection-end-line="961" selection-end-column="18" />
-                  <folding />
+                  <caret line="773" column="18" lean-forward="false" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
+                  <folding>
+                    <marker date="1521711153766" expanded="true" signature="268:627" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -93,7 +94,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="69">
                   <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-                  <folding />
+                  <folding>
+                    <marker date="1521709811602" expanded="true" signature="470:12712" ph="{% block header ...%}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,11 +138,10 @@
           <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="213" column="2" lean-forward="true" selection-start-line="213" selection-start-column="2" selection-end-line="213" selection-end-column="2" />
+                <state relative-caret-position="1472">
+                  <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
                   <folding>
-                    <element signature="e#3389#4867#0" expanded="false" />
-                    <element signature="e#4912#4995#0" expanded="false" />
+                    <element signature="e#4593#4676#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -401,12 +403,12 @@
       <workItem from="1520682748597" duration="16842000" />
       <workItem from="1520842598622" duration="20000" />
       <workItem from="1521098535819" duration="10239000" />
-      <workItem from="1521702877723" duration="4593000" />
+      <workItem from="1521702877723" duration="5634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62495000" />
+    <option name="totallyTimeSpent" value="63536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -506,8 +508,7 @@
         <state relative-caret-position="416">
           <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
           <folding>
-            <element signature="e#3389#4867#0" expanded="false" />
-            <element signature="e#4912#4995#0" expanded="false" />
+            <element signature="e#4593#4676#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -516,7 +517,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1521709811602" expanded="true" signature="470:12712" ph="{% block header ...%}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,8 +565,7 @@
         <state relative-caret-position="234">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#3389#4867#0" expanded="false" />
-            <element signature="e#4912#4995#0" expanded="false" />
+            <element signature="e#4593#4676#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -602,8 +604,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3389#4867#0" expanded="false" />
-            <element signature="e#4912#4995#0" expanded="false" />
+            <element signature="e#4593#4676#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,8 +745,10 @@
     <entry file="file://$PROJECT_DIR$/views/feed.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
-          <caret line="961" column="18" lean-forward="false" selection-start-line="961" selection-start-column="18" selection-end-line="961" selection-end-column="18" />
-          <folding />
+          <caret line="773" column="18" lean-forward="false" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
+          <folding>
+            <marker date="1521711153766" expanded="true" signature="268:627" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +756,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1521709811602" expanded="true" signature="470:12712" ph="{% block header ...%}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -795,8 +800,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/menu.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -857,22 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/profile.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -881,14 +870,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="213" column="2" lean-forward="true" selection-start-line="213" selection-start-column="2" selection-end-line="213" selection-end-column="2" />
+        <state relative-caret-position="1472">
+          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
           <folding>
-            <element signature="e#3389#4867#0" expanded="false" />
-            <element signature="e#4912#4995#0" expanded="false" />
+            <element signature="e#4593#4676#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

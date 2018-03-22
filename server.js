@@ -139,11 +139,16 @@ server.get('/signup', function(req, res) {
     res.render(views('login/signup'))
 })
 
-server.post('/signup', function(req, res) {
+server.post('app/signup', function(req, res) {
     // fnc.SessionIsConnect(req, res, 0, settings.server.url)
 
     let _val = {
-        email   : req.body.email
+        lastname   : req.body.lastname,
+        firstname   : req.body.firstname,
+        email   : req.body.email,
+        birthdate   : req.body.birthdate,
+        gender   : req.body.gender,
+        password   : req.body.password
     }
 
     let _rs = {
@@ -167,22 +172,6 @@ server.post('/signup', function(req, res) {
                 birthday    : safety.input(req.body.birthday),
                 password    : safety.hashpassword(req.body.password)
             }
-
-            let insertNewUser = db.query('INSERT INTO users SET ?', _valNewUser, function(err, data) {
-                if(err) {
-                    console.log(err)
-                    res.send(err)
-                } else {
-                    req.session.connect = 1
-                    req.session.email = 'dmyoann'
-
-                    _rs.type = 'success'
-                    _rs.mess = settings.server.url+'/profile'
-                    res.send(_rs)
-
-                    res.end()
-                }
-            })
         }
     })
 })
