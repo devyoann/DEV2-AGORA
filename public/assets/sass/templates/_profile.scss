@@ -20,14 +20,21 @@
     color: black;
     text-decoration: none;
     text-align: center;
+    box-sizing: border-box;
 
     &.active {
       background: #FF5C3E;
       color: white;
+      border: none;
     }
 
     &:first-child {
       border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
     }
   }
 }
@@ -77,4 +84,28 @@
   position: absolute;
   left: 220px;
   bottom: 20px;
+}
+
+#profile_about {
+  .info {}
+
+  .title {
+    font-size: 30px;
+    color: #FF5C3E;
+  }
+}
+
+#desc {
+  span {
+    font-size: 17px;
+  }
+
+  .left {
+    width: 200px;
+    color: #FF5C3E;
+  }
+
+  .right {
+    width: 600px;
+  }
 }

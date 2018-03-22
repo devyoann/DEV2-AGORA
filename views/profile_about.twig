@@ -1,6 +1,6 @@
 {% extends '_layout.twig' %}
 
-{% set title = 'Profile Timeline' %}
+{% set title = 'Profile About' %}
 
 {% block header %}
   <header id="mainHeader" class="flex align-items-center justify-content-between">
@@ -186,4 +186,88 @@
       </a>
     </ul>
   </nav>
+{% endblock %}
+
+{% block content %}
+<main id="profile_about">
+  <div class="page_choice">
+    <div class="flex">
+      <a href="/profile_timeline">Timeline</a>
+      <a href="/profile_about" class="active">About</a>
+    </div>
+  </div>
+  <section id="headProfile" class="">
+    <div class="profile_img over_hide">
+      <img src="assets/img/profile_img/guy.jpg" alt="">
+    </div>
+    <span id="name">Luke Graham</span>
+    <div class="buttons flex">
+      <button type="button" name="addFriend" class="add mg-r1">Ajouter +</button>
+      <button type="button" name="message" class="message">Message</button>
+    </div>
+  </section>
+  <div class="write_post full-w mg-t10 bbox flex align-items-center">
+    <form class="flex align-items-center justify-content-between mg-l1" action="index.html" method="post">
+      <input class="pd-l1 bbox" type="text" name="" value="" placeholder="Type a post">
+      <input type="submit" name="" value="">
+      <label for="mediaUpload"></label>
+      <input type="file" id="mediaUpload" name="" value="">
+      <label class="bbox" for="gif">GIF</label>
+      <input type="file" id="gif" name="" value="">
+    </form>
+  </div>
+  <section class="info mg-t6 pd-b5">
+    <span class="title">À propos</span>
+    <div id="desc" class="mg-t5">
+      <div class="flex mg-b2">
+        <div class="left">
+          <span>Bio :</span>
+        </div>
+        <div class="right">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        </div>
+      </div>
+      <div class="flex mg-b2">
+        <div class="left">
+          <span>Job :</span>
+        </div>
+        <div class="right">
+          <span>Web Developer</span>
+        </div>
+      </div>
+      <div class="flex mg-b2">
+        <div class="left">
+          <span>Email :</span>
+        </div>
+        <div class="right">
+          <span>aaa@aaa.aa</span>
+        </div>
+      </div>
+      <div class="flex mg-b2">
+        <div class="left">
+          <span>Adresse :</span>
+        </div>
+        <div class="right">
+          <span>1 rue de la paix</span>
+        </div>
+      </div>
+      <div class="flex mg-b2">
+        <div class="left">
+          <span>Code postal :</span>
+        </div>
+        <div class="right">
+          <span>75011</span>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="left">
+          <span>Ville :</span>
+        </div>
+        <div class="right">
+          <span>Paris</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}
