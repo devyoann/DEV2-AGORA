@@ -1,7 +1,7 @@
 .profile_img {
   border-radius: 100px;
-  max-height: 50px;
-  max-width: 50px;
+  min-height: 50px;
+  min-width: 50px;
 
   img {
     width: 100%;
@@ -35,6 +35,7 @@
 
       .date {
         font-size: 13px;
+        margin-top: 5px;
       }
     }
   }
@@ -160,6 +161,73 @@
             .text_comment {}
           }
         }
+      }
+    }
+  }
+}
+
+.write_post {
+  background: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  @media screen and (max-width: $break-large) {
+    display: block;
+  }
+
+  .profile_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  form {
+    width: 95%;
+
+    input,
+    label {
+      display: block;
+      border-radius: 50px;
+      border: none;
+      height: 35px;
+    }
+
+    input {
+      &[type=text] {
+        border: solid 1px #C2C2C2;
+        width: 85%;
+
+        &::placeholder {
+          color: #C2C2C2;
+        }
+      }
+
+      &[type=submit] {
+        background: url("/assets/img/send.svg")no-repeat center;
+        background-size: 20px;
+        background-color: #FF5C3E;
+        width: 35px;
+        height: 35px;
+        border: none;
+      }
+
+      &[type=file] {
+        display: none;
+      }
+    }
+
+    label {
+      width: 35px;
+
+      &[for=mediaUpload] {
+        background: url("/assets/img/media.svg")no-repeat center;
+        background-size: 20px;
+        background-color: #FC3574;
+      }
+
+      &[for=gif] {
+        background: #3194FC;
+        text-align: center;
+        color: white;
+        line-height: 2.3;
       }
     }
   }

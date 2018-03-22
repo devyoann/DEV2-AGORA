@@ -1,0 +1,221 @@
+{% extends '_layout.twig' %}
+
+{% set title = 'Profile Timeline' %}
+
+{% block header %}
+  <header id="mainHeader" class="flex align-items-center justify-content-between">
+    <div class="flex align-items-center">
+      <img src="assets/img/logo.svg" alt="">
+      <form id="search" class="flex align-items-center mg-l3" action="index.html" method="post">
+        <input type="text" id="search_bar" name="" placeholder="Search..">
+        <label for="search_bar">
+          <img src="assets/img/search_icon.svg" alt="">
+        </label>
+      </form>
+    </div>
+    <div class="flex align-items-center">
+      <div class="notification">
+        <img src="assets/img/notif.svg" alt="">
+      </div>
+      <div class="profile_img over_hide mg-l2">
+        <a href="#">
+          <img src="assets/img/profile_img/guy2.jpg" alt="">
+        </a>
+      </div>
+      <div class="burger_right mg-l2">
+        <span>Filters</span>
+      </div>
+    </div>
+  </header>
+
+  <nav id="board">
+    {#
+    <div class="button_board text_center ">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="32px" height="22px" viewbox="0 0 32 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>Icon</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                <g id="Header-top/burger-opened" transform="translate(-1267.000000, -42.000000)" stroke="#3194FC" stroke-width="2">
+                    <g id="Header-top">
+                        <g id="Filter" transform="translate(1268.000000, 38.000000)">
+                            <g id="Icon" transform="translate(0.000000, 4.000000)">
+                                <path d="M13,1.5 L29.7126431,1.5" id="Line"></path>
+                                <path d="M0.288461538,11.5 L29.717194,11.5" id="Line-Copy"></path>
+                                <path d="M8,20.5 L29.7303916,20.5" id="Line-Copy-2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    #}
+    <ul class="mg-t5">
+      <a href="/feed" class="block">
+        <li class="text_center">
+          <svg width="20px" height="16px" viewbox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>burgericon/feed</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="burger/closed" transform="translate(-53.000000, -173.000000)">
+                <g id="Nav-Burger">
+                  <g id="burgericon/feed" transform="translate(51.000000, 169.000000)">
+                    <g id="ic/subtitles/grey600">
+                      <g id="ic_subtitles_24px">
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path
+                          d="M20,4 L4,4 C2.9,4 2,4.9 2,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M4,12 L8,12 L8,14 L4,14 L4,12 Z M14,18 L4,18 L4,16 L14,16 L14,18 Z M20,18 L16,18 L16,16 L20,16 L20,18 Z M20,14 L10,14 L10,12 L20,12 L20,14 Z"
+                          id="Shape"
+                          fill="#FFFFFF"
+                          fill-rule="nonzero"></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </li>
+      </a>
+      <a href="/chat" class="block">
+        <li class="mg-t3 text_center">
+          <svg width="20px" height="14px" viewbox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>ic/supervisor_account/grey600</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="burger/closed" transform="translate(-54.000000, -222.000000)">
+                <g id="Nav-Burger">
+                  <g id="ic/supervisor_account/grey600" transform="translate(52.000000, 217.000000)">
+                    <g id="ic_supervisor_account_24px">
+                      <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                      <path
+                        d="M16.50501,12 C17.8877756,12 19,10.88 19,9.5 C19,8.12 17.8877756,7 16.50501,7 C15.1222445,7 14,8.12 14,9.5 C14,10.88 15.1222445,12 16.50501,12 Z M9.00500835,11 C10.6677796,11 12,9.66 12,8 C12,6.34 10.6677796,5 9.00500835,5 C7.34223706,5 6,6.34 6,8 C6,9.66 7.34223706,11 9.00500835,11 Z M16.5,14 C14.67,14 11,14.92 11,16.75 L11,19 L22,19 L22,16.75 C22,14.92 18.33,14 16.5,14 Z M8.72358591,13 C6.48559232,13 2,14.17 2,16.5 L2,19 L8.72358591,19 L8.72358591,16.75 C8.72358591,15.9 9.04055496,14.41 11,13.28 C10.1643543,13.1 9.35752401,13 8.72358591,13 Z"
+                        id="Shape"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </li>
+      </a>
+      <a href="/calendar" class="block">
+        <li class="mg-t3 text_center">
+          <svg width="20px" height="20px" viewbox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>ic/date_range/grey600</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="burger/closed" transform="translate(-54.000000, -268.000000)">
+                <g id="Nav-Burger">
+                  <g id="ic/date_range/grey600" transform="translate(51.000000, 266.000000)">
+                    <g id="ic_date_range_24px">
+                      <path
+                        d="M9,11 L7,11 L7,13 L9,13 L9,11 Z M13,11 L11,11 L11,13 L13,13 L13,11 Z M17,11 L15,11 L15,13 L17,13 L17,11 Z M19,4 L18,4 L18,2 L16,2 L16,4 L8,4 L8,2 L6,2 L6,4 L5,4 C3.89,4 3.01,4.9 3.01,6 L3,20 C3,21.1 3.89,22 5,22 L19,22 C20.1,22 21,21.1 21,20 L21,6 C21,4.9 20.1,4 19,4 Z M19,20 L5,20 L5,9 L19,9 L19,20 Z"
+                        id="Shape"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"></path>
+                      <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <span class="calendar_label"></span>
+        </li>
+      </a>
+      <a href="/weather" class="block">
+        <li class="mg-t3 text_center">
+          <svg width="20px" height="23px" viewbox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>ic/wb_sunny/grey600</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="burger/closed" transform="translate(-53.000000, -315.000000)">
+                <g id="ic/wb_sunny/grey600" transform="translate(52.000000, 315.000000)">
+                  <g id="ic_wb_sunny_24px">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path
+                      d="M6.76,4.84 L4.96,3.05 L3.55,4.46 L5.34,6.25 L6.76,4.84 Z M4,10.5 L1,10.5 L1,12.5 L4,12.5 L4,10.5 Z M13,0.55 L11,0.55 L11,3.5 L13,3.5 L13,0.55 L13,0.55 Z M20.45,4.46 L19.04,3.05 L17.25,4.84 L18.66,6.25 L20.45,4.46 Z M17.24,18.16 L19.03,19.96 L20.44,18.55 L18.64,16.76 L17.24,18.16 Z M20,10.5 L20,12.5 L23,12.5 L23,10.5 L20,10.5 Z M12,5.5 C8.69,5.5 6,8.19 6,11.5 C6,14.81 8.69,17.5 12,17.5 C15.31,17.5 18,14.81 18,11.5 C18,8.19 15.31,5.5 12,5.5 Z M11,22.45 L13,22.45 L13,19.5 L11,19.5 L11,22.45 Z M3.55,18.54 L4.96,19.95 L6.75,18.15 L5.34,16.74 L3.55,18.54 Z"
+                      id="Shape"
+                      fill="#FFFFFF"
+                      fill-rule="nonzero"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <span class="weather_label"></span>
+        </li>
+      </a>
+      <a href="/settings">
+        <li class="mg-t3 text_center">
+          <svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <title>ic/settings/grey600</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="burger/closed" transform="translate(-54.000000, -366.000000)">
+                <g id="ic/settings/grey600" transform="translate(52.000000, 364.000000)">
+                  <g id="ic_settings_24px">
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path
+                      d="M19.43,12.98 C19.47,12.66 19.5,12.34 19.5,12 C19.5,11.66 19.47,11.34 19.43,11.02 L21.54,9.37 C21.73,9.22 21.78,8.95 21.66,8.73 L19.66,5.27 C19.54,5.05 19.27,4.97 19.05,5.05 L16.56,6.05 C16.04,5.65 15.48,5.32 14.87,5.07 L14.49,2.42 C14.46,2.18 14.25,2 14,2 L10,2 C9.75,2 9.54,2.18 9.51,2.42 L9.13,5.07 C8.52,5.32 7.96,5.66 7.44,6.05 L4.95,5.05 C4.72,4.96 4.46,5.05 4.34,5.27 L2.34,8.73 C2.21,8.95 2.27,9.22 2.46,9.37 L4.57,11.02 C4.53,11.34 4.5,11.67 4.5,12 C4.5,12.33 4.53,12.66 4.57,12.98 L2.46,14.63 C2.27,14.78 2.22,15.05 2.34,15.27 L4.34,18.73 C4.46,18.95 4.73,19.03 4.95,18.95 L7.44,17.95 C7.96,18.35 8.52,18.68 9.13,18.93 L9.51,21.58 C9.54,21.82 9.75,22 10,22 L14,22 C14.25,22 14.46,21.82 14.49,21.58 L14.87,18.93 C15.48,18.68 16.04,18.34 16.56,17.95 L19.05,18.95 C19.28,19.04 19.54,18.95 19.66,18.73 L21.66,15.27 C21.78,15.05 21.73,14.78 21.54,14.63 L19.43,12.98 Z M12,15.5 C10.07,15.5 8.5,13.93 8.5,12 C8.5,10.07 10.07,8.5 12,8.5 C13.93,8.5 15.5,10.07 15.5,12 C15.5,13.93 13.93,15.5 12,15.5 Z"
+                      id="Shape"
+                      fill="#FFFFFF"
+                      fill-rule="nonzero"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </li>
+      </a>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block content %}
+<main id="profile_timeline">
+  <div class="page_choice">
+    <div class="flex">
+      <a href="/profile_timeline" class="active">Timeline</a>
+      <a href="/profile_about">About</a>
+    </div>
+
+  </div>
+  <section id="headProfile" class="">
+    <div class="profile_img over_hide">
+      <img src="assets/img/profile_img/guy.jpg" alt="">
+    </div>
+    <span id="name">Luke Graham</span>
+    <div class="buttons flex">
+      <button type="button" name="addFriend" class="add mg-r1">Ajouter +</button>
+      <button type="button" name="message" class="message">Message</button>
+    </div>
+  </section>
+  <div class="write_post full-w mg-t10 bbox flex align-items-center">
+    <form class="flex align-items-center justify-content-between mg-l1" action="index.html" method="post">
+      <input class="pd-l1 bbox" type="text" name="" value="" placeholder="Type a post">
+      <input type="submit" name="" value="">
+      <label for="mediaUpload"></label>
+      <input type="file" id="mediaUpload" name="" value="">
+      <label class="bbox" for="gif">GIF</label>
+      <input type="file" id="gif" name="" value="">
+    </form>
+  </div>
+</main>
+{% endblock %}

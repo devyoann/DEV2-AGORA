@@ -14,21 +14,29 @@ server.use('/assets/img', express.static(__dirname + '/public/assets/img'));
 server.use('/assets/fonts', express.static(__dirname + '/public/assets/fonts'));
 
 server.get('/', function(req, res) {
-    res.render(__dirname + '/views/index');
+	res.render(__dirname + '/views/index');
 });
 
 server.get('/feed', function(req, res) {
-    res.render(__dirname + '/views/feed');
+	res.render(__dirname + '/views/feed');
 });
 
 server.get('/weather', function(req, res) {
-    res.render(__dirname + '/views/weather');
+	res.render(__dirname + '/views/weather');
 });
 
 server.get('/chat', function(req, res) {
-    res.render(__dirname + '/views/chat');
+	res.render(__dirname + '/views/chat');
+});
+
+server.get('/profile_timeline', function(req, res) {
+	res.render(__dirname + '/views/profile_timeline');
+});
+
+server.get('/profile_about', function(req, res) {
+	res.render(__dirname + '/views/profile_about');
 });
 
 server.listen(port, function() {
-    console.log('Server listining on port ' + port);
+	console.log('Server listining on port ' + port);
 });
