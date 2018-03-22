@@ -1,0 +1,40 @@
+{% extends '_layout.twig' %}
+
+{% set title = 'Inscription' %}
+
+{% block customsScript %}
+	<script src="assets/js/app/signup.js"></script>
+{% endblock %}
+
+{% block content %}
+	<main>
+		<form id="formsignup" action="app/signup" method="POST">
+			<span id="firstname">Prénom</span>
+			<input type="text" name="firstname" id="firstname" required>
+			<span id="firstname">Nom</span>
+			<input type="text" name="lastname" id="lastname" required>
+			<span id="firstname">Adresse mail</span>
+			<input type="email" name="email" id="email" required>
+			<span id="birthday">Date de naissance</span>
+			<input type="text" name="birthday" id="birthday" required>
+			<span id="gender">Sexe</span>
+			<input type="radio" name="gender" value="M"> Homme
+			<input type="radio" name="gender" value="F"> Femme
+			<span id="password">Mot de passe</span>
+			<input type="password" name="password" id="password" required>
+			<span id="repassword">Confirmer</span>
+			<input type="password" name="repassword" id="repassword" required>
+			<input type="submit">
+		</form>
+	</main>
+{% endblock %}
+
+{% block customsStylesheets %}
+	<style>
+		form {
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+		}
+	</style>
+{% endblock %}

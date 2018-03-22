@@ -1,5 +1,7 @@
 node_modules/
 OLD/
-.DS_Store
-*.sass-cache
-.idea
+CREA/
+Icon
+.Icon
+.sass-cache
+package-lock.json

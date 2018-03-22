@@ -1,0 +1,18 @@
+server:
+    url: http://localhost:1337
+    title: Agora
+mysql:
+    cnct: true
+    host: 127.0.0.1
+    port: 3306
+    user: root
+    pssw: ''
+    dbts: agora
+port:
+    local   : 1337
+    public  : 8080
+links:
+    assets:
+        private : /public/assets/
+        public  : /assets/
+    views: /views/

@@ -18,8 +18,12 @@
   "homepage": "https://github.com/devyoann/DEV2-AGORA#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
     "express": "^4.16.2",
     "moment": "^2.21.0",
+    "express-session": "^1.15.6",
+    "js-yaml": "^3.10.0",
+    "json-stringify": "^1.0.0",
     "mysql": "^2.15.0",
     "twig": "^1.10.5"
   }

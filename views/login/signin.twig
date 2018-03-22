@@ -1,0 +1,29 @@
+{% extends '_layout.twig' %}
+
+{% set title = 'Connexion' %}
+
+{% block customsScript %}
+	<script src="assets/js/app/signin.js"></script>
+{% endblock %}
+
+{% block content %}
+	<main>
+        <form id="formsignin" action="app/signin" method="POST">
+			<span id="firstname">Adresse mail</span>
+			<input type="email" name="email" id="email" required>
+			<span id="password">Mot de passe</span>
+			<input type="password" name="password" id="password" required>
+			<input type="submit">
+		</form>
+	</main>
+{% endblock %}
+
+{% block customsStylesheets %}
+	<style>
+		form {
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+		}
+	</style>
+{% endblock %}
