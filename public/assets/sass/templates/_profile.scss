@@ -1,0 +1,111 @@
+#profile_about,
+#profile_timeline {
+  width: 94vw;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  font-family: 'Quicksand';
+  margin-top: 10vh;
+}
+
+.page_choice {
+  display: table;
+  margin: 0 auto 20px;
+
+  a {
+    padding: 10px 0;
+    width: 100px;
+    border: solid 1px grey;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+
+    &.active {
+      background: #FF5C3E;
+      color: white;
+      border: none;
+    }
+
+    &:first-child {
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+
+#headProfile {
+  height: 250px;
+  background: url("/assets/img/dark.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+
+  .profile_img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 15px;
+      background-color: #FF5C3E;
+      color: white;
+
+      &:first-of-type {}
+
+      &:last-of-type {}
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+#name {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 220px;
+  bottom: 20px;
+}
+
+#profile_about {
+  .info {}
+
+  .title {
+    font-size: 30px;
+    color: #FF5C3E;
+  }
+}
+
+#desc {
+  span {
+    font-size: 17px;
+  }
+
+  .left {
+    width: 200px;
+    color: #FF5C3E;
+  }
+
+  .right {
+    width: 600px;
+  }
+}

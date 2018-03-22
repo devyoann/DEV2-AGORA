@@ -195,7 +195,6 @@ server.get('/logout', function (req, res) {
     res.end()
 })
 
-
 server.get('/feed', function(req, res) {
     res.render(views('feed'));
 });
@@ -208,11 +207,18 @@ server.get('/chat', function(req, res) {
     res.render(views('chat'));
 });
 
-
 server.get('/content', function (req, res) {
     console.log(req.session)
     console.log(req.session.user)
     res.send("You can only see this after you've logged in.")
+})
+
+server.get('/profile_timeline', function(req, res) {
+    res.render(views('profile_timeline'))
+})
+
+server.get('/profile_about', function(req, res) {
+    res.render(views('profile_about'))
 })
 
 

@@ -914,8 +914,8 @@ p.desc {
 /* line 1, ../sass/components/recurrent.scss */
 .profile_img {
   border-radius: 100px;
-  max-height: 50px;
-  max-width: 50px;
+  min-height: 50px;
+  min-width: 50px;
 }
 /* line 6, ../sass/components/recurrent.scss */
 .profile_img img {
@@ -951,38 +951,39 @@ p.desc {
 /* line 36, ../sass/components/recurrent.scss */
 .post .top .name_date .date {
   font-size: 13px;
+  margin-top: 5px;
 }
-/* line 42, ../sass/components/recurrent.scss */
+/* line 43, ../sass/components/recurrent.scss */
 .post .content {
   width: 100%;
 }
-/* line 45, ../sass/components/recurrent.scss */
+/* line 46, ../sass/components/recurrent.scss */
 .post .content .text {
   line-height: 22px;
   font-size: 14px;
 }
-/* line 51, ../sass/components/recurrent.scss */
+/* line 52, ../sass/components/recurrent.scss */
 .post .content .img img {
   width: 100%;
 }
-/* line 55, ../sass/components/recurrent.scss */
+/* line 56, ../sass/components/recurrent.scss */
 .post .content .img video {
   width: 100%;
 }
-/* line 62, ../sass/components/recurrent.scss */
+/* line 63, ../sass/components/recurrent.scss */
 .post .reaction_counter span {
   color: #9B9B9B;
   font-size: 13px;
 }
-/* line 67, ../sass/components/recurrent.scss */
+/* line 68, ../sass/components/recurrent.scss */
 .post .reaction_counter svg {
   height: 12px;
 }
-/* line 70, ../sass/components/recurrent.scss */
+/* line 71, ../sass/components/recurrent.scss */
 .post .reaction_counter svg g {
   fill: #9B9B9B;
 }
-/* line 77, ../sass/components/recurrent.scss */
+/* line 78, ../sass/components/recurrent.scss */
 .post .reaction .comment,
 .post .reaction .fire,
 .post .reaction .share {
@@ -996,13 +997,13 @@ p.desc {
   transition: 0.2s ease;
   border-radius: 10px;
 }
-/* line 91, ../sass/components/recurrent.scss */
+/* line 92, ../sass/components/recurrent.scss */
 .post .reaction .comment.active.fire,
 .post .reaction .fire.active.fire,
 .post .reaction .share.active.fire {
   background: #FF5C3E;
 }
-/* line 95, ../sass/components/recurrent.scss */
+/* line 96, ../sass/components/recurrent.scss */
 .post .reaction .comment.active .comment_icon,
 .post .reaction .comment.active .fire_icon,
 .post .reaction .comment.active .share_icon,
@@ -1014,7 +1015,7 @@ p.desc {
 .post .reaction .share.active .share_icon {
   fill: white;
 }
-/* line 102, ../sass/components/recurrent.scss */
+/* line 103, ../sass/components/recurrent.scss */
 .post .reaction .comment svg,
 .post .reaction .fire svg,
 .post .reaction .share svg {
@@ -1023,40 +1024,40 @@ p.desc {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-/* line 111, ../sass/components/recurrent.scss */
+/* line 112, ../sass/components/recurrent.scss */
 .post .comments_section {
   display: none;
 }
-/* line 115, ../sass/components/recurrent.scss */
+/* line 116, ../sass/components/recurrent.scss */
 .post .comments_section form label {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 121, ../sass/components/recurrent.scss */
+/* line 122, ../sass/components/recurrent.scss */
 .post .comments_section form label img {
   width: 100%;
 }
-/* line 126, ../sass/components/recurrent.scss */
+/* line 127, ../sass/components/recurrent.scss */
 .post .comments_section form input {
   width: 85%;
   border-radius: 50px;
   border: solid 1px lightgray;
   padding: 5px;
 }
-/* line 137, ../sass/components/recurrent.scss */
+/* line 138, ../sass/components/recurrent.scss */
 .post .comments_section .contain > div .author .profile_img {
   width: 10%;
   max-width: 40px;
   max-height: 40px;
   border-radius: 50px;
 }
-/* line 143, ../sass/components/recurrent.scss */
+/* line 144, ../sass/components/recurrent.scss */
 .post .comments_section .contain > div .author .profile_img img {
   width: 100%;
 }
-/* line 148, ../sass/components/recurrent.scss */
+/* line 149, ../sass/components/recurrent.scss */
 .post .comments_section .contain > div .author .comment {
   background-color: #F4F4F4;
   padding: 10px 5px;
@@ -1064,10 +1065,79 @@ p.desc {
   border-radius: 10px;
   width: 85%;
 }
-/* line 155, ../sass/components/recurrent.scss */
+/* line 156, ../sass/components/recurrent.scss */
 .post .comments_section .contain > div .author .comment .name {
   font-weight: bold;
   color: #FF5C3E;
+}
+
+/* line 169, ../sass/components/recurrent.scss */
+.write_post {
+  background: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 169, ../sass/components/recurrent.scss */
+  .write_post {
+    display: block;
+  }
+}
+/* line 177, ../sass/components/recurrent.scss */
+.write_post .profile_img {
+  width: 40px;
+  height: 40px;
+}
+/* line 182, ../sass/components/recurrent.scss */
+.write_post form {
+  width: 95%;
+}
+/* line 185, ../sass/components/recurrent.scss */
+.write_post form input,
+.write_post form label {
+  display: block;
+  border-radius: 50px;
+  border: none;
+  height: 35px;
+}
+/* line 194, ../sass/components/recurrent.scss */
+.write_post form input[type=text] {
+  border: solid 1px #C2C2C2;
+  width: 85%;
+}
+/* line 198, ../sass/components/recurrent.scss */
+.write_post form input[type=text]::placeholder {
+  color: #C2C2C2;
+}
+/* line 203, ../sass/components/recurrent.scss */
+.write_post form input[type=submit] {
+  background: url("/assets/img/send.svg") no-repeat center;
+  background-size: 20px;
+  background-color: #FF5C3E;
+  width: 35px;
+  height: 35px;
+  border: none;
+}
+/* line 212, ../sass/components/recurrent.scss */
+.write_post form input[type=file] {
+  display: none;
+}
+/* line 217, ../sass/components/recurrent.scss */
+.write_post form label {
+  width: 35px;
+}
+/* line 220, ../sass/components/recurrent.scss */
+.write_post form label[for=mediaUpload] {
+  background: url("/assets/img/media.svg") no-repeat center;
+  background-size: 20px;
+  background-color: #FC3574;
+}
+/* line 226, ../sass/components/recurrent.scss */
+.write_post form label[for=gif] {
+  background: #3194FC;
+  text-align: center;
+  color: white;
+  line-height: 2.3;
 }
 
 /* line 1, ../sass/templates/_index.scss */
@@ -1098,97 +1168,29 @@ header#indexHeader form input {
   width: 85vw;
 }
 /* line 14, ../sass/templates/_feed.scss */
-#feed .write_post {
-  background: white;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-@media screen and (max-width: 1024px) {
-  /* line 14, ../sass/templates/_feed.scss */
-  #feed .write_post {
-    display: block;
-  }
-}
-/* line 22, ../sass/templates/_feed.scss */
-#feed .write_post .profile_img {
-  width: 40px;
-  height: 40px;
-}
-/* line 27, ../sass/templates/_feed.scss */
-#feed .write_post form {
-  width: 95%;
-}
-/* line 30, ../sass/templates/_feed.scss */
-#feed .write_post form input,
-#feed .write_post form label {
-  display: block;
-  border-radius: 50px;
-  border: none;
-  height: 35px;
-}
-/* line 39, ../sass/templates/_feed.scss */
-#feed .write_post form input[type=text] {
-  border: solid 1px #C2C2C2;
-  width: 85%;
-}
-/* line 43, ../sass/templates/_feed.scss */
-#feed .write_post form input[type=text]::placeholder {
-  color: #C2C2C2;
-}
-/* line 48, ../sass/templates/_feed.scss */
-#feed .write_post form input[type=submit] {
-  background: url("/assets/img/send.svg") no-repeat center;
-  background-size: 20px;
-  background-color: #FF5C3E;
-  width: 35px;
-  height: 35px;
-  border: none;
-}
-/* line 57, ../sass/templates/_feed.scss */
-#feed .write_post form input[type=file] {
-  display: none;
-}
-/* line 62, ../sass/templates/_feed.scss */
-#feed .write_post form label {
-  width: 35px;
-}
-/* line 65, ../sass/templates/_feed.scss */
-#feed .write_post form label[for=mediaUpload] {
-  background: url("/assets/img/media.svg") no-repeat center;
-  background-size: 20px;
-  background-color: #FC3574;
-}
-/* line 71, ../sass/templates/_feed.scss */
-#feed .write_post form label[for=gif] {
-  background: #3194FC;
-  text-align: center;
-  color: white;
-  line-height: 2.3;
-}
-/* line 81, ../sass/templates/_feed.scss */
 #feed .container {
   margin: 0 auto;
 }
-/* line 84, ../sass/templates/_feed.scss */
+/* line 17, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
   width: 32%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 84, ../sass/templates/_feed.scss */
+  /* line 17, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 49%;
   }
 }
 @media screen and (max-width: 769px) {
-  /* line 84, ../sass/templates/_feed.scss */
+  /* line 17, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 95, ../sass/templates/_feed.scss */
+/* line 28, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
@@ -1797,4 +1799,112 @@ main.weather #locationinfoinc #locationinfotoday span.todayinfo {
   background: blue;
   border-radius: 50px;
   color: white;
+}
+
+/* line 1, ../sass/templates/_profile.scss */
+#profile_about,
+#profile_timeline {
+  width: 94vw;
+  float: right;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  font-family: 'Quicksand';
+  margin-top: 10vh;
+}
+
+/* line 12, ../sass/templates/_profile.scss */
+.page_choice {
+  display: table;
+  margin: 0 auto 20px;
+}
+/* line 16, ../sass/templates/_profile.scss */
+.page_choice a {
+  padding: 10px 0;
+  width: 100px;
+  border: solid 1px grey;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 25, ../sass/templates/_profile.scss */
+.page_choice a.active {
+  background: #FF5C3E;
+  color: white;
+  border: none;
+}
+/* line 31, ../sass/templates/_profile.scss */
+.page_choice a:first-child {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+/* line 36, ../sass/templates/_profile.scss */
+.page_choice a:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+/* line 42, ../sass/templates/_profile.scss */
+#headProfile {
+  height: 250px;
+  background: url("/assets/img/dark.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+/* line 48, ../sass/templates/_profile.scss */
+#headProfile .profile_img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
+}
+/* line 56, ../sass/templates/_profile.scss */
+#headProfile .buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+}
+/* line 61, ../sass/templates/_profile.scss */
+#headProfile .buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #FF5C3E;
+  color: white;
+}
+/* line 74, ../sass/templates/_profile.scss */
+#headProfile .buttons button:focus {
+  outline: none;
+}
+
+/* line 81, ../sass/templates/_profile.scss */
+#name {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 220px;
+  bottom: 20px;
+}
+
+/* line 92, ../sass/templates/_profile.scss */
+#profile_about .title {
+  font-size: 30px;
+  color: #FF5C3E;
+}
+
+/* line 99, ../sass/templates/_profile.scss */
+#desc span {
+  font-size: 17px;
+}
+/* line 103, ../sass/templates/_profile.scss */
+#desc .left {
+  width: 200px;
+  color: #FF5C3E;
+}
+/* line 108, ../sass/templates/_profile.scss */
+#desc .right {
+  width: 600px;
 }
