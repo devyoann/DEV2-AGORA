@@ -142,41 +142,42 @@ var connection = function () {
 server.post('/', function(req, res) {
     // fnc.SessionIsConnect(req, res, 0, settings.server.url)
 
-    let _val = {
-        lastname   : req.body.lastname,
-        firstname   : req.body.firstname,
-        email   : req.body.email,
-        birthdate   : req.body.birthdate,
-        gender   : req.body.gender,
-        password   : req.body.password
-
-    }
-
-    let _rs = {
-        type    : '',
-        mess    : ''
-    }
-
-    let co = connection();
-    co.connect();
-    co.query('INSERT INTO user VALUES(?)', _val, function(error, results, fields) {
-        if (error) return console.log(error);
-        if (results.length > 0) {
-            bcrypt.compare(req.body.password, results[0].password).then(function (password) {
-                if (password === true) {
-                    var sessData = req.session;
-                    sessData.someAttribute = results[0].id;
-                    res.redirect('/feed');
-                } else {
-                    res.render('index.twig', {
-                        checkPassword : password
-                    })
-                }
-            })
-        } else {
-            res.render(views('/'))
-        }
-    })
+    // let _val = {
+    //     lastname   : req.body.lastname,
+    //     firstname   : req.body.firstname,
+    //     email   : req.body.email,
+    //     birthdate   : req.body.birthdate,
+    //     gender   : req.body.gender,
+    //     password   : req.body.password
+    //
+    // }
+    //
+    // let _rs = {
+    //     type    : '',
+    //     mess    : ''
+    // }
+    //
+    // let co = connection();
+    // co.connect();
+    // co.query('INSERT INTO user VALUES(?)', _val, function(error, results, fields) {
+    //     if (error) return console.log(error);
+    //     if (results.length > 0) {
+    //         bcrypt.compare(req.body.password, results[0].password).then(function (password) {
+    //             if (password === true) {
+    //                 var sessData = req.session;
+    //                 sessData.someAttribute = results[0].id;
+    //                 res.redirect('/feed');
+    //             } else {
+    //                 res.render('index.twig', {
+    //                     checkPassword : password
+    //                 })
+    //             }
+    //         })
+    //     } else {
+    //         res.render(views('/'))
+    //     }
+    // })
+    res.redirect('/feed');
 })
 
 // server.get('/logout', function (req, res) {
