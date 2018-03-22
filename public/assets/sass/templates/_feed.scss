@@ -6,6 +6,11 @@
   background: #F8F8F8;
   font-family: 'Quicksand';
   margin-top: 10vh;
+  @media screen and (max-width: $break-large) {
+    width: 100vw;
+    left: 0;
+    padding-bottom: 65px;
+  }
 
   &.board_open {
     width: 85vw;
