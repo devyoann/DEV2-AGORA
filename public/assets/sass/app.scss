@@ -1,15 +1,7 @@
-/**
- * Mix - Screens Imports SCSS File
- * @author : Brieuc Caillot | Alexandre Bétourné | Yoann Dimaria
- */
-
- // Compass Imports for Utilities and Mixins
- @import "compass/reset";
- @import "compass/utilities";
- @import "compass/css3";
-
-
- // Imports
- @import "common";
- @import "components";
- @import "templates";
+// Compass Imports for Utilities and Mixins
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3"; // Imports
+@import "common";
+@import "components";
+@import "templates";
