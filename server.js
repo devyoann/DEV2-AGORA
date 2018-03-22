@@ -5,6 +5,7 @@ const session   = require('express-session')
 const mysql     = require('mysql')
 const bodyParser= require('body-parser')
 const twig      = require('twig')
+const bcrypt      = require('bcrypt')
 const stringify = require('json-stringify')
 const yaml      = require('js-yaml')
 const fnc       = require('./controllers/function.js')
@@ -44,28 +45,6 @@ var assets = function(type, link) {
     return assets;
 }
 
-// connection database (if settings.mysql.cnct is true connection ok => .config.yml)
-if(settings.mysql.cnct === true) {
-    var db = function() {
-        return mysql.createPool({
-            host    : settings.mysql.host,
-            port    : settings.mysql.port,
-            user    : settings.mysql.user,
-            password: settings.mysql.pssw,
-            database: settings.mysql.dbts,
-        });
-    }
-
-    db().getConnection(function(err) {
-        if(err) wr(err);
-        else wr('Connexion à la base de donnée réussie.');
-    });
-
-    var db = db();
-} else {
-    wr('La connexion à la base de donnée est désactivée.');
-}
-
 // twig
 server.set('view engine', 'twig');
 
@@ -101,6 +80,21 @@ server.use(assets('public', 'fonts'),
     express.static(assets('private', 'fonts'))
 );
 
+// connection database (if settings.mysql.cnct is true connection ok => .config.yml)
+// if(settings.mysql.cnct === true) {
+//     var connection = function() {
+//         return mysql.createPool({
+//             host    : settings.mysql.host,
+//             port    : settings.mysql.port,
+//             user    : settings.mysql.user,
+//             password: settings.mysql.pssw,
+//             database: settings.mysql.dbts,
+//         });
+//     }
+//     console.log('Connexion reussie');
+// }
+
+
 // const insertViews = function() {
 //     db().exec('INSERT INTO views (page) VALUES ("index")');
 // };
@@ -109,37 +103,43 @@ server.get('/', function(req, res) {
     res.render(views('index'));
 });
 
-server.get('/signin', function(req, res) {
-    res.render(views('login/signin'))
-})
+// server.get('/signin', function(req, res) {
+//     res.render(views('login/signin'))
+// })
+//
+// server.post('/signin', function(req, res) {
+//
+//     let _val = {
+//         email   : safety.input(req.body.email),
+//         password: safety.hashpassword(req.body.password)
+//     }
+//
+//     let _rs = {
+//         type    : '',
+//         mess    : ''
+//     }
+//
+//     let selectUser = db.query('SELECT email, password FROM users WHERE ?', _val, function(err, data) {
+//         console.log(selectUser.sql)
+//
+//         if(err) {
+//             console.log(err)
+//         } else {
+//             console.log('ok')
+//         }
+//     })
+// })
 
-server.post('/app/signin', function(req, res) {
-    let _val = {
-        email   : safety.input(req.body.email),
-        password: safety.hashpassword(req.body.password)
-    }
+var connection = function () {
+    return mysql.createConnection({
+        host: '127.0.0.1',
+        user: 'root',
+        password: '',
+        database: 'agora'
+    });
+}
 
-    let _rs = {
-        type    : '',
-        mess    : ''
-    }
-
-    let selectUser = db.query('SELECT email, password FROM users WHERE ?', _val, function(err, data) {
-        console.log(selectUser.sql)
-
-        if(err) {
-            console.log(err)
-        } else {
-            console.log('ok')
-        }
-    })
-})
-
-server.get('/signup', function(req, res) {
-    res.render(views('login/signup'))
-})
-
-server.post('app/signup', function(req, res) {
+server.post('/', function(req, res) {
     // fnc.SessionIsConnect(req, res, 0, settings.server.url)
 
     let _val = {
@@ -149,6 +149,7 @@ server.post('app/signup', function(req, res) {
         birthdate   : req.body.birthdate,
         gender   : req.body.gender,
         password   : req.body.password
+
     }
 
     let _rs = {
@@ -156,33 +157,35 @@ server.post('app/signup', function(req, res) {
         mess    : ''
     }
 
-    let selectEmail = db.query('INSERT INTO user WHERE ?', _val, function(err, data) {
-        if(data != '') {
-            console.log(err)
-            _rs.type = 'error'
-            _rs.mess = 'L\'adresse email est déjà utilisée.'
-            res.send(_rs.mess)
+    let co = connection();
+    co.connect();
+    co.query('INSERT INTO user VALUES(?)', _val, function(error, results, fields) {
+        if (error) return console.log(error);
+        if (results.length > 0) {
+            bcrypt.compare(req.body.password, results[0].password).then(function (password) {
+                if (password === true) {
+                    var sessData = req.session;
+                    sessData.someAttribute = results[0].id;
+                    res.redirect('/feed');
+                } else {
+                    res.render('index.twig', {
+                        checkPassword : password
+                    })
+                }
+            })
         } else {
-            let _valNewUser = {
-                username    : fnc.Times(),
-                firstname   : safety.input(req.body.firstname),
-                lastname    : safety.input(req.body.lastname),
-                email       : safety.input(req.body.email),
-                gender      : safety.input(req.body.gender),
-                birthday    : safety.input(req.body.birthday),
-                password    : safety.hashpassword(req.body.password)
-            }
+            res.render(views('/'))
         }
     })
 })
 
-server.get('/logout', function (req, res) {
-    req.session.destroy()
-
-    res.redirect(settings.server.url)
-
-    res.end()
-})
+// server.get('/logout', function (req, res) {
+//     req.session.destroy()
+//
+//     res.redirect(settings.server.url)
+//
+//     res.end()
+// })
 
 server.get('/feed', function(req, res) {
     res.render(views('feed'));
