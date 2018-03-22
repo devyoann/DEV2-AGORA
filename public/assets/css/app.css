@@ -1073,8 +1073,9 @@ p.desc {
 /* line 1, ../sass/templates/_index.scss */
 header#indexHeader {
   padding: 20px;
+  border-bottom: solid 1px grey;
 }
-/* line 5, ../sass/templates/_index.scss */
+/* line 6, ../sass/templates/_index.scss */
 header#indexHeader form input {
   border: solid 1px grey;
   font-size: 16px;
@@ -1102,16 +1103,22 @@ header#indexHeader form input {
   border-radius: 10px;
   padding: 5px 10px;
 }
-/* line 19, ../sass/templates/_feed.scss */
+@media screen and (max-width: 1024px) {
+  /* line 14, ../sass/templates/_feed.scss */
+  #feed .write_post {
+    display: block;
+  }
+}
+/* line 22, ../sass/templates/_feed.scss */
 #feed .write_post .profile_img {
   width: 40px;
   height: 40px;
 }
-/* line 24, ../sass/templates/_feed.scss */
+/* line 27, ../sass/templates/_feed.scss */
 #feed .write_post form {
   width: 95%;
 }
-/* line 27, ../sass/templates/_feed.scss */
+/* line 30, ../sass/templates/_feed.scss */
 #feed .write_post form input,
 #feed .write_post form label {
   display: block;
@@ -1119,16 +1126,16 @@ header#indexHeader form input {
   border: none;
   height: 35px;
 }
-/* line 36, ../sass/templates/_feed.scss */
+/* line 39, ../sass/templates/_feed.scss */
 #feed .write_post form input[type=text] {
   border: solid 1px #C2C2C2;
   width: 85%;
 }
-/* line 40, ../sass/templates/_feed.scss */
+/* line 43, ../sass/templates/_feed.scss */
 #feed .write_post form input[type=text]::placeholder {
   color: #C2C2C2;
 }
-/* line 45, ../sass/templates/_feed.scss */
+/* line 48, ../sass/templates/_feed.scss */
 #feed .write_post form input[type=submit] {
   background: url("/assets/img/send.svg") no-repeat center;
   background-size: 20px;
@@ -1137,51 +1144,51 @@ header#indexHeader form input {
   height: 35px;
   border: none;
 }
-/* line 54, ../sass/templates/_feed.scss */
+/* line 57, ../sass/templates/_feed.scss */
 #feed .write_post form input[type=file] {
   display: none;
 }
-/* line 59, ../sass/templates/_feed.scss */
+/* line 62, ../sass/templates/_feed.scss */
 #feed .write_post form label {
   width: 35px;
 }
-/* line 62, ../sass/templates/_feed.scss */
+/* line 65, ../sass/templates/_feed.scss */
 #feed .write_post form label[for=mediaUpload] {
   background: url("/assets/img/media.svg") no-repeat center;
   background-size: 20px;
   background-color: #FC3574;
 }
-/* line 68, ../sass/templates/_feed.scss */
+/* line 71, ../sass/templates/_feed.scss */
 #feed .write_post form label[for=gif] {
   background: #3194FC;
   text-align: center;
   color: white;
   line-height: 2.3;
 }
-/* line 78, ../sass/templates/_feed.scss */
+/* line 81, ../sass/templates/_feed.scss */
 #feed .container {
   margin: 0 auto;
 }
-/* line 81, ../sass/templates/_feed.scss */
+/* line 84, ../sass/templates/_feed.scss */
 #feed .container .grid-sizer,
 #feed .container .post {
   width: 32%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 81, ../sass/templates/_feed.scss */
+  /* line 84, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 49%;
   }
 }
 @media screen and (max-width: 769px) {
-  /* line 81, ../sass/templates/_feed.scss */
+  /* line 84, ../sass/templates/_feed.scss */
   #feed .container .grid-sizer,
   #feed .container .post {
     width: 100%;
   }
 }
-/* line 92, ../sass/templates/_feed.scss */
+/* line 95, ../sass/templates/_feed.scss */
 #feed .container .gutter-sizer {
   width: 2%;
 }
