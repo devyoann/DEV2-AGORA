@@ -14,77 +14,79 @@
 {% endblock %}
 
 {% block content %}
-  <main class="landing">
-    <section class="flex full-h full-w pd-b10">
-      <div class="left pd-t6">
-        <h1 class="text is-primary mg-b3">Le nouveau réseau social innovant !</h1>
-        <p class="desc text is-secondary">
-          Bacon ipsum dolor amet ball tip frankfurter turkey, pancetta beef kevin pig pastrami. Prosciutto spare ribs short loin filet mignon beef ribs rump. Pancetta picanha flank boudin, fatback chuck porchetta.
-        </p>
-        <div class="devices text is-secondary mg-t10">
-          <h3>Disponible sur toutes les platformes</h3>
-        </div>
-        <div class="mockup"></div>
+  <main class="landing pd-b3">
+    <section class="flex full-h full-w">
+    <div class="right ">
+      <div class="white-bg">
+        <h2 class="text is-primary text_center mg-b4">Inscription</h2>
+        <form action="#" method="POST">
+          <div class="input-container flex">
+            <div class="input-left">
+              <div class="input-centered">
+                <label for="lastname">Nom</label>
+                <input id="lastname" class="input mg-t1" type="text" placeholder="Nom">
+              </div>
+            </div>
+            <div class="input-right">
+              <div class="input-centered">
+                <label for="firstname">Prénom</label>
+                <input id="firstname" class="input mg-t1" type="text" placeholder="Prénom">
+              </div>
+            </div>
+          </div>
+          <div class="input-container flex mg-t1">
+            <div class="input-full">
+              <label for="email">Adresse email</label>
+              <input id="email" class="input mg-t1" type="text" placeholder="Email">
+            </div>
+          </div>
+          <div class="input-container flex mg-t1">
+            <div class="input-full">
+              <label for="birth">Date de naissance</label>
+              <input id="birth" class="input mg-t1" type="text" placeholder="Date de naissance">
+            </div>
+          </div>
+          <div class="radio-full mauto flex align-items-center">
+            <label class="radio">
+              <input type="radio" name="question">
+              Homme
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              Femme
+            </label>
+          </div>
+          <div class="input-container flex mg-t1">
+            <div class="input-full">
+              <label for="password">Mot de passe</label>
+              <input id="password" class="input mg-t1" type="text" placeholder="Mot de passe">
+            </div>
+          </div>
+          <div class="input-container flex mg-t1">
+            <div class="input-full">
+              <label for="confirmpassword">Confirmer</label>
+              <input id="confirmpassword" class="input mg-t1" type="text" placeholder="Mot de passe">
+            </div>
+          </div>
+          <div class="mg-t2">
+            <button class="button mauto block" type="submit">Inscription</button>
+          </div>
+        </form>
       </div>
-      <div class="right ">
-        <div class="white-bg">
-          <h2 class="text is-primary text_center mg-b4">Inscription</h2>
-          <form action="#" method="POST">
-            <div class="input-container flex">
-              <div class="input-left">
-                <div class="input-centered">
-                  <label for="lastname">Nom</label>
-                  <input id="lastname" class="input mg-t1" type="text" placeholder="Nom">
-                </div>
-              </div>
-              <div class="input-right">
-                <div class="input-centered">
-                  <label for="firstname">Prénom</label>
-                  <input id="firstname" class="input mg-t1" type="text" placeholder="Prénom">
-                </div>
-              </div>
-            </div>
-            <div class="input-container flex mg-t1">
-              <div class="input-full">
-                <label for="email">Adresse email</label>
-                <input id="email" class="input mg-t1" type="text" placeholder="Email">
-              </div>
-            </div>
-            <div class="input-container flex mg-t1">
-              <div class="input-full">
-                <label for="birth">Date de naissance</label>
-                <input id="birth" class="input mg-t1" type="text" placeholder="Date de naissance">
-              </div>
-            </div>
-            <div class="radio-full mauto flex align-items-center">
-              <label class="radio">
-                <input type="radio" name="question">
-                Homme
-              </label>
-              <label class="radio">
-                <input type="radio" name="question">
-                Femme
-              </label>
-            </div>
-            <div class="input-container flex mg-t1">
-              <div class="input-full">
-                <label for="password">Mot de passe</label>
-                <input id="password" class="input mg-t1" type="text" placeholder="Mot de passe">
-              </div>
-            </div>
-            <div class="input-container flex mg-t1">
-              <div class="input-full">
-                <label for="confirmpassword">Confirmer</label>
-                <input id="confirmpassword" class="input mg-t1" type="text" placeholder="Mot de passe">
-              </div>
-            </div>
-            <div class="mg-t2">
-              <button class="button mauto block" type="submit">Inscription</button>
-            </div>
-          </form>
-        </div>
+    </div>
+    <div class="left pd-t6">
+      <h1 class="text is-primary mg-b3">Le nouveau réseau social innovant !</h1>
+      <p class="desc text is-secondary">
+        Bacon ipsum dolor amet ball tip frankfurter turkey, pancetta beef kevin pig pastrami. Prosciutto spare ribs short loin filet mignon beef ribs rump. Pancetta picanha flank boudin, fatback chuck porchetta.
+      </p>
+      <div class="devices text is-secondary mg-t10">
+        <h3>Disponible sur toutes les platformes</h3>
       </div>
+      <div class="mockup"></div>
+    </div>
     </section>
-    <div class="background"></div>
+    <div class="background">
+
+    </div>
   </main>
 {% endblock %}

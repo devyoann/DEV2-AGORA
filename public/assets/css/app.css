@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/**
- * Mix - Screens Imports SCSS File
- * @author : Brieuc Caillot | Alexandre Bétourné | Yoann Dimaria
- */
 /* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1400,109 +1396,144 @@ header#mainHeader > div:last-child .burger_right:focus {
   fill: #FF5C3E;
 }
 
-/* line 1, ../sass/templates/_landing.scss */
-main.landing {
-  height: 100vh;
-  overflow-y: hidden;
-}
-/* line 5, ../sass/templates/_landing.scss */
+/* line 2, ../sass/templates/_landing.scss */
 main.landing .background {
-  height: 600px;
+  height: 100vh;
   width: 100%;
-  position: relative;
-  bottom: 595px;
-  background: url("../img/landing.jpg");
+  position: fixed;
+  bottom: 0;
+  background: url("../img/landing.jpg") no-repeat bottom;
+  background-size: contain;
   z-index: -1;
 }
-/* line 14, ../sass/templates/_landing.scss */
+/* line 12, ../sass/templates/_landing.scss */
 main.landing section:first-of-type {
-  margin-top: 100px;
+  flex-direction: row-reverse;
 }
-/* line 17, ../sass/templates/_landing.scss */
+@media screen and (max-width: 1024px) {
+  /* line 12, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type {
+    display: block;
+  }
+}
+/* line 18, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left {
   width: 50%;
 }
-/* line 20, ../sass/templates/_landing.scss */
+@media screen and (max-width: 1024px) {
+  /* line 18, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type .left {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+/* line 26, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h1 {
   text-align: center;
 }
-/* line 24, ../sass/templates/_landing.scss */
+/* line 30, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left p.desc {
   text-align: center;
 }
-/* line 28, ../sass/templates/_landing.scss */
+/* line 34, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left h3 {
   text-align: center;
 }
-/* line 32, ../sass/templates/_landing.scss */
+/* line 38, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .left div.mockup {
-  background: url("../img/mockup.png") no-repeat;
+  background: url("../img/mockup.png") no-repeat center;
   height: 300px;
   width: 580px;
   background-size: contain;
   margin: 50px auto 0;
 }
-/* line 41, ../sass/templates/_landing.scss */
+@media screen and (max-width: 1024px) {
+  /* line 38, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type .left div.mockup {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 38, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type .left div.mockup {
+    display: none;
+  }
+}
+/* line 53, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right {
   width: 50%;
 }
-/* line 44, ../sass/templates/_landing.scss */
+@media screen and (max-width: 1024px) {
+  /* line 53, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 53, ../sass/templates/_landing.scss */
+  main.landing section:first-of-type .right {
+    width: 100%;
+  }
+}
+/* line 62, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right .white-bg {
   background-color: #fff;
   border-radius: 8px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 40px 0;
+  max-width: 600px;
 }
-/* line 52, ../sass/templates/_landing.scss */
+/* line 71, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right h2 {
   text-align: center;
 }
-/* line 56, ../sass/templates/_landing.scss */
+/* line 75, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form {
   top: 110px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
-/* line 61, ../sass/templates/_landing.scss */
+/* line 80, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container {
   height: 70px;
 }
-/* line 64, ../sass/templates/_landing.scss */
+/* line 83, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container input {
   margin-top: 10px;
 }
-/* line 68, ../sass/templates/_landing.scss */
+/* line 87, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container .input-right,
 main.landing section:first-of-type .right form div.input-container div.input-left {
   width: 50%;
 }
-/* line 72, ../sass/templates/_landing.scss */
+/* line 91, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container .input-right .input-centered,
 main.landing section:first-of-type .right form div.input-container div.input-left .input-centered {
   margin: 0 auto;
   width: 90%;
 }
-/* line 78, ../sass/templates/_landing.scss */
+/* line 97, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full {
   width: 94%;
   margin: 0 auto;
 }
-/* line 82, ../sass/templates/_landing.scss */
+/* line 101, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.input-container div.input-full input {
   width: 95%;
 }
-/* line 88, ../sass/templates/_landing.scss */
+/* line 107, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full {
   width: 94%;
   margin: 0 auto;
   height: 50px;
 }
-/* line 93, ../sass/templates/_landing.scss */
+/* line 112, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form div.radio-full .radio:first-child {
   margin-right: 30px;
 }
-/* line 98, ../sass/templates/_landing.scss */
+/* line 117, ../sass/templates/_landing.scss */
 main.landing section:first-of-type .right form .button {
   background-color: #404258;
   color: #fff;

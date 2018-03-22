@@ -1,21 +1,27 @@
 main.landing {
-  height: 100vh;
-  overflow-y: hidden;
-
   .background {
-    height: 600px;
+    height: 100vh;
     width: 100%;
-    position: relative;
-    bottom: 595px;
-    background: url("../img/landing.jpg");
+    position: fixed;
+    bottom: 0;
+    background: url("../img/landing.jpg") no-repeat bottom;
+    background-size: contain;
     z-index: -1;
   }
 
   section:first-of-type {
-    margin-top: 100px;
+    flex-direction: row-reverse;
+    @media screen and (max-width: $break-large) {
+      display: block;
+    }
 
     .left {
       width: 50%;
+      @media screen and (max-width: $break-large) {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
 
       h1 {
         text-align: center;
@@ -30,23 +36,36 @@ main.landing {
       }
 
       div.mockup {
-        background: url("../img/mockup.png") no-repeat;
+        background: url("../img/mockup.png") no-repeat center;
         height: 300px;
         width: 580px;
         background-size: contain;
         margin: 50px auto 0;
+        @media screen and (max-width: $break-large) {
+          width: 80%;
+        }
+        @media screen and (max-width: $break-small) {
+          display: none;
+        }
       }
     }
 
     .right {
       width: 50%;
+      @media screen and (max-width: $break-large) {
+        width: 100%;
+      }
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+      }
 
       .white-bg {
         background-color: map-get($colors, white);
         border-radius: 8px;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         padding: 40px 0;
+        max-width: 600px;
       }
 
       h2 {
@@ -55,7 +74,7 @@ main.landing {
 
       form {
         top: 110px;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
 
         div.input-container {
