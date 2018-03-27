@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="36865105-7ec0-4abe-8566-8a8fe3fd68b5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/docs/schema.sql" afterPath="$PROJECT_DIR$/docs/schema.sql" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/views/_layout.twig" afterPath="$PROJECT_DIR$/views/_layout.twig" />
       <change beforePath="$PROJECT_DIR$/views/index.twig" afterPath="$PROJECT_DIR$/views/index.twig" />
+      <change beforePath="$PROJECT_DIR$/views/login/signup.twig" afterPath="$PROJECT_DIR$/views/login/signup.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,38 +32,8 @@
           <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
-                  <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="signup.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="63" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".config.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/docs/schema.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+                <state relative-caret-position="340">
+                  <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -71,8 +42,28 @@
           <file leaf-file-name="feed.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/feed.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17779">
-                  <caret line="773" column="18" lean-forward="false" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
+                <state relative-caret-position="723">
+                  <caret line="103" column="12" lean-forward="false" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/docs/schema.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="92">
+                  <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_feed.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -91,7 +82,7 @@
           <file leaf-file-name="_layout.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/_layout.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
+                <state relative-caret-position="1242">
                   <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="64" />
                   <folding />
                 </state>
@@ -101,8 +92,8 @@
           <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="621">
-                  <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+                <state relative-caret-position="345">
+                  <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -122,21 +113,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_feed.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="531">
-                  <caret line="177" column="12" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
+                <state relative-caret-position="209">
+                  <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -185,8 +166,8 @@
           <file leaf-file-name="feed.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/assets/js/feed.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+                <state relative-caret-position="644">
+                  <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
                   <folding>
                     <marker date="1521709550074" expanded="true" signature="29:31" ph="{...}" />
                   </folding>
@@ -243,6 +224,12 @@
       <find>form</find>
       <find>method</find>
       <find>redi</find>
+      <find>feed.scss</find>
+      <find>grid-</find>
+      <find>gr</find>
+      <find>gutter-size</find>
+      <find>module</find>
+      <find>.connect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -271,12 +258,12 @@
         <option value="$PROJECT_DIR$/views/weather.twig" />
         <option value="$PROJECT_DIR$/public/assets/js/api.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/docs/schema.sql" />
         <option value="$PROJECT_DIR$/.config.yml" />
-        <option value="$PROJECT_DIR$/views/login/signup.twig" />
         <option value="$PROJECT_DIR$/views/_layout.twig" />
-        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/login/signup.twig" />
         <option value="$PROJECT_DIR$/views/index.twig" />
+        <option value="$PROJECT_DIR$/docs/schema.sql" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -300,9 +287,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="841" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -348,11 +334,6 @@
               <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="docs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="DEV2-AGORA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DEV2-AGORA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,7 +345,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/js/api.js&#10;color&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/common/_colors.scss&#10;colors&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/common/_colors.scss&#10;button&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/components/_buttons.scss&#10;weather&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/templates/_weather.scss&#10;wea&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/views/weather.twig&#10;mom&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sign&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/views/login/signup.twig&#10;sch&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/docs/schema.sql&#10;config&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/.config.yml&#10;schema&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/docs/schema.sql&#10;api&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/js/api.js&#10;color&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/common/_colors.scss&#10;colors&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/common/_colors.scss&#10;button&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/components/_buttons.scss&#10;weather&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/public/assets/sass/templates/_weather.scss&#10;wea&#9;FILE&#9;file:///Users/Brieuc/Desktop/GIT/DEV2-AGORA/views/weather.twig&#10;mom&#9;null&#9;null" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
@@ -416,26 +397,29 @@
       <workItem from="1520842598622" duration="20000" />
       <workItem from="1521098535819" duration="10239000" />
       <workItem from="1521702877723" duration="9515000" />
-      <workItem from="1521723369232" duration="441000" />
+      <workItem from="1521723369232" duration="626000" />
+      <workItem from="1521816535702" duration="1966000" />
+      <workItem from="1521832705782" duration="7594000" />
+      <workItem from="1522135021713" duration="5631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67858000" />
+    <option name="totallyTimeSpent" value="83234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26647565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20069444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -679,28 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <marker date="1521709550074" expanded="true" signature="29:31" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,22 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/feed.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17779">
-          <caret line="773" column="18" lean-forward="false" selection-start-line="773" selection-start-column="18" selection-end-line="773" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -810,23 +760,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/profile.twig" />
-    <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -843,34 +777,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.config.yml">
+    <entry file="file://$PROJECT_DIR$/views/_layout.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="1242">
+          <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layout.twig">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="64" />
+        <state relative-caret-position="644">
+          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding>
+            <marker date="1521709550074" expanded="true" signature="29:31" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/sass/templates/_feed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login/signup.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/feed.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="103" column="12" lean-forward="false" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="340">
+          <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="177" column="12" lean-forward="true" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
+        <state relative-caret-position="209">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>

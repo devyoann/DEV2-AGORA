@@ -1,4 +1,6 @@
-
+DROP DATABASE IF EXISTS agora;
+CREATE DATABASE agora;
+USE agora;
 
 CREATE TABLE user (
 	`id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7,8 +9,6 @@ CREATE TABLE user (
 	`email` VARCHAR(128),
 	`birthdate` VARCHAR(128),
 	`gender` INT,
-	`password` VARCHAR(128)
+	`password` VARCHAR(128),
+	`repassword` VARCHAR(128)
 );
-
-INSERT INTO user (lastname, firstname, email, birthdate, gender, password) VALUES 
-	('Caillot', 'Brieuc', 'brieuc@gmail.com', '31/12/1997', '1', 'psswordbidule');
